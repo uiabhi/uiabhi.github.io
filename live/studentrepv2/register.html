@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+
+    <title>Resigter || Student Rep Programme - Viralpitch</title>
+
+    <meta name="theme-color" content="#f15b2b">
+
+    <link href="./register_files/css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://viralpitch.co/sui/assets/image/favicon/apple-touch-icon.png">
+    <!-- Styles -->
+    
+    <link rel="stylesheet" href="./register_files/jquery-ui.css">
+
+    <link href="./register_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./register_files/owl.carousel.min.css" rel="stylesheet">
+    <link href="./register_files/owl.theme.default.min.css" rel="stylesheet">
+    <link href="./register_files/animate.css" rel="stylesheet">
+    <link href="./register_files/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./register_files/toastr.min.css">
+
+
+    <style>
+        span.help-block b {
+            color: #fd3277;
+            float: right;
+            padding: 5px;
+        }
+        .login .contact-card .forgot-password{
+            margin: 3em 0;
+        }
+        a.login-btn.sgnup:hover {
+            text-decoration: none;
+        }
+        .conbtn a:hover{
+            text-decoration: none;
+        }
+        .login-btn:hover{
+            text-decoration: none;
+        }
+    </style>
+
+
+    </head>
+<body data-gr-c-s-loaded="true">
+<div id="app">
+
+    <!--------------------------------------------------------------
+Navigation section
+---------------------------------------------------------------->
+
+        <!--------------------------------------------------------------
+Navigation section
+---------------------------------------------------------------->
+
+
+<header class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg main-nav">
+
+
+            <a class="logo-brand imgclass" href="https://viralpitch.co/">
+
+                <img src="/logo-light.png" alt="" class="logo-brand d-inline-block" width="200px">
+
+            </a>
+
+
+
+            <div class="visible-xs visible-sm hidden-lg hidden-md">
+
+                <a data-toggle="modal" data-target="#exampleModalCenter1" class="nav-link login-btn">Log in</a>
+
+
+
+            </div>
+
+
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav hidden-lg hidden-md">
+
+
+
+                </ul>
+
+                <ul class="navbar-nav second-ul hidden-lg hidden-md">
+
+
+                </ul>
+
+                <ul class="navbar-nav hidden-xs hidden-sm">
+
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#exampleModalCenter1" class="nav-link login-btn">Log
+                            in</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!--------------------------------------------------------------
+Navigation section
+---------------------------------------------------------------->
+    
+    <style>
+
+        @media  screen and (max-width: 768px) {
+            .othersinput {
+                display: inline;
+                margin-top: 30px;
+                font-size: 1em;
+            }
+        }
+
+        .selectcity{
+            -webkit-appearance: none;
+            width: 100%;
+            border-radius: 0;
+            border: none;
+            border-bottom: 1px solid #cdcdcd;
+            background: no-repeat;
+            text-align: center;
+        }
+        .othersc{
+            margin-top: 15px;
+        }
+
+        .main-nav .login-btn{
+            display: none !important;
+        }
+
+        @media  screen and (min-width: 768px) {
+            input[type="date"]::before {
+                display: none;
+            }
+        }
+
+        input[type="date"]::before {
+            color: #ffffff;
+            content: attr(placeholder);
+            margin-right: 5px;
+            z-index: -1;
+            /*position: absolute;*/
+        }
+        input[type="date"] {
+            color: #ffffff;
+        }
+        input[type="date"]:focus,
+        input[type="date"]:valid {
+            color: #666666;
+        }
+        input[type="date"]:focus::before,
+        input[type="date"]:valid::before {
+            content: "" !important;
+            display: none;
+        }
+    </style>
+    <!--------------------------------------------------------------
+Main content section
+---------------------------------------------------------------->
+
+
+    <div class="login-screen">
+        <ul>
+            <li>
+                <form class="signup-form" method="POST" action="#">
+                    <input type="hidden" name="_token" value="Mf50f682FYibHL3gJzcX9fmRxOl1h7i8Phjc6HxO">
+                    <h3 class="">Sign up</h3>
+                    <div class="form-group">
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                 <svg width="20px" class="svg-inline--fa fa-user fa-w-16 input-icon" aria-hidden="true" data-prefix="far" data-icon="user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#fff" d="M423.309 291.025L402.221 285C431.798 243.89 436 202.294 436 180 436 80.649 355.484 0 256 0 156.649 0 76 80.516 76 180c0 22.299 4.198 63.884 33.779 105l-21.088 6.025C21.28 310.285 0 371.59 0 408.605v25.681C0 477.138 34.862 512 77.714 512h356.571C477.138 512 512 477.138 512 434.286v-25.681c0-36.247-20.725-98.161-88.691-117.58zM256 48c72.902 0 132 59.099 132 132s-59.098 132-132 132-132-59.099-132-132S183.098 48 256 48zm208 386.286c0 16.41-13.304 29.714-29.714 29.714H77.714C61.304 464 48 450.696 48 434.286v-25.681c0-33.167 21.987-62.316 53.878-71.427l46.103-13.172C162.683 335.058 200.427 360 256 360s93.317-24.942 108.019-35.994l46.103 13.172C442.013 346.29 464 375.438 464 408.605v25.681z"></path></svg>
+                                </span>
+
+                            </div>
+
+                            <input id="name" type="text" class="form-control" placeholder="Name" name="name" value="" required="required" autofocus="">
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="form-group mar" style="text-align: left;border-bottom: 1px solid #ff008e;margin-left: 0;padding-left: 11px;">
+
+                        <div class="gender-blk">
+                            <label class="check-container">Male
+                                <input type="radio" id="male" name="gender" value="Male" class="form-control radio-checkbox main1checked" required="required">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="check-container">Female
+                                <input type="radio" id="female" name="gender" value="Female" class="form-control radio-checkbox main2checked">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="check-container">Others
+                                <input id="other-gender" type="radio" name="gender" value="others" class="form-control radio-checkbox otherschecked">
+                                <span class="checkmark"></span>
+                            </label>
+
+
+                            <input type="text" name="gender" class="form-control othersinput" placeholder="Other" style="display: none; margin: 0;">
+                        </div>
+
+
+                        <label class="check-container" id="others">
+
+                        </label>
+
+
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                <svg fill="#fff" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.5 92.8"><path d="M77 9.5h-2.2v-4c0-3-2.5-5.5-5.5-5.5h-2c-3 0-5.5 2.5-5.5 5.5v4H22.7v-4c0-3-2.5-5.5-5.5-5.5h-2c-3 0-5.5 2.5-5.5 5.5v4H7.5C3.4 9.5 0 12.9 0 17v68.2c0 4.1 3.4 7.5 7.5 7.5H77c4.1 0 7.5-3.4 7.5-7.5V17c0-4.1-3.4-7.5-7.5-7.5zm-12.2 0v-4c0-1.4 1.1-2.5 2.5-2.5h2c1.4 0 2.5 1.1 2.5 2.5v11c0 1.4-1.1 2.5-2.5 2.5h-2c-1.4 0-2.5-1.1-2.5-2.5v-7zm-52.1 0v-4c0-1.4 1.1-2.5 2.5-2.5h2c1.4 0 2.5 1.1 2.5 2.5v11c0 1.4-1.1 2.5-2.5 2.5h-2c-1.4 0-2.5-1.1-2.5-2.5v-7zm68.8 75.7c0 2.5-2 4.5-4.5 4.5H7.5c-2.5 0-4.5-2-4.5-4.5V33.4h78.5v51.8zm0-54.8H3V17c0-2.5 2-4.5 4.5-4.5h2.2v4c0 3 2.5 5.5 5.5 5.5h2c2.7 0 4.9-1.9 5.4-4.4.1-.4.1-.7.1-1.1v-4h39.1v4c0 .4 0 .8.1 1.1.5 2.5 2.7 4.4 5.4 4.4h2c3 0 5.5-2.5 5.5-5.5v-4H77c2.5 0 4.5 2 4.5 4.5v13.4z"></path><path d="M27.5 37.8H10.7v21h16.8v-21zm-3 18H13.7v-15h10.8v15zM50.5 37.8H33.7v21h16.8v-21zm-3 18H36.7v-15h10.8v15zM73.5 37.8H56.7v21h16.8v-21zm-3 18H59.7v-15h10.8v15zM27.5 65.1H10.7v21h16.8v-21zm-3 18H13.7v-15h10.8v15zM50.5 65.1H33.7v21h16.8v-21zm-3 18H36.7v-15h10.8v15zM73.5 65.1H56.7v21h16.8v-21zm-3 18H59.7v-15h10.8v15z"></path></svg>
+                                </span>
+
+                            </div>
+
+                            <input placeholder="DOB" id="dob" type="date" class="form-control" name="dob" value="" required="required" autofocus="">
+
+                        </div>
+
+                                            </div>
+
+                    <div class="form-group">
+                        <div class="input-group ">
+                            <div class="input-group-prepend border-0" style="border-bottom: 1px solid #ff008e !important;">
+                            <span class="input-group-text border-0">
+                             <svg fill="#fff" width="30px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 52.3"><style>.st0{fill:none}</style><path class="st0" d="M45 36.8c-.2 0-.4 0-.5-.1l-18.6-8.1v19.2c0 1 .9 1.9 1.9 1.9h37.4c1 0 1.9-.9 1.9-1.9V27.3l-21.5 9.3c-.2.1-.4.2-.6.2zM13.8 32.5c.1-.1.2-.3.2-.6 0-.5-.4-1-1-1-.5 0-1 .4-1 1 0 .3.1.6.4.8.4.3.5.8.5 1.2L11.5 42h3.1l-1.2-8.4c.1-.5.2-.8.4-1.1z"></path><path class="st0" d="M5.4 16.8l8.5 3.7 25.9-3.4c.5-1.3 2.6-2.2 5.3-2.2 3.1 0 5.4 1.2 5.4 2.8 0 1.6-2.3 2.8-5.4 2.8-1.7 0-3.1-.4-4.1-1l-22.3 2.9L45 34l40-17.4L44.3 2.7C38 5.1 15 13.8 5.4 16.8z"></path><path class="st0" d="M49.1 17.7c0-.6-1.6-1.5-4.1-1.5-2.5 0-4.1.9-4.1 1.5s1.6 1.5 4.1 1.5c2.5 0 4.1-.9 4.1-1.5z"></path><path d="M89.1 15.2L44.7.1c-.3-.1-.6-.1-.9 0C28.6 5.8 3.6 15 1.3 15.2c-.6 0-1.2.4-1.3 1.1-.1.6.2 1.2.8 1.5l11.5 5v5.6c-1.6.3-2.9 1.8-2.9 3.6 0 .8.3 1.6.7 2.2l-1.5 9c-.1.4 0 .8.3 1.1.3.3.6.5 1 .5h6.2c.4 0 .7-.2 1-.5s.4-.7.3-1.1l-1.3-9.4c.3-.6.5-1.2.5-1.9 0-1.3-.7-2.5-1.7-3.1v-4.9l8.2 3.6v20.3c0 2.5 2 4.5 4.5 4.5H65c2.5 0 4.5-2 4.5-4.5V26.2L89 17.7c.5-.2.8-.7.8-1.3.2-.5-.2-1-.7-1.2zM11.6 41.9l1.4-8.1c.1-.5-.1-.9-.5-1.2-.2-.2-.4-.5-.4-.8 0-.5.4-1 1-1 .5 0 1 .4 1 1 0 .3-.1.5-.2.6-.3.3-.4.7-.3 1.1l1.2 8.4h-3.2zM67 47.8c0 1-.8 1.9-1.9 1.9H27.7c-1 0-1.9-.9-1.9-1.9V28.6l18.6 8.1c.2.1.3.1.5.1s.4 0 .5-.1L67 27.3v20.5zM45 34L18.6 22.5l22.3-2.9c1 .6 2.4 1 4.1 1 3.1 0 5.4-1.2 5.4-2.8 0-1.6-2.3-2.8-5.4-2.8-2.7 0-4.7.9-5.3 2.2l-25.9 3.4-8.5-3.7C15 13.8 38 5.1 44.3 2.7L85 16.6 45 34zm-4.1-16.3c0-.6 1.6-1.5 4.1-1.5 2.5 0 4.1.9 4.1 1.5s-1.6 1.5-4.1 1.5c-2.5 0-4.1-.9-4.1-1.5z"></path></svg>
+                                </span>
+
+                            </div>
+
+                            <div class="row" style="display: contents;">
+
+                                <div class="col border-0">
+                                    <input style="border-bottom: 1px solid #ff008e !important; width: 88%;" id="college" type="text" class="form-control border-0" placeholder="College" name="college" value="" required="required" autofocus="">
+                                </div>
+
+                                <div class="col">
+                                    <select name="semester" class="drp" required="required">
+                                        <option value="">Semester</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+
+                                    </select>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+
+                        <select style="width: 100%;" class="form-control selectcity" name="city" required="required">
+                            <option value="">--Select City--</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Dehradun">Dehradun</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Manipal">Manipal</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Others">Other</option>
+
+                        </select>
+
+
+                        <input type="text" class="form-control othercity othersc" name="city_others" placeholder="Enter other city" style="display: none;">
+
+                        
+                                            </div>
+
+
+                    <div class="form-group">
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <svg width="20px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="far" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" viewBox="0 0 512 512"><path fill="#fff" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path>
+                                    </svg>
+                                </span>
+
+                            </div>
+
+                            <input id="email" type="email" class="form-control" placeholder="Email id" name="email" value="" required="required">
+
+                        </div>
+
+                                            </div>
+
+                    <div class="form-group">
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+
+                                    <svg style="transform: rotate(100deg);" width="20px" aria-hidden="true" data-prefix="far" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-phone fa-w-16 fa-3x"><path fill="#ffffff" d="M476.5 22.9L382.3 1.2c-21.6-5-43.6 6.2-52.3 26.6l-43.5 101.5c-8 18.6-2.6 40.6 13.1 53.4l40 32.7C311 267.8 267.8 311 215.4 339.5l-32.7-40c-12.8-15.7-34.8-21.1-53.4-13.1L27.7 329.9c-20.4 8.7-31.5 30.7-26.6 52.3l21.7 94.2c4.8 20.9 23.2 35.5 44.6 35.5C312.3 512 512 313.7 512 67.5c0-21.4-14.6-39.8-35.5-44.6zM69.3 464l-20.9-90.7 98.2-42.1 55.7 68.1c98.8-46.4 150.6-98 197-197l-68.1-55.7 42.1-98.2L464 69.3C463 286.9 286.9 463 69.3 464z" class=""></path></svg>
+                                </span>
+
+                            </div>
+                            <input id="phone_no" type="phone_no" class="form-control" placeholder="Mobile no" name="phone_no" value="" required="required">
+
+                        </div>
+                        <!--<span class="error">Field Can't be blank</span>-->
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <svg width="20px" aria-hidden="true" data-prefix="far" data-icon="unlock-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-unlock-alt fa-w-14 fa-3x"><path fill="#fff" d="M400 240H128v-94.8c0-52.8 42.1-96.7 95-97.2 53.4-.6 97 42.7 97 96v24c0 13.3 10.7 24 24 24s24-10.7 24-24v-22.6C368 65.8 304 .2 224.3 0 144.8-.2 80 64.5 80 144v96H48c-26.5 0-48 21.5-48 48v176c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V288c0-26.5-21.5-48-48-48zm0 224H48V288h352v176zm-176-32c-15.5 0-28-12.5-28-28v-56c0-15.5 12.5-28 28-28s28 12.5 28 28v56c0 15.5-12.5 28-28 28z" class=""></path>
+                                    </svg>
+                                </span>
+
+                            </div>
+
+
+                            <input id="password" type="password" class="form-control" placeholder="Password" name="password" required="required">
+
+
+                        </div>
+
+
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <svg width="20px" aria-hidden="true" data-prefix="far" data-icon="unlock-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-unlock-alt fa-w-14 fa-3x"><path fill="#fff" d="M400 240H128v-94.8c0-52.8 42.1-96.7 95-97.2 53.4-.6 97 42.7 97 96v24c0 13.3 10.7 24 24 24s24-10.7 24-24v-22.6C368 65.8 304 .2 224.3 0 144.8-.2 80 64.5 80 144v96H48c-26.5 0-48 21.5-48 48v176c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V288c0-26.5-21.5-48-48-48zm0 224H48V288h352v176zm-176-32c-15.5 0-28-12.5-28-28v-56c0-15.5 12.5-28 28-28s28 12.5 28 28v56c0 15.5-12.5 28-28 28z" class=""></path>
+                                    </svg>
+                                </span>
+
+                            </div>
+
+
+                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Re-enter Password" required="required">
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <button type="submit" class="login-btn">Sign up</button>
+                    </div>
+
+                    <p>
+                        Already have an account?&nbsp; &nbsp;<a href="#" class="white-c">Login here</a>
+                    </p>
+
+                </form>
+
+
+
+            </li>
+
+            <li>
+                <div class="login-bg">
+
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+</div>
+
+<!-- Scripts -->
+
+
+
+
+
+
+<script src="./studentrep_files/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="./studentrep_files/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="./studentrep_files/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./studentrep_files/jquery-ui.min.js"></script>
+<script src="./studentrep_files/bootbox.min.js"></script>
+<script src="./studentrep_files/owl.carousel.min.js"></script>
+<script src="./studentrep_files/wow.min.js"></script>x
+<script src="./register_files/toastr.min.js"></script>
+<script src="./register_files/main.js"></script>
+<script>
+    $(".radio-checkbox").change(function() {
+        $(".radio-checkbox").prop('checked',false);
+        $(this).prop('checked',true);
+    });
+
+</script>
+
+<script>
+
+    // open mobile menu
+    $('.js-toggle-menu').click(function(e){
+        e.preventDefault();
+        $('.mobile-header-nav').slideToggle();
+        $(this).toggleClass('open');
+    });
+
+</script>
+
+
+<script>
+
+    $( document ).ready(function() {
+        $('.othersinput').css('display','none');
+    });
+
+    (function(){
+        $(document).ready(function(){
+
+            $(".otherschecked").change(function() {
+                if($(this).prop('checked')) {
+                    $('.othersinput').css('display','inline');
+                    $('.othersinput').val('');
+                } else {
+                $('.othersinput').show();
+                }
+            });
+
+            $(".main2checked").change(function() {
+                if($(this).prop('checked')) {
+                    $('.othersinput').css('display','none');
+                    $('.othersinput').val('');
+                    $('.othersinput').val('Female');
+
+                } else {
+                    $('.othersinput').show();
+                    $('.othersinput').val('Female');
+                }
+            });
+
+            $(".main1checked").change(function() {
+                if($(this).prop('checked')) {
+                    $('.othersinput').css('display','none');
+                    $('.othersinput').val('');
+                    $('.othersinput').val('Male');
+                } else {
+                    $('.othersinput').show();
+//                    $('.othersinput').val('Male');
+                }
+            });
+
+
+            $('.othercity').css('display','none');
+
+            $('.selectcity').on('change', function (e) {
+                var optionSelected = $("option:selected", this);
+                var valueSelected = this.value;
+
+                if(valueSelected == "Others"){
+                    $('.othercity').css('display','block');
+                    $('.othercity').attr('required','required');
+                }
+                else {
+                    $('.othercity').css('display', 'none');
+                    $('.othercity').val('');
+                    $('.othercity').removeAttr('required');
+                }
+            });
+
+        });
+    })();
+
+
+
+
+</script>
+
+
+
+
+<!-- Croppie js -->
+<script src="./register_files/croppie.min.js"></script>
+
+
+
+
+
+
+<script>
+    $('.homepage-slider').owlCarousel({
+        loop:true,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        nav:false,
+        dots: false,
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:false,
+        smartSpeed:450,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+
+</script>
+
+
+<script>
+    wow = new WOW(
+        {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       0,          // default
+            mobile:       false,       // default
+            live:         true        // default
+        }
+    );
+    wow.init();
+</script>
+
+
+    <script>
+        //Header fixed//
+        $(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+
+                if(scroll >= 65){
+                    $('.logo-brand.imgclass svg').css('display','none');
+                }
+                else{
+                    $('.logo-brand.imgclass svg').css('display','block');
+                }
+
+            });
+
+        });
+
+    </script>
+
+
+
+
+</body></html>
