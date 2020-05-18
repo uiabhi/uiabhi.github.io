@@ -32,7 +32,7 @@ var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
     datasets: [{
       label: "Followers",
       lineTension: 0.3,
@@ -46,7 +46,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [0, 10, 15, 20, 25, 24, 25, 26, 28, 29, 30, 35 ],
+      data: [0, 10, 15, 20, 25, 24],
     }],
   },
   options: {
@@ -74,8 +74,8 @@ var myLineChart = new Chart(ctx, {
       }],
       yAxes: [{
         ticks: {
-          maxTicksLimit: 5,
-          padding: 10,
+          maxTicksLimit:55,
+          padding: 1,
           // Include a sign in the ticks
           callback: function(value, index, values) {
             return '' + number_format(value);
@@ -102,11 +102,11 @@ var myLineChart = new Chart(ctx, {
       borderColor: '#dddfeb',
       borderWidth: 1,
       xPadding: 15,
-      yPadding: 15,
+      yPadding: 0,
       displayColors: false,
       intersect: false,
       mode: 'index',
-      caretPadding: 10,
+      caretPadding: 0,
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
