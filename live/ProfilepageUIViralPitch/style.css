@@ -186,13 +186,14 @@
   }
   .profile-card-stats {
     padding: 10px 0px;
-    margin: 10px 0px;
+    margin: 0px 0px;
     text-align: center;
     overflow: hidden;
   }
   .profile-stat {
     height: 100%;
     width: 33.3333%;
+    border: 1px solid #4900be;
   }
   .profile-stat:after {
     color: #999;
@@ -233,6 +234,25 @@
     content: "Follower:Following Ratio";
     font-size: small;
   }
+  .fa-instagram {
+    color: #f51787;
+  }
+  .fa-youtube-square {
+  color: #d22334;
+  }
+  .fa-pinterest {
+  color: #d22334;
+  }
+  .fa-twitter {
+    color: #2caae1;
+  }
+  .checked {
+    color: orange;
+  }
+  .user-social{
+    font-size: xx-large;
+  }
+
   .image {
     width: 240px;
     height: 200px;
