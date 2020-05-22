@@ -192,14 +192,22 @@
   }
   .profile-stat {
     height: 100%;
-    width: 33.3333%;
-   
+    width: 20%;
+    border-radius: 10px;
   }
+  .profile-stat:hover {
+    background-color: #d0dfdc;
+    
+    z-index: 200;
+    font-weight: 700;
+    zoom: 1.1;
+  }
+
   .profile-stat:after {
     color: #999;
   }
-  .works::after {
-    content: "works";
+  .post::after {
+    content: "Total Post";
     font-size: small;
   }
   .followers::after {
