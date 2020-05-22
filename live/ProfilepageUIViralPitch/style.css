@@ -193,7 +193,7 @@
   .profile-stat {
     height: 100%;
     width: 20%;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   .profile-stat:hover {
     background-color: #d0dfdc;
