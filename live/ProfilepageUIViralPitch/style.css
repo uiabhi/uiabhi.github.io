@@ -12,6 +12,14 @@
     right: ;
     bottom: ;
   }
+  .rela-block2 {
+    display: inline-block;
+    margin: auto;
+    top: ;
+    left: ;
+    right: ;
+    bottom: ;
+  }
   .rela-inline {
     display: inline-block;
     position: relative;
@@ -30,6 +38,7 @@
     right: ;
     bottom: ;
     float: left;
+    height: max-content;
   }
   .floated.right {
     float: right;
@@ -126,29 +135,23 @@
     padding: 5px;
   }
   
-  .container {
+  .container-profile {
     z-index: 1;
-    width: 92%;
-    max-width: 1126px;
     background-color: #f4f4f4;
-    margin: 20px auto;
-    padding: 70px 0;
+    padding-top: 20px;
   }
   .profile-card {
     width: calc(100% - 40px);
-    /* padding-top: 100px; */
-    margin: 30px auto 30px;
+    margin: 0px auto;
     background-color: #fff;
     box-shadow: 0 2px 6px -2px rgba(0,0,0,0.26);
 
   }
   .profile-card-two {
-    width: calc(100% - 40px);
     padding-top: 1px;
-    margin: 30px auto 30px;
+    margin: 30px 20px;
     background-color: #fff;
     box-shadow: 0 2px 6px -2px rgba(0,0,0,0.26);
- 
   }
   .profile-pic {
     display: false;
@@ -172,8 +175,12 @@
     padding: 10px;
     text-align: center;
   }
+  #coverbackground>div>img{
+    width: 20%;
+  }
   .user-name {
     font-family: "Montserrat";
+    color: #0f0d13;
     font-size: 24px;
     letter-spacing: 3px;
     font-weight: 400;
@@ -186,7 +193,15 @@
   }
   .profile-card-stats {
     padding: 10px 0px;
+    margin: 10px 10px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .profile-card-stats-two {
+    padding: 10px 0px;
     margin: 0px 0px;
+    width: 50%;
+    height: max-content;
     text-align: center;
     overflow: hidden;
   }
@@ -194,6 +209,7 @@
     height: 100%;
     width: 20%;
     border-radius: 5px;
+    color: black;
   }
   .profile-stat:hover {
     background-color: #d0dfdc;
@@ -210,6 +226,10 @@
     content: "Total Post";
     font-size: small;
   }
+  .gender::after {
+    content: "Gender";
+    font-size: small;
+  }
   .followers::after {
     content: "followers";
     font-size: small;
@@ -219,7 +239,7 @@
     font-size: small;
   }
   .avglike::after {
-    content: "~ Likes";
+    content: "Avg Likes";
     font-size: small;
   }
   .engrate::after {
@@ -227,19 +247,19 @@
     font-size: small;
   }
   .avgcomment::after {
-    content: "~Comments";
+    content: "Avg Comments";
     font-size: small;
   }
   .likecommntratio::after {
-    content: "Like:Comment Ratio";
+    content: "Like:Comment";
     font-size: small;
   }
   .photovideoratio::after {
-    content: "Photo:Video Ratio";
+    content: "Photo:Video";
     font-size: small;
   }
   .followerfollowingratio::after {
-    content: "Follower:Following Ratio";
+    content: "Follower:Following";
     font-size: small;
   }
   .fa-instagram {
@@ -382,6 +402,7 @@
     line-height: 1.2;
     padding: 0;
     margin: 0 5px 5px 0;
+    color: #2d0272;
   }
 
   @media screen and (max-width: 1000px) {
