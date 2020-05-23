@@ -84,7 +84,7 @@
     letter-spacing: 2px;
     font-weight: 400;
     line-height: 24px;
-    background-color: #230064;
+    background-color: #2e44b9;
   }
   .blurred {
     -webkit-filter: blur(2px);
@@ -137,7 +137,7 @@
   
   .container-profile {
     z-index: 1;
-    background-color: #230064;
+    background-color: #2e44b9;
     padding-top: 20px;
   }
   .profile-card {
@@ -402,7 +402,7 @@
     line-height: 1.2;
     padding: 0;
     margin: 0 5px 5px 0;
-    color: #2d0272;
+    color: #2e44b9;
   }
 
   @media screen and (max-width: 1000px) {
