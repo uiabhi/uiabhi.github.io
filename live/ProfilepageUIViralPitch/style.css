@@ -183,7 +183,7 @@
     color: #0f0d13;
     font-size: 24px;
     letter-spacing: 3px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 30px;
     margin-bottom: 12px;
   }
@@ -209,14 +209,12 @@
     height: 100%;
     width: 20%;
     border-radius: 5px;
+    font-weight: 700;
     color: black;
   }
   .profile-stat:hover {
     background-color: #d0dfdc;
-    
     z-index: 200;
-    font-weight: 700;
-    zoom: 1.1;
   }
 
   .profile-stat:after {
