@@ -450,7 +450,7 @@ h6 {
 }
 
 .display-4 {
-    font-size: 3.5rem;
+    font-size: 3.0rem;
     font-weight: 300;
     line-height: 1.2
 }
@@ -4774,7 +4774,8 @@ input[type=submit].btn-block {
 
 .card-body {
     flex: 1 1 auto;
-    padding: 1.25rem
+    padding: 1.25rem;
+    height: 100%;
 }
 
 .card-title {
@@ -4867,7 +4868,8 @@ input[type=submit].btn-block {
 }
 
 .card-deck .card {
-    margin-bottom: .75rem
+    margin-bottom: .75rem;
+    height: 100%;
 }
 
 @media (min-width:576px) {
@@ -10872,7 +10874,7 @@ a:focus {
 }
 
 .text-lg {
-    font-size: 1.2rem
+    font-size: 1.0rem
 }
 
 .text-gray-100 {
