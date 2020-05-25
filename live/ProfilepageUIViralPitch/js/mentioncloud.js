@@ -16,7 +16,7 @@ anychart.onDocumentReady(function () {
 
     // create a chart and set the data
     var chartt = anychart.tagCloud(data);
-    chartt.angles(1)
+    chartt.angles([0])
     // set the container id
     chartt.container("testone");
     chartt.listen("pointClick", function (e) {

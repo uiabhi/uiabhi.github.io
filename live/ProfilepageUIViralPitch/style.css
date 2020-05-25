@@ -327,6 +327,13 @@ body {
   color: #2e44b9;
 }
 
+.social{
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
+
 @media screen and (max-width: 630px) {
   .image {
     width: calc(100% - 40px);
