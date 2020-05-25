@@ -67,6 +67,7 @@ body {
   width: 47%;
   float: left;
 }
+
 .height90 {
   height: 90vh;
   overflow: auto;
@@ -316,4 +317,8 @@ body {
     padding-top: 70px;
     margin: 50px auto 30px;
   }
+}
+/* hideinchart */
+#ac_layer_1d,#ac_path_1e,.anychart-credits,#ac_layer_1z,#ac_layer_1d>path{
+  display: none;
 }
