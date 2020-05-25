@@ -71,6 +71,10 @@ body {
   height: 90vh;
   overflow: auto;
 }
+.height50 {
+  height: 50vh;
+  overflow: auto;
+}
 .margintopzero{
   margin-top: 0;
 }
@@ -203,11 +207,19 @@ body {
 .followerfollowingratio::after {
   content: "Follower:Following";
 }
+.fraudscore::after {
+  content: "Fraud Score";
+}
+.monthlypost::after {
+  content: "Monthly Post";
+}
 
 .checked {
   color: orange;
 }
-
+.monthlystats{
+  font-size: 5em;
+}
 .image {
   width: 240px;
   height: 200px;
