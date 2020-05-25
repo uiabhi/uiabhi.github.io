@@ -132,6 +132,7 @@ body {
 }
 
 .profile-stat {
+  padding-top: 20px;
   height: 100%;
   width: 20%;
   border-radius: 5px;
@@ -139,7 +140,25 @@ body {
   font-weight: 700;
   color: rgb(35, 47, 187);
 }
+.profile-stat-m {
+  padding-top: 20px;
+  text-align: center;
+  height: 100%;
+  width: 33.3333%;
+  border-radius: 5px;
+  font-size: 29px;
+  font-weight: 700;
+  color: rgb(35, 47, 187);
+}
+.profile-stat-m:hover {
+  background-color: #d0dfdc;
+  z-index: 200;
+}
 
+.profile-stat-m:after {
+  color: #999;
+  font-size: small;
+}
 .profile-stat:hover {
   background-color: #d0dfdc;
   z-index: 200;
@@ -147,51 +166,43 @@ body {
 
 .profile-stat:after {
   color: #999;
+  font-size: small;
 }
 
 .post::after {
   content: "Total Post";
-  font-size: small;
 }
 
 .followers::after {
   content: "followers";
-  font-size: small;
 }
 
 .following::after {
   content: "following";
-  font-size: small;
 }
 
 .avglike::after {
   content: "Avg Likes";
-  font-size: small;
 }
 
 .engrate::after {
   content: "Eng.Rates";
-  font-size: small;
 }
 
 .avgcomment::after {
   content: "Avg Comments";
-  font-size: small;
 }
 
 .likecommntratio::after {
   content: "Like:Comment";
-  font-size: small;
 }
 
 .photovideoratio::after {
   content: "Photo:Video";
-  font-size: small;
 }
 
 .followerfollowingratio::after {
   content: "Follower:Following";
-  font-size: small;
 }
 
 .checked {
@@ -202,7 +213,7 @@ body {
   width: 240px;
   height: 200px;
   cursor: pointer;
-  margin: 0 18px 40px;
+  margin: 0 18px 18px;
   overflow: hidden;
   border-radius: 5px;
   border: 10px solid #fff;
