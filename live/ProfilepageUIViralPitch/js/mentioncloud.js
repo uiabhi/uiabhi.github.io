@@ -2,11 +2,11 @@ anychart.onDocumentReady(function () {
 
     // create data   
     var data = [
-{x: "@learning", value: 80},
+{x: "@learning", value: 20},
 {x: "@includes", value: 56},
 {x: "@lists", value: 44},
 {x: "@meaning", value: 40},
-{x: "@useful", value: 36},
+{x: "@useful", value: 50},
 {x: "@different", value: 32},
 {x: "@grammar", value: 28},
 {x: "@teaching", value: 24},
@@ -15,15 +15,15 @@ anychart.onDocumentReady(function () {
     ];
 
     // create a chart and set the data
-    var chartt = anychart.tagCloud(data);
-    chartt.angles([0])
+    var chart = anychart.tagCloud(data);
+    chart.angles([.5])
     // set the container id
-    chartt.container("testone");
-    chartt.listen("pointClick", function (e) {
+    chart.container("testone");
+    chart.listen("pointClick", function (e) {
         var url = "https://en.wikipedia.org/wiki/" + e.point.get("x");
         window.open(url, "_blank");
     });
 
     // initiate drawing the chart
-    chartt.draw();
+    chart.draw();
 });

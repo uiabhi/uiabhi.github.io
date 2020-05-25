@@ -344,29 +344,112 @@ body {
   padding: 0;
 }
 
-@media screen and (max-width: 630px) {
-  .image {
-    width: calc(100% - 40px);
-    height: 0px;
-    padding-bottom: 60%;
-  }
+.monthlystatglyf{
+  padding-bottom: 20px;
+  font-size:100px;
 }
 
-@media screen and (max-width: 550px) {
+
+@media screen and (max-width: 600px) {
+  .image {
+    width: 130px;
+    height: 130px;
+  }
   .profile-card-stats {
     padding: 20px 10px;
     margin: 20px 0px;
   }
 
   .profile-pic {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: -70px;
+    left: 50%;
+    right: false;
+    bottom: false;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     height: 140px;
     width: 140px;
-    top: -70px;
+    border: 10px solid #fff;
+    border-radius: 100%;
+    background-size: cover;
   }
-
+  #user_description{
+    display: none;
+  }
   .profile-card {
     padding-top: 70px;
-    margin: 50px auto 30px;
+    margin: 50px auto 0px;
+  }
+  .user-name{
+    padding-top: 0px;
+    font-family: "Montserrat";
+    color: #0f0d13;
+    font-size: 28px;
+    text-align: center;
+  }
+  .profile-stat {
+    padding-top: 10px;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 700;
+ }
+ .profile-name-container {
+  padding: 0px;
+}
+
+.fiftypercent {
+  width: calc(100% - 40px);
+  margin: 0 10px 20px 20px;
+  float: none;
+  
+}
+#analytics{
+  display: none;
+}
+.height90{
+  height: max-content;
+}
+div.rela-block.profile-name-container > i{
+  top: -59px!important;
+}
+.monthlystatglyf {
+  font-size: 47px;
+}
+
+.height50{
+  height: max-content;
+}
+ .topmentions, .tophashtag{
+   display: none;
+ }
+ .tagged-users-list li .insta-profile .details {
+  padding-left: 0px;
+}
+.relatedimage{
+  width: 120px;
+  float: left;
+  padding-right: 10px;
+}
+div.col-sm-6.col-md-8 > i{
+  position: absolute;
+    top: 0px!important;
+    right: 13px;
+}
+}
+
+@media screen and (min-width: 1280px) {
+  .topmentionsmobile, .tophashtagmobile{
+    display: none;
   }
 }
 
+@media screen and (max-width: 340px) {
+  .image {
+    width: 115px;
+    height: 115px;
+  }
+}

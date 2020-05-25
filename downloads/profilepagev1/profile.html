@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <!-- FONTS -->
+    <!-- Roboto, Yellowtail, and Montserrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400|Yellowtail" rel="stylesheet">
+    <!-- PAGE STUFF -->
+
+
+    <div class="rela-block container">
+        <div class="rela-block profile-card">
+            <div class="profile-pic" id="profile_pic"></div>
+            <div class="rela-block profile-name-container">
+                <div class="rela-block user-name" id="user_name">User Name Here</div>
+                <div class="rela-block user-desc" id="user_description">User Description Here</div>
+            </div>
+            <div class="rela-block profile-card-stats">
+                <div class="floated profile-stat works" id="num_works">56<br></div>
+                <div class="floated profile-stat followers" id="num_followers">2.8 M<br></div>
+                <div class="floated profile-stat following" id="num_following">245<br></div>
+            </div>
+        </div>
+        <div class="rela-block profile-card-two">
+            <div class="rela-block profile-card-stats">
+                <div class="floated profile-stat avglike" id="avglikes">726<br></div>
+                <div class="floated profile-stat engrate" id="engrate">5.3%<br></div>
+                <div class="floated profile-stat avgcomment" id="avgcomment">26<br></div>
+            </div>
+        </div>
+
+        <div class="rela-block content">
+            <div class="rela-inline image"></div>
+            <div class="rela-inline image"></div>
+            <div class="rela-inline image"></div>
+            <div class="rela-inline image"></div>
+        </div>
+        <div class="rela-inline button more-images" onclick="add_images(); inf_scroll = true;">More Images</div>
+
+        <div class="rela-block profile-card-two">
+            <div class="rela-block profile-card-stats">
+                <div class="floated profile-stat likecommntratio" id="likecommntratio">110:12<br></div>
+                <div class="floated profile-stat photovideoratio" id="photovideoratio">3:1<br></div>
+                <div class="floated profile-stat followerfollowingratio" id="followerfollowingratio">135K:1<br></div>
+            </div>
+            <div class="rela-block profile-card-stats">
+                <div class="rela-block user-name" id="topmentions"><i class="fa fa-check-circle-o"></i>Top Mentions
+                </div>
+
+                <ul class="tagged-users-list clearfix">
+                    <li><a href="https://www.instagram.com/viral.pitch/" target="_blank" rel="noreferrer noopener">
+                            <div class="insta-profile"><img class="tag-photo"
+                                    src="https://instagram.fdel3-1.fna.fbcdn.net/v/t51.2885-19/s150x150/89870665_209483497077319_2011657600776536064_n.jpg?_nc_ht=instagram.fdel3-1.fna.fbcdn.net&_nc_ohc=NtKubTEWGtUAX_w32HD&oh=01dabd406e1c94fc343a986108d98feb&oe=5EEF3457"
+                                    alt="insta pic">
+                                <div class="details"><span class="uname">Viral Picth</span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/abhinehaji/" target="_blank" rel="noreferrer noopener">
+                            <div class="insta-profile"><img class="tag-photo"
+                                    src="https://instagram.fdel3-1.fna.fbcdn.net/v/t51.2885-19/s150x150/97278395_239810807312615_42696630666788864_n.jpg?_nc_ht=instagram.fdel3-1.fna.fbcdn.net&_nc_ohc=peX6KLZvHcEAX9JxFgW&oh=b14e426b9bda180ba90b0d6d731a4352&oe=5EF16EEF"
+                                    alt="insta pic">
+                                <div class="details"><span class="uname">abhinehaji</span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/alibaba.group/" target="_blank" rel="noreferrer noopener">
+                            <div class="insta-profile"><img class="tag-photo"
+                                    src="https://instagram.fdel3-1.fna.fbcdn.net/v/t51.2885-19/s150x150/26871861_157171438323271_9098827481443467264_n.jpg?_nc_ht=instagram.fdel3-1.fna.fbcdn.net&amp;_nc_ohc=4xPkNVpKjxEAX-77nzV&amp;oh=8b6c9811e29b68533336ce3b11c00097&amp;oe=5EEDF9B7"
+                                    alt="insta pic">
+                                <div class="details"><span class="uname">alibaba.group</span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/viral.pitch/" target="_blank" rel="noreferrer noopener">
+                            <div class="insta-profile"><img class="tag-photo"
+                                    src="https://instagram.fdel3-1.fna.fbcdn.net/v/t51.2885-19/s150x150/89870665_209483497077319_2011657600776536064_n.jpg?_nc_ht=instagram.fdel3-1.fna.fbcdn.net&_nc_ohc=NtKubTEWGtUAX_w32HD&oh=01dabd406e1c94fc343a986108d98feb&oe=5EEF3457"
+                                    alt="insta pic">
+                                <div class="details"><span class="uname">Viral Picth</span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/abhinehaji/" target="_blank" rel="noreferrer noopener">
+                            <div class="insta-profile"><img class="tag-photo"
+                                    src="https://instagram.fdel3-1.fna.fbcdn.net/v/t51.2885-19/s150x150/97278395_239810807312615_42696630666788864_n.jpg?_nc_ht=instagram.fdel3-1.fna.fbcdn.net&_nc_ohc=peX6KLZvHcEAX9JxFgW&oh=b14e426b9bda180ba90b0d6d731a4352&oe=5EF16EEF"
+                                    alt="insta pic">
+                                <div class="details"><span class="uname">abhinehaji</span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/alibaba.group/" target="_blank" rel="noreferrer noopener">
+                            <div class="insta-profile"><img class="tag-photo"
+                                    src="https://instagram.fdel3-1.fna.fbcdn.net/v/t51.2885-19/s150x150/26871861_157171438323271_9098827481443467264_n.jpg?_nc_ht=instagram.fdel3-1.fna.fbcdn.net&amp;_nc_ohc=4xPkNVpKjxEAX-77nzV&amp;oh=8b6c9811e29b68533336ce3b11c00097&amp;oe=5EEDF9B7"
+                                    alt="insta pic">
+                                <div class="details"><span class="uname">alibaba.group</span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/viral.pitch/" target="_blank" rel="noreferrer noopener">
+                            <div class="insta-profile"><img class="tag-photo"
+                                    src="https://instagram.fdel3-1.fna.fbcdn.net/v/t51.2885-19/s150x150/89870665_209483497077319_2011657600776536064_n.jpg?_nc_ht=instagram.fdel3-1.fna.fbcdn.net&_nc_ohc=NtKubTEWGtUAX_w32HD&oh=01dabd406e1c94fc343a986108d98feb&oe=5EEF3457"
+                                    alt="insta pic">
+                                <div class="details"><span class="uname">Viral Picth</span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/abhinehaji/" target="_blank" rel="noreferrer noopener">
+                            <div class="insta-profile"><img class="tag-photo"
+                                    src="https://instagram.fdel3-1.fna.fbcdn.net/v/t51.2885-19/s150x150/97278395_239810807312615_42696630666788864_n.jpg?_nc_ht=instagram.fdel3-1.fna.fbcdn.net&_nc_ohc=peX6KLZvHcEAX9JxFgW&oh=b14e426b9bda180ba90b0d6d731a4352&oe=5EF16EEF"
+                                    alt="insta pic">
+                                <div class="details"><span class="uname">abhinehaji</span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/alibaba.group/" target="_blank" rel="noreferrer noopener">
+                            <div class="insta-profile"><img class="tag-photo"
+                                    src="https://instagram.fdel3-1.fna.fbcdn.net/v/t51.2885-19/s150x150/26871861_157171438323271_9098827481443467264_n.jpg?_nc_ht=instagram.fdel3-1.fna.fbcdn.net&amp;_nc_ohc=4xPkNVpKjxEAX-77nzV&amp;oh=8b6c9811e29b68533336ce3b11c00097&amp;oe=5EEDF9B7"
+                                    alt="insta pic">
+                                <div class="details"><span class="uname">alibaba.group</span></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rela-block profile-card-stats">
+                <div class="rela-block user-name" id="topmentions"><i class="fa fa-hashtag"></i>Top Hashtags</div>
+
+                <ul class="tagged-hastags-list clearfix">
+                    <li class="hastags">#friend</li>
+                    <li class="hastags">#friendship</li>
+                    <li class="hastags">#friendsforever</li>
+                    <li class="hastags">#friendshipgoals</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="rela-block profile-card-two">
+            <div class="rela-block profile-card-stats">
+                <div class="rela-block user-name" id="topmentions"><i class="fa fa-check-circle-o"></i>Stats
+                </div></div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
