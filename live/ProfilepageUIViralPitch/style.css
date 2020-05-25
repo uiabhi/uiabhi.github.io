@@ -3,6 +3,7 @@
   -webkit-transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
   transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
 }
+
 .rela-block {
   display: block;
   position: relative;
@@ -22,6 +23,7 @@
   right: ;
   bottom: ;
 }
+
 .floated {
   position: relative;
   margin: false;
@@ -72,11 +74,13 @@ body {
   height: 90vh;
   overflow: auto;
 }
+
 .height50 {
   height: 50vh;
   overflow: auto;
 }
-.margintopzero{
+
+.margintopzero {
   margin-top: 0;
 }
 
@@ -93,7 +97,8 @@ body {
   background-size: cover;
   float: left;
 }
-.charts{
+
+.charts {
   font-size: 24px;
 }
 
@@ -112,9 +117,10 @@ body {
   line-height: 30px;
   margin-bottom: 12px;
 }
-.stars{
+
+.stars {
   padding-top: 0px;
-}  
+}
 
 
 .user-desc {
@@ -148,6 +154,7 @@ body {
   font-weight: 700;
   color: rgb(35, 47, 187);
 }
+
 .profile-stat-m {
   padding-top: 20px;
   text-align: center;
@@ -163,6 +170,7 @@ body {
   color: #999;
   font-size: small;
 }
+
 .profile-stat:hover {
   background-color: #d0dfdc;
   z-index: 200;
@@ -208,9 +216,11 @@ body {
 .followerfollowingratio::after {
   content: "Follower:Following";
 }
+
 .fraudscore::after {
   content: "Fraud Score";
 }
+
 .monthlypost::after {
   content: "Monthly Post";
 }
@@ -218,9 +228,11 @@ body {
 .checked {
   color: orange;
 }
-.monthlystats{
+
+.monthlystats {
   font-size: 5em;
 }
+
 .image {
   width: 240px;
   height: 200px;
@@ -318,7 +330,20 @@ body {
     margin: 50px auto 30px;
   }
 }
+
 /* hideinchart */
-#ac_layer_1d,#ac_path_1e,.anychart-credits,#ac_layer_1z,#ac_layer_1d>path{
+#ac_layer_1d,
+#ac_path_1e,
+.anychart-credits,
+#ac_layer_1z,
+#ac_layer_1d>path,
+#ac_layer_u,
+#ac_layer_1a,
+#ac_path_v,
+#ac_layer_15,
+#ac_path_16,
+#ac_layer_1r,
+#ac_layer_g,
+#ac_path_m {
   display: none;
 }
