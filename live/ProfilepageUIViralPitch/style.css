@@ -170,6 +170,21 @@ body {
   color: #999;
   font-size: small;
 }
+.profile-stat-m-4 {
+  padding-top: 20px;
+  text-align: center;
+  height: 100%;
+  width: 25%;
+  border-radius: 5px;
+  font-size: 29px;
+  font-weight: 700;
+  color: rgb(35, 47, 187);
+}
+
+.profile-stat-m-4:after {
+  color: #999;
+  font-size: small;
+}
 
 .profile-stat:hover {
   background-color: #d0dfdc;
@@ -224,6 +239,9 @@ body {
 .monthlypost::after {
   content: "Monthly Post";
 }
+.followershike::after {
+  content: "New Followers";
+}
 
 .checked {
   color: orange;
@@ -231,6 +249,9 @@ body {
 
 .monthlystats {
   font-size: 5em;
+}
+.paddingbotton20{
+  padding-bottom: 40px;
 }
 
 .image {

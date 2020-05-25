@@ -1,46 +1,46 @@
 anychart.onDocumentReady(function () {
     var data = [{
-            "x": "like4like",
+            "x": "#like4like",
             "value": 50
         },
         {
-            "x": "memes",
+            "x": "#memes",
             "value": 10
         },
         {
-            "x": "Hindustani",
+            "x": "#Hindustani",
             "value": 70
         },
         {
-            "x": "viralpitch",
+            "x": "#viralpitch",
             "value": 60
         },
         {
-            "x": "friends",
+            "x": "#friends",
             "value": 40
         },
         {
-            "x": "loophole",
+            "x": "#loophole",
             "value": 30
         },
         {
-            "x": "Russian",
+            "x": "#Russian",
             "value": 21
         },
         {
-            "x": "test",
+            "x": "#test",
             "value": 60
         },
         {
-            "x": "hastags",
+            "x": "#hastags",
             "value": 40
         },
         {
-            "x": "unkonwn",
+            "x": "#unkonwn",
             "value": 30
         },
         {
-            "x": "olelele",
+            "x": "#olelele",
             "value": 21
         },
     ];
