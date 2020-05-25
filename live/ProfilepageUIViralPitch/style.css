@@ -354,47 +354,7 @@ body {
 }
 
 /* hideinchart */
-.anychart-credits,
-#ac_layer_1f,
-#ac_layer_2f,
-
-#ac_layer_1p,
-#ac_layer_2p,
-
-#ac_layer_1h,
-#ac_layer_2h,
-#ac_path_3,
-
-#ac_path_u,
-#ac_path_v,
-
-#ac_path_1e,
-
-#ac_layer_1d,
-#ac_layer_1z,
-#ac_layer_u,
-#ac_layer_1a,
-
-#ac_layer_15,
-#ac_path_16,
-
-#ac_path_2q,
-#ac_path_2i,
-#ac_path_2g,
-#ac_layer_2z,
-
-#ac_layer_39,
-#ac_layer_11,
-#ac_layer_4,
-
-#ac_path_12,
-#ac_layer_1h,
-
-#ac_layer_2x,
-#ac_layer_1k,
-
-#ac_layer_2t
-{
+.anychart-credits{
   display: none;
   height: 0;
   width: 0;
