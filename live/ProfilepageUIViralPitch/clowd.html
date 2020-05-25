@@ -2,54 +2,53 @@
 <html>
  <head>
   <title>JavaScript Tag Cloud Chart</title>
-  <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
-  <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
-  <style>
-    html, body, #test {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    }
-  </style> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.js"></script>
+
  </head>
   <body>
-   <div id="test"></div>
+
+
     <script>
-        anychart.onDocumentReady(function() {
-  var data = [
-    {"x": "Mandarin chinese", "value": 1090000000},
-    {"x": "English", "value": 983000000},
-    {"x": "Hindustani", "value": 544000000},
-    {"x": "Spanish", "value": 527000000},
-    {"x": "Arabic", "value": 422000000},
-    {"x": "Malay", "value": 281000000},
-    {"x": "Russian", "value": 267000000},
-    {"x": "Bengali", "value": 261000000},
-    {"x": "Portuguese", "value": 229000000},
-    {"x": "French", "value": 229000000},
-    {"x": "Hausa", "value": 150000000},
-    {"x": "Punjabi", "value": 148000000},
-    {"x": "Japanese", "value": 129000000},
-    {"x": "German", "value": 129000000},
-    {"x": "Persian", "value": 121000000}
-  ];
-
- // create a tag (word) cloud chart
-  var chart = anychart.tagCloud(data);
-
-   // set a chart title
-  // set an array of angles at which the words will be laid out
-  chart.angles([0])
-  // enable a color range
-  chart.colorRange(true);
-  // set the color range length
-  chart.colorRange().length('80%');
-
-  // display the word cloud chart
-  chart.container("test");
-  chart.draw();
-});
+      var fill = d3.scaleOrdinal(d3.schemeCategory20);
+    
+      var data = [
+          {text: "Hello", value:6260},
+          {text: "happy", value:5370},
+          {text: "beautiful", value:2480},
+          {text: "rainbow", value:4350},
+          {text: "unicorn", value:1250},
+          {text: "glitter", value:3140},
+          {text: "happy", value:990},
+          {text: "pie", value:4230}];
+    
+      var layout = d3.layout.cloud()
+          .size([400, 300])
+          .words(data)
+          .font("Impact")
+          .padding(5)
+          .rotate(function() { return ~~(Math.random() * 2) * 90; })
+          .on("end", draw);
+    
+      layout.start();
+    
+      function draw(words) {
+          d3.select("#demo2")
+            .append("g")
+            .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+            .selectAll("text")
+            .data(words)
+            .enter()
+            .append("text")
+            .text((d) => d.text)
+            .style("font-size", (d) => d.size + "px")
+            .style("font-family", (d) => d.font)
+            .style("fill", (d, i) => fill(i))
+            .attr("text-anchor", "middle")
+            .attr("transform", (d) => "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")");
+      }
     </script>
+    
+    <svg id="demo2" width="400" height="300"></svg>
+
   </body>
 </html>
