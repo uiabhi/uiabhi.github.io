@@ -332,7 +332,17 @@ body {
   top: 13px;
   right: 13px;
 }
-
+.fa-instagram{
+  color: #57009e;
+}
+/* hideinchart */
+.anychart-credits{
+  display: none;
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+}
 
 @media screen and (max-width: 630px) {
   .image {
@@ -360,11 +370,3 @@ body {
   }
 }
 
-/* hideinchart */
-.anychart-credits{
-  display: none;
-  height: 0;
-  width: 0;
-  margin: 0;
-  padding: 0;
-}
