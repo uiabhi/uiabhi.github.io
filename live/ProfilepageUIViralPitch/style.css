@@ -88,6 +88,9 @@ body {
   background-size: cover;
   float: left;
 }
+.charts{
+  font-size: 24px;
+}
 
 .profile-name-container {
   margin: 0 auto 10px;
@@ -149,10 +152,6 @@ body {
   font-size: 29px;
   font-weight: 700;
   color: rgb(35, 47, 187);
-}
-.profile-stat-m:hover {
-  background-color: #d0dfdc;
-  z-index: 200;
 }
 
 .profile-stat-m:after {
