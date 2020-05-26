@@ -70,6 +70,9 @@ body {
   margin-right: 0;
   float: left;
 }
+.floatnone{
+  float: none!important;
+}
 
 .height90 {
   height: 90vh;
@@ -237,8 +240,8 @@ body {
   content: "Fraud Score";
 }
 
-.monthlypost::after {
-  content: "Monthly Post";
+.weeklypost::after {
+  content: "Weekly Post";
 }
 .followershike::after {
   content: "New Followers";
@@ -332,9 +335,7 @@ body {
   top: 13px;
   right: 13px;
 }
-.fa-instagram{
-  color: #57009e;
-}
+
 /* hideinchart */
 .anychart-credits{
   display: none;
@@ -344,16 +345,74 @@ body {
   padding: 0;
 }
 
-.monthlystatglyf{
+.weeklystatglyf{
   padding-bottom: 20px;
   font-size:100px;
 }
+.fa-instagram {
+  color: #ff00eb;
+}
+.boxsec {
+  width: 100%;
+  position: relative;
+  margin-top: 5px;
+}
+.boxsec.abltpos {
+  width: 100%;
+  position: relative;
+  margin-top: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0b1370;
+  padding-top: 2px;
+  padding-bottom: 3px;
+}
+.image p {
+  margin-bottom: 0;
+  line-height: 14px;
+}
 
+.ld {
+  color: #2d2d2d;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 0;
+  line-height: 14px;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: center;
+}
+.passets1 {
+  width: 50%;
+  float: left;
+  display: inline;
+  text-align: center;
+  color: #e8e9ff;
+  font-weight: 300;
+  font-size: 15px;
+}
+.passets1 span {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 10px;
+  padding-top: 10px;
+}
 
 @media screen and (max-width: 600px) {
   .image {
     width: 130px;
-    height: 130px;
+    height: max-content;
   }
   .profile-card-stats {
     padding: 20px 10px;
@@ -416,7 +475,7 @@ body {
 div.rela-block.profile-name-container > i{
   top: -59px!important;
 }
-.monthlystatglyf {
+.weeklystatglyf {
   font-size: 47px;
 }
 
