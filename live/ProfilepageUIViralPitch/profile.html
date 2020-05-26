@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://cdn.anychart.com/releases/8.7.1/css/anychart-ui.min.css?hcode=a0c21fc77e1449cc86299c5faa067dc4" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
@@ -32,6 +33,7 @@
                         class="fa fa-male" style="display: inline-block;"> Male</i><i class="fa fa-female"
                         style="display: none;"> Female</i></div>
                         <i class="fa fa-instagram social" style="position: absolute;top: 13px;right: 13px;font-size: 25px;"></i>
+                        <p style="font-size: small;" class="d-sm-none">(Data Updated on Tue, 26 May 2020 08:37:28 GMT) <a href="#" title="refresh"><i class="glyphicon glyphicon-refresh" style="color: green;"></i></a> </p>
                 <div class="rela-block user-name stars" id="stars">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -39,6 +41,7 @@
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
                 </div>
+                
                 <div class="rela-block user-desc text-center" id="user_description">Lorem ipsum dolor sit amet
                     consectetur adipisicing elit. Esse suscipit tenetur corporis voluptatum incidunt aliquam excepturi
                     provident, dolores unde accusamus quasi dignissimos id!
@@ -335,7 +338,25 @@
 
         </div>
 
-
+            <!-- weekly stats profile -->
+            <div class="rela-block profile-card-two top-posts margintopzero">
+                <div class="rela-block profile-card-stats">
+                  <div class="rela-block user-name paddingbotton20"><i class="fa fa-check-circle-o"></i>Weekly Gains
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 text-left">
+                      <div class="well well-sm">
+                        <canvas id="WeeklymyChart" width="" height="100"></canvas>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 text-left">
+                      <div class="well well-sm">
+                        <canvas id="WeeklymyChart2" width="" height="100"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
     <!-- similar profile -->
         <div class="rela-block profile-card-two top-posts height90 margintopzero">
@@ -488,8 +509,10 @@
                 </div>
                 <button style="padding:10px;border-radius: 5px;background-color:#00000000;">Load more</button>
             </div>
+            
 
         </div>
+
 
     </div>
 
@@ -497,8 +520,16 @@
     <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-tag-cloud.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
     <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-exports.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
     <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-ui.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
-    <!-- chart.js lib -->
-    <script src="chart.js/Chart.min.js"></script>
+
+      <!-- chart.js lib -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+
+
+
 
     <!-- chart script -->
     <script src="js/followers-following.js"></script>
@@ -506,6 +537,8 @@
     <script src="js/like-comment.js"></script>
     <script src="js/hastagwordcloud.js"></script>
     <script src="js/mentioncloud.js"></script>
+    <script src="js/weeklygainfollow.js"></script>
+    <script src="js/weeklygainpost.js"></script>
 </body>
 
 </html>

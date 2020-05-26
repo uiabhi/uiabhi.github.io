@@ -352,6 +352,11 @@ body {
 .fa-instagram {
   color: #ff00eb;
 }
+.fa-sync{
+  color: blue ;
+  width: 26px;
+  height: 26px;
+}
 .boxsec {
   width: 100%;
   position: relative;
@@ -497,6 +502,9 @@ div.col-sm-6.col-md-8 > i{
   position: absolute;
     top: 0px!important;
     right: 13px;
+}
+.refresharea{
+  text-align: center;
 }
 }
 
