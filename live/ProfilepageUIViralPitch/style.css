@@ -49,6 +49,11 @@ body {
   background-color: #2e44b9;
   padding-top: 20px;
 }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 1.1;
+}
 
 .profile-card {
   width: calc(100% - 40px);
@@ -387,6 +392,9 @@ body {
 .fa-check-circle{
   color:#3897f0;
 }
+.fa-twitter{
+  color: #00acee;
+}
 .boxsec {
   width: 100%;
   position: relative;
@@ -552,6 +560,15 @@ div.col-sm-6.col-md-8 > i{
 }
 .socialtop{
   font-size: 50px;
+}
+.socialbottom{
+  position: absolute;
+  top: 0px;
+  right: 13px;
+  font-size: 42px;
+}
+.profilegender{
+  font-size: 24px;
 }
 }
 

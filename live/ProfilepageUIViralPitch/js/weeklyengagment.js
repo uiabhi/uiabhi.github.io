@@ -7,7 +7,7 @@ var ctx = document.getElementById('WeeklymyChart2');
                       label: 'Weekly Engagment',
                       data: [12, 18, 19, 26, 22, 23],
                       backgroundColor: [
-                        'rgba(255, 99, 255, 0.2)',
+                        'rgba(35, 47, 187, 1)',
                         'rgba(54, 162, 235, 0.2)',
                         'rgba(255, 206, 86, 0.2)',
                         'rgba(75, 192, 192, 0.2)',
