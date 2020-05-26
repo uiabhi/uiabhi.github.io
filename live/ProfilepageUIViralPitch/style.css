@@ -97,7 +97,6 @@ body {
   width: 180px;
   border: 10px solid #fff;
   /* border-radius: 100%; */
-  background: url("https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/s960x960/82440198_2396143890490929_9221768974671282176_o.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=8bfaSVLqj6cAX_V_y2b&_nc_ht=scontent.fdel3-1.fna&_nc_tp=7&oh=99df269543abd444d4a3f73a0bc13cdb&oe=5EEA8774") center no-repeat;
   background-size: cover;
   float: left;
 }
@@ -231,6 +230,9 @@ body {
 .photovideoratio::after {
   content: "Photo:Video";
 }
+.subshike::after {
+  content: "New Subscribers";
+}
 
 .followerfollowingratio::after {
   content: "Follower:Following";
@@ -245,6 +247,21 @@ body {
 }
 .followershike::after {
   content: "New Followers";
+}
+.ytpost::after {
+  content: "Total Videos";
+}
+.ytsubsribers::after {
+  content: "Subsribers";
+}
+.views::after {
+  content: "Views";
+}
+.likedislikeratio::after {
+  content: "likes:dislikes";
+}
+.viewslikesratio::after {
+  content: "Views:likes";
 }
 
 .checked {
