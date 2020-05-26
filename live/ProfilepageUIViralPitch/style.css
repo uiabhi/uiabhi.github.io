@@ -354,6 +354,9 @@ body {
   right: 13px;
 }
 
+.socialtop{
+    font-size: 85px;
+}
 /* hideinchart */
 .anychart-credits{
   display: none;
@@ -378,6 +381,9 @@ body {
   width: 26px;
   height: 26px;
 }
+.fa-check-circle{
+  color:#3897f0;
+}
 .boxsec {
   width: 100%;
   position: relative;
@@ -399,7 +405,11 @@ body {
   margin-bottom: 0;
   line-height: 14px;
 }
-
+a.profilecatagory{
+  background-color: rgb(200, 199, 199);
+  padding:8px;
+  line-height: 50px;
+}
 .ld {
   color: #2d2d2d;
   font-weight: 400;
@@ -526,6 +536,9 @@ div.col-sm-6.col-md-8 > i{
 }
 .refresharea{
   text-align: center;
+}
+.socialtop{
+  font-size: 50px;
 }
 }
 
