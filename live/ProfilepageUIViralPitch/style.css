@@ -57,6 +57,9 @@ body {
   box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.26);
 
 }
+.topmentionsmobile, .tophashtagmobile{
+  display: none;
+}
 
 .profile-card-two {
   padding-top: 1px;
@@ -389,6 +392,13 @@ body {
   position: relative;
   margin-top: 5px;
 }
+.profilegender{
+  display: inline-block;
+    padding: 2px 6px;
+    border-radius: 50%;
+    background-color: #3897f0;
+    color: white;
+}
 .boxsec.abltpos {
   width: 100%;
   position: relative;
@@ -502,6 +512,9 @@ a.profilecatagory{
   float: none;
   
 }
+.topmentionsmobile, .tophashtagmobile{
+  display: block;
+}
 #analytics{
   display: none;
 }
@@ -546,9 +559,7 @@ div.col-sm-6.col-md-8 > i{
   color: #3897f0;
 }
 @media screen and (min-width: 1280px) {
-  .topmentionsmobile, .tophashtagmobile{
-    display: none;
-  }
+
 }
 
 @media screen and (max-width: 340px) {
