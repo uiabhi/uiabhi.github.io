@@ -542,6 +542,9 @@ div.col-sm-6.col-md-8 > i{
 }
 }
 
+.fa-check-circle {
+  color: #3897f0;
+}
 @media screen and (min-width: 1280px) {
   .topmentionsmobile, .tophashtagmobile{
     display: none;
