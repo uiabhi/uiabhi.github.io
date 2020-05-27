@@ -212,11 +212,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .followers::after {
-  content: "followers";
+  content: "Followers";
 }
 
 .following::after {
-  content: "following";
+  content: "Following";
 }
 
 .avglike::after {
@@ -379,7 +379,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size:100px;
 }
 .fa-instagram {
-  color: #ff00eb;
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .fa-youtube{
   color: red;
@@ -403,7 +407,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .profilegender{
   display: inline-block;
     padding: 2px 6px;
-    border-radius: 50%;
+    border-radius: 0%;
     background-color: #3897f0;
     color: white;
 }

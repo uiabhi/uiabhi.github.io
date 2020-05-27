@@ -7,7 +7,7 @@ var myChart = new Chart(ctx, {
       label: 'Followers Gain',
       data: [12, 7, 11, 8, 10, 9],
       backgroundColor: [
-        'rgba(35, 47, 187, 1)',
+        'rgba(35, 47, 187, 0)',
         'rgba(54, 162, 235, 0.2)',
         'rgba(255, 206, 86, 0.2)',
         'rgba(75, 192, 192, 0.2)',

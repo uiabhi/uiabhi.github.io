@@ -7,7 +7,7 @@ var ctx = document.getElementById('WeeklymyChart2');
                       label: 'Total Media',
                       data: [12, 18, 19, 26, 22, 23],
                       backgroundColor: [
-                        'rgba(0, 149, 0, 1)',
+                        'rgba(0, 149, 0, 0)',
                         'rgba(54, 162, 235, 0.2)',
                         'rgba(255, 206, 86, 0.2)',
                         'rgba(75, 192, 192, 0.2)',

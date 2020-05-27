@@ -7,7 +7,7 @@ var myChart = new Chart(ctx, {
       label: 'Subscribers Gain',
       data: [12, 7, 11, 8, 10, 9],
       backgroundColor: [
-        'rgba(0, 149, 0, 1)',
+        'rgba(0, 149, 0, 0)',
         'rgba(54, 162, 235, 0.2)',
         'rgba(255, 206, 86, 0.2)',
         'rgba(75, 192, 192, 0.2)',
