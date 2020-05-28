@@ -365,12 +365,14 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+          <div class="d-sm-flex align-items-center  mb-4">
             <h1 class="h3 mb-0 text-gray-800">Social Media Audit Report</h1>
-            <span class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">Period:</i> <input type="date"
-                name="fromdate" id=""> To <input type="date" name="todate" id=""></span>
-            <button onclick="window.print()" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                class="fas fa-print fa-sm text-white-50"></i> Print Report</button>
+              <select class="form-control d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="Duration">
+                <option>7 Days</option>
+                <option>30 Days</option>
+                <option>90 Days</option>
+                
+              </select>
           </div>
 
           <!-- Content Row -->
@@ -475,10 +477,10 @@
           </div>
           <!-- Content Row -->
 
-          <div class="row">
+          <div class="row ">
             <!-- Pie Chart -->
             <div class="col-xl-4 col-lg-4 mb-4">
-              <div class="card shadow mb-4 border-left-primary justify-content-center">
+              <div class="card shadow mb-4 border-left-primary justify-content-center h-100">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row">
                   <h6 class="m-0 font-weight-bold text-primary text-uppercase">influncer type</h6>
@@ -507,7 +509,7 @@
             </div>
             <!-- table  -->
             <div class="col-xl-4 col-lg-4 mb-4">
-              <div class="card shadow mb-4 border-left-primary">
+              <div class="card shadow mb-4 border-left-primary h-100">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row">
                   <h6 class="m-0 font-weight-bold text-primary text-uppercase">Posts</h6>
@@ -545,7 +547,7 @@
             </div>
             <!-- table  -->
             <div class="col-xl-4 col-lg-4 mb-4">
-              <div class="card shadow mb-4 border-left-primary">
+              <div class="card shadow mb-4 border-left-primary h-100">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row">
                   <h6 class="m-0 font-weight-bold text-primary text-uppercase">Campaign Hastags</h6>
@@ -591,6 +593,210 @@
             
            
           </div>
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Platform</th>
+                      <th>Avg Eng</th>
+                      <th>Campaign Eng</th>
+                      <th>No. Of Post</th>
+                      <th>Payout</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Name</th>
+                      <th>Platform</th>
+                      <th>Avg Eng</th>
+                      <th>Campaign Eng</th>
+                      <th>No. Of Post</th>
+                      <th>Payout</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical gaurav</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Ok Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>M koon hun Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                    <tr>
+                      <td>Technical Guruji</td>
+                      <td>Youtube</td>
+                      <td>2.5%</td>
+                      <td>2.9%</td>
+                      <td>5</td>
+                      <td>$320</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
         </div>
 
 
@@ -661,6 +867,12 @@
   <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 
