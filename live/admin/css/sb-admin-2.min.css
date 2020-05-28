@@ -10696,6 +10696,9 @@ img {
     right: 6px;
     top: 20px;
 }
+.mainlogo{
+    width: 150px;
+}
 @media print {
 
     *,
@@ -11296,8 +11299,16 @@ a:focus {
     background-color: #eaecf4;
     color: #3a3b45
 }
+@media (max-width:575px) {
+    .mainlogo{
+        width: 100px;
+    }
+}
 
 @media (min-width:576px) {
+    .mainlogo{
+        width: 100px;
+    }
     .topbar .dropdown {
         position: relative
     }
