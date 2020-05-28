@@ -224,15 +224,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .avglike::after {
-  content: "Avg Likes";
+  content: "Avg. Likes";
 }
 
 .engrate::after {
-  content: "Eng.Rates";
+  content: "Eng. Rates";
 }
 
 .avgcomment::after {
-  content: "Avg Comments";
+  content: "Avg. Comments";
 }
 
 .likecommntratio::after {
@@ -264,16 +264,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   content: "Total Videos";
 }
 .ytsubsribers::after {
-  content: "Subsribers";
+  content: "Subscribers";
 }
 .views::after {
   content: "Views";
 }
 .likedislikeratio::after {
-  content: "likes:dislikes";
+  content: "Likes:Dislikes";
 }
 .viewslikesratio::after {
-  content: "Views:likes";
+  content: "Views:Likes";
 }
 
 .checked {
