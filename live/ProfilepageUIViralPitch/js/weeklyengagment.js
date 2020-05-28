@@ -1,4 +1,4 @@
-var ctx = document.getElementById('WeeklymyChart2');
+var ctx = document.getElementById('WeeklymyChart2');ctx.style.backgroundColor = 'rgba( 255,255,255,255)';
                 var myChart = new Chart(ctx, {
                   type: 'line',
                   data: {
@@ -22,7 +22,7 @@ var ctx = document.getElementById('WeeklymyChart2');
                         'rgba(153, 102, 255, 1)',
                         'rgba(255, 159, 64, 1)'
                       ],
-                      borderWidth: 1
+                      borderWidth: 2
                     }]
                   },
                   options: {

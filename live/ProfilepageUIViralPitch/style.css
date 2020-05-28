@@ -321,22 +321,23 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #22baa0;
 }
 
-.tagged-users-list li .insta-profile {
+.tagged-users-list li .profile {
   display: flex;
   align-items: center;
 }
 
-.tagged-users-list li .insta-profile .tag-photo {
+.tagged-users-list li .profile .tag-photo {
+  height: 30px;
   width: 30px;
   display: block;
   border-radius: 2px;
 }
 
-.tagged-users-list li .insta-profile .details {
+.tagged-users-list li .profile .details {
   padding-left: 10px;
 }
 
-.tagged-users-list li .insta-profile .details .uname {
+.tagged-users-list li .profile .details .uname {
   font-weight: 500;
   display: block;
   color: #22baa0;
@@ -465,6 +466,46 @@ a.profilecatagory{
   color: #fff;
   line-height: 10px;
   padding-top: 10px;
+}
+.hcimg{
+  background:url(https://viralpitch.co/public/image/category/cate-sprt.png) no-repeat;
+  background-size:100% 1200%
+}
+.photography{
+  background-position:0 0
+}
+.gaming{
+  background-position:0 9.1%
+}
+.entertainment{
+  background-position:0 18.2%
+}
+.Craft-DIY{
+  background-position:0 27.2%
+}
+.family{
+  background-position:0 36.4%
+}
+.Lifestyle{
+  background-position:0 45.4%
+}
+.technology{
+  background-position:0 54.6%
+}
+.food{
+  background-position:0 63.6%
+}
+.Sports{
+  background-position:0 72.8%
+}
+.Beauty{
+  background-position:0 81.9%
+}
+.fashion{
+  background-position:0 90.8%
+}
+.travel{
+  background-position:0 100%
 }
 
 @media screen and (max-width: 600px) {
