@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI</title>
+    <link href="https://viralpitch.co/d2/admin-panel1/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet"
+        type="text/css">
+    <link href="https://viralpitch.co/d2/admin-panel1/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css">
+    <link href="https://viralpitch.co/d2/admin-panel1/assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet"
+        type="text/css">
+    <link href="https://viralpitch.co/d2/admin-panel1/assets/plugins/jquery-scrollbar/jquery.scrollbar.css"
+        rel="stylesheet" type="text/css" media="screen">
+    <link class="main-stylesheet" href="https://viralpitch.co/d2/admin-panel1/pages/css/themes/corporate.css"
+        rel="stylesheet" type="text/css">
+    <!-- <link class="main-stylesheet" href="./themes/sb-admin-2.min.css" rel="stylesheet" type="text/css"> -->
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/jquery/jquery-3.2.1.min.js"
+        type="text/javascript"></script>
+</head>
+
+<body class="fixed-header menu-pin menu-behind  windows desktop pace-done" data-gr-c-s-loaded="true">
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99"
+            style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+    <nav class="page-sidebar" data-pages="sidebar">
+        <div class="sidebar-overlay-slide from-top" id="appMenu">
+            <div class="row">
+                <div class="col-xs-6 no-padding">
+                    <a href="#" class="p-l-40"><img
+                            src="https://viralpitch.co/d2/admin-panel1/assets/img/demo/social_app.svg" alt="socail"></a>
+                </div>
+                <div class="col-xs-6 no-padding">
+                    <a href="#" class="p-l-10"><img
+                            src="https://viralpitch.co/d2/admin-panel1/assets/img/demo/email_app.svg" alt="socail"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 m-t-20 no-padding">
+                    <a href="#" class="p-l-40"><img
+                            src="https://viralpitch.co/d2/admin-panel1/assets/img/demo/calendar_app.svg" alt="socail">
+                    </a>
+                </div>
+                <div class="col-xs-6 m-t-20 no-padding">
+                    <a href="#" class="p-l-10"><img
+                            src="https://viralpitch.co/d2/admin-panel1/assets/img/demo/add_more.svg" alt="socail">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-header">
+            <img src="https://viralpitch.co/d2/admin-panel1/assets/img/logo_white.png" alt="logo" class="brand"
+                data-src-retina="https://viralpitch.co/d2/admin-panel1/assets/img/logo_white_2x.png" width="78"
+                height="22">
+            <div class="sidebar-header-controls">
+                <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20"
+                    data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i></button>
+                <button type="button"
+                    class="btn btn-link d-lg-inline-block d-xlg-inline-block d-md-inline-block d-sm-none d-none"
+                    data-toggle-pin="sidebar"><i class="fa fs-12"></i></button>
+            </div>
+        </div>
+        <div class="sidebar-menu">
+            <div class="scroll-wrapper menu-items" style="position: relative;">
+                <ul class="menu-items scroll-content"
+                    style="height: 607px; margin-bottom: 0px; margin-right: 0px; max-height: none;">
+                    <li class="m-t-30 ">
+                        <a href="#" class="detailed">
+                            <span class="title">All</span>
+                            <span class="details">Campaign: 20</span>
+                        </a>
+                        <span class="bg-success icon-thumbnail"><i class="fa fa-th-list" aria-hidden="true"></i></span>
+                    </li>
+                    <li class="">
+                        <a href="#" class="detailed">
+                            <span class="title">Active</span>
+                            <span class="details">Campaign: 0</span>
+                        </a>
+                        <span class="icon-thumbnail"><i class="fa fa-circle-o-notch"></i></span>
+                    </li>
+                    <li class="">
+                        <a href="#" class="detailed">
+                            <span class="title">In Review</span>
+                            <span class="details">Campaign: 20</span>
+                        </a>
+                        <span class="icon-thumbnail"><i class="fa fa-circle-o-notch fa-spin"></i></span>
+                    </li>
+                    <li class="">
+                        <a href="#" class="detailed">
+                            <span class="title">Completed</span>
+                            <span class="details">Campaign: 0</span>
+                        </a>
+                        <span class="icon-thumbnail"><i class="fa fa-check" aria-hidden="true"></i></span>
+                    </li>
+                    <li class="">
+                        <a href="#" class="detailed">
+                            <span class="title">Pending </span>
+                            <span class="details">Campaign: 0</span>
+                        </a>
+                        <span class="icon-thumbnail"><i class="fa fa-refresh" aria-hidden="true"></i></span>
+                    </li>
+                    <li class="">
+                        <a href="#" class="detailed">
+                            <span class="title">Live </span>
+                            <span class="details">Campaign: 0</span>
+                        </a>
+                        <span class="icon-thumbnail"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="detailed">
+                            <span class="title"> Influncer </span>
+                            <span class="details"> Request</span>
+                        </a>
+                        <span class="icon-thumbnail"><i class="fa fa-users" aria-hidden="true"></i></span>
+                    </li>
+                </ul>
+                <div class="scroll-element scroll-x" style="">
+                    <div class="scroll-element_outer">
+                        <div class="scroll-element_size"></div>
+                        <div class="scroll-element_track"></div>
+                        <div class="scroll-bar" style="width: 96px;"></div>
+                    </div>
+                </div>
+                <div class="scroll-element scroll-y" style="">
+                    <div class="scroll-element_outer">
+                        <div class="scroll-element_size"></div>
+                        <div class="scroll-element_track"></div>
+                        <div class="scroll-bar" style="height: 96px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </nav>
+    <div class="page-container">
+        <div class="header ">
+            <a href="#" class="btn-link toggle-sidebar d-lg-none pg pg-menu" data-toggle="sidebar"></a>
+            <div class="">
+                <div class="brand inline m-l-10"><img src="https://viralpitch.co/d2/admin-panel1/assets/img/logo_fl.png"
+                        alt="logo" data-src="https://viralpitch.co/d2/admin-panel1/assets/img/logo_fl.png"
+                        data-src-retina="https://viralpitch.co/d2/admin-panel1/assets/img/logo_2x_fl.png"
+                        style="width: 150px;height: auto;"></div>
+            </div>
+            <div class="d-flex align-items-center">
+
+                <div class="pull-left p-r-15 fs-14 font-heading pr">
+                    <a href="#">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="label label-danger ntfsn">0</span></a>
+                </div>
+
+                <div class="pull-left p-r-15 fs-14 font-heading pr">
+                    <a href="#">
+                        <i class="fa fa-flag-o"></i>
+                        <span class="label label-danger ntfsn">0</span></a>
+                </div>
+                <div class="pull-left p-r-10 fs-14 font-heading d-lg-block d-none">
+                    <span class="semi-bold">gktphp</span> <span class="text-master"></span>
+                </div>
+                <style>
+                    [data-letters]:before {
+                        content: attr(data-letters);
+                        display: inline-block;
+                        font-size: 1em;
+                        width: 2.5em;
+                        height: 2.5em;
+                        line-height: 2.5em;
+                        text-align: center;
+                        border-radius: 50%;
+                        background: plum;
+                        vertical-align: middle;
+                        margin-right: 1em;
+                        color: white;
+                    }
+                </style>
+                <div class="dropdown pull-right d-lg-block d-none">
+                    <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+
+                        <p data-letters="G"></p>
+
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
+                        <a href="#" class="dropdown-item"><i
+                                class="pg-settings_small"></i> Settings</a>
+
+                        <a href="#" class="clearfix bg-master-lighter dropdown-item">
+                            <span class="pull-left">Logout</span>
+                            <span class="pull-right"><i class="pg-power"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content-wrapper ">
+
+
+
+
+
+            <div class="content ">
+                <div class="jumbotron" data-pages="parallax">
+                    <div class="container-fluid container-fixed-lg sm-p-l-0 sm-p-r-0">
+                        <div class="inner" style="transform: translateY(0px); opacity: 1;">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Create Campaign</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid container-fixed-lg">
+<!-- main area starts here -->
+
+
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <div class="d-sm-flex mb-4">
+      <h1 class="h3 mb-0 text-gray-800" style="width: 50%;">Social Media Audit Report</h1>
+      <div class="float-right" style="padding-left: 21%;">
+        <select class="form-control d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="Duration"
+          style="width: 300px;">
+          <option>7 Days</option>
+          <option>30 Days</option>
+          <option>90 Days</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row">
+
+      <!-- Total Reach-->
+      <div class="col-xl-3 col-md-3 mb-3">
+        <div class="card border-left-primary shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-lg font-weight-bold text-primary text-uppercase mb-1 text-center">Total Reach
+                </div>
+                <div class="col-sm-12  text-center">
+                  <div class="col-auto h5 mb-10 font-weight-bold text-sucess-800 text-center">
+                    <span class="display-4 text-primary">7.5M</span> <span class="text-success">-1.8% ↑</span>
+                  </div>
+                  <i class="fab fa-instagram"></i><span
+                  class="h5 mb-0 font-weight-bold text-gray-800 p-1"> 2.5M</span>
+                  <i class="fab fa-twitter"></i><span
+                  class="h5 mb-0 font-weight-bold text-gray-800 p-1"> 2.5M</span>
+                  <i class="fab fa-youtube"></i><span
+                  class="h5 mb-0 font-weight-bold text-gray-800 p-1"> 2.5M</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Total Engagment-->
+      <div class="col-xl-3 col-md-3 mb-3">
+        <div class="card border-left-primary shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-lg font-weight-bold text-primary text-uppercase mb-1 text-center">Engagments
+                </div>
+                <div class="col-sm-12  text-center">
+                  <div class="col-auto h5 mb-10 font-weight-bold text-sucess-800 text-center">
+                    <span class="display-4 text-primary">7.5M</span> <span class="text-success">-1.8% ↑</span>
+                  </div>
+                  <i class="fab fa-instagram"><span
+                      class="h5 mb-0 font-weight-bold text-gray-800 p-1"> 7%</span></i>
+                  <i class="fab fa-twitter"><span
+                      class="h5 mb-0 font-weight-bold text-gray-800 p-1"> 1.2%</span></i>
+                  <i class="fab fa-youtube"><span
+                      class="h5 mb-0 font-weight-bold text-gray-800 p-1"> 5%</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Total Engagment-->
+      <div class="col-xl-3 col-md-3 mb-3">
+        <div class="card border-left-primary shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-lg font-weight-bold text-primary text-uppercase mb-1 text-center">Est. Paid Reach
+                </div>
+                <div class="col-sm-12  text-center">
+                  <div class="col-auto h5 mb-10 font-weight-bold text-sucess-800 text-center">
+                    <span class="display-4 text-primary">6.5%</span> <span class="text-success">-1.9% ↑</span>
+                  </div>
+                  <i class="fab fa-instagram"><span
+                      class="h5 mb-0 font-weight-bold text-gray-800 p-1"> 7%</span></i>
+                  <i class="fab fa-twitter"><span
+                      class="h5 mb-0 font-weight-bold text-gray-800 p-1"> 1.2%</span></i>
+                  <i class="fab fa-youtube"><span
+                      class="h5 mb-0 font-weight-bold text-gray-800 p-1"> 5%</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-3 mb-3">
+        <div class="card border-left-primary shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-lg font-weight-bold text-primary text-uppercase mb-1 text-center">Estimated.
+                  Spends</div>
+                <div class="col-sm-12  text-center">
+                  <div class="col-auto h5 mb-10 font-weight-bold text-sucess-800 text-center">
+                    <span class="display-4 text-primary">$200k</span> <span class="text-success">25% ↑</span>
+                  </div>
+                  <i class="fab fa-instagram"><span
+                      class="h5 mb-0 font-weight-bold text-gray-800 p-1"> $42K</span></i>
+                  <i class="fab fa-twitter"><span
+                      class="h5 mb-0 font-weight-bold text-gray-800 p-1"> $12K</span></i>
+                  <i class="fab fa-youtube"><span
+                      class="h5 mb-0 font-weight-bold text-gray-800 p-1"> $26K</span></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Content Row -->
+
+    <div class="row ">
+      <!-- Pie Chart -->
+      <div class="col-xl-4 col-lg-4 mb-4">
+        <div class="card shadow mb-4 border-left-primary justify-content-center h-100">
+          <!-- Card Header - Dropdown -->
+          <div class="card-header py-3 d-flex flex-row">
+            <h6 class="m-0 font-weight-bold text-primary text-uppercase">influncer type</h6>
+          </div>
+          <!-- Card Body -->
+          <div class="card-body">
+            <div class="chart-pie pb-2">
+              <canvas id="myPieChart"></canvas>
+            </div>
+            <div class="mt-4 text-center small">
+              <span class="mr-2">
+                <i class="fas fa-circle text-primary"></i> Nano
+              </span>
+              <span class="mr-2">
+                <i class="fas fa-circle text-success"></i> Celeb
+              </span>
+              <span class="mr-2">
+                <i class="fas fa-circle text-info"></i> Micro
+              </span>
+              <span class="mr-2">
+                <i class="fas fa-circle text-danger"></i> Macro
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- table  -->
+      <div class="col-xl-4 col-lg-4 mb-4">
+        <div class="card shadow mb-4 border-left-primary h-100">
+          <!-- Card Header - Dropdown -->
+          <div class="card-header py-3 d-flex flex-row">
+            <h6 class="m-0 font-weight-bold text-primary text-uppercase">Posts</h6>
+
+          </div>
+          <!-- Card Body -->
+          <div class="card-body">
+            <table style="text-align: center;" class="table pt-4 pb-2">
+              <tr>
+                <th colspan="6">150</th>
+              </tr>
+              <tr>
+                <td colspan="3"><i class="fas fa-leaf"></i> 50</td>
+                <td colspan="3"><i class="fas fa-money-bill-wave"></i> 100</td>
+              </tr>
+              <tr style="padding-top: 10px;">
+                <td colspan="2"><i class="fab fa-instagram"></i></td>
+                <td colspan="2"><i class="fab fa-twitter"></i></td>
+                <td colspan="2"><i class="fab fa-youtube"></i></td>
+              </tr>
+              <tr>
+                <td title="Organic post on instagram"><i class="fas fa-leaf"></i>50</td>
+                <td title="paid post on instagram"><i class="fas fa-money-bill-wave"></i>20</td>
+                <td><i class="fas fa-leaf"></i>30</td>
+                <td><i class="fas fa-money-bill-wave"></i>50</td>
+                <td>
+                  <i class="fas fa-leaf"></i>44
+                </td>
+                <td><i class="fas fa-money-bill-wave"></i>30</td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- table  -->
+      <div class="col-xl-4 col-lg-4 mb-4">
+        <div class="card shadow mb-4 border-left-primary h-100">
+          <!-- Card Header - Dropdown -->
+          <div class="card-header py-3 d-flex flex-row">
+            <h6 class="m-0 font-weight-bold text-primary text-uppercase">Campaign Hastags</h6>
+
+          </div>
+          <!-- Card Body -->
+          <table class="pt-4 pb-2">
+            <tr>
+              <td>
+                <ul>
+                  <li>testtag</li>
+                  <li>testsdsd</li>
+                  <li>somethingnew</li>
+                  <li>githhubzindah</li>
+                  <li>nindia</li>
+                  <li>nindiatests</li>
+                  <li>somethingnew</li>
+                  <li>githhubzindah</li>
+                  <li>nindia</li>
+                  <li>nindiatests</li>
+                  <li>somethingnew</li>
+                  <li>githhubzindah</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>testtag</li>
+                  <li>testsdsd</li>
+                  <li>somethingnew</li>
+                  <li>githhubzindah</li>
+                  <li>nindia</li>
+                  <li>nindiatests</li>
+                  <li>somethingnew</li>
+                  <li>githhubzindah</li>
+                  <li>nindia</li>
+                  <li>nindiatests</li>
+                  <li>somethingnew</li>
+                  <li>githhubzindah</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Influncers</h6>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Platform</th>
+                <th>Avg Eng</th>
+                <th>Campaign Eng</th>
+                <th>No. Of Post</th>
+                <th>Payout</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Name</th>
+                <th>Platform</th>
+                <th>Avg Eng</th>
+                <th>Campaign Eng</th>
+                <th>No. Of Post</th>
+                <th>Payout</th>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical gaurav</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Ok Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>M koon hun Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Aman Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Abhishek Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Technical Guruji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+              <tr>
+                <td>Sumit ji</td>
+                <td>Youtube</td>
+                <td>2.5%</td>
+                <td>2.9%</td>
+                <td>5</td>
+                <td>$320</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card shadow mb-4v h-100">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Influncers</h6>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="http://placehold.it/250x250" alt="" class="img-rounded img-responsive relatedimage" /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <a href="" target="_blank" rel="noopener noreferrer"><h4>Bhaumik Patel</h4></a> <i class="fab fa-youtube social" style="position: absolute;top: 13px;right: 13px;"></i>
+                        <div class="rela-block stars" id="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <small>
+                            <cite title="Category"><i class="fa fa-tasks"></i> Catagory: Fitness </cite> <br>
+                            <cite title="Followers/Subscribers"><i class="fa fa-users"></i> Followers/Subs: 251k </cite> <br>
+                            <cite title="Engagement"><i class="fa fa-chart-line"></i> Avg.Eng: 10% </cite> <br>
+                            <cite title="Campaign Engagement"><i class="fa fa-chart-line"></i> Camp.Eng: 15% </cite>
+                    </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="http://placehold.it/250x250" alt="" class="img-rounded img-responsive relatedimage" /></a>
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <a href="" target="_blank" rel="noopener noreferrer"><h4>Bhaumik Patel</h4></a> <i class="fab fa-instagram social" style="position: absolute;top: 13px;right: 13px;"></i>
+                        <div class="rela-block stars" id="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <small>
+                            <cite title="Category"><i class="fa fa-tasks"></i> Catagory: Fitness </cite> <br>
+                            <cite title="Followers/Subscribers"><i class="fa fa-users"></i> Followers/Subs: 251k </cite> <br>
+                            <cite title="Engagement"><i class="fa fa-chart-line"></i> Avg.Eng: 10% </cite> <br>
+                            <cite title="Campaign Engagement"><i class="fa fa-chart-line"></i> Camp.Eng: 2% </cite>
+                    </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="well well-sm">
+              <div class="row">
+                  <div class="col-sm-6 col-md-4">
+                      <a href="#" target="_blank" rel="noopener noreferrer"><img src="http://placehold.it/250x250" alt="" class="img-rounded img-responsive relatedimage" /></a>
+                  </div>
+                  <div class="col-sm-6 col-md-8">
+                      <a href="" target="_blank" rel="noopener noreferrer"><h4>Bhaumik Patel</h4></a> <i class="fab fa-instagram social" style="position: absolute;top: 13px;right: 13px;"></i>
+                      <div class="rela-block stars" id="stars">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                      </div>
+                      <small>
+                          <cite title="Category"><i class="fa fa-tasks"></i> Catagory: Fitness </cite> <br>
+                          <cite title="Followers/Subscribers"><i class="fa fa-users"></i> Followers/Subs: 251k </cite> <br>
+                          <cite title="Engagement"><i class="fa fa-chart-line"></i> Avg.Eng: 10% </cite> <br>
+                          <cite title="Campaign Engagement"><i class="fa fa-chart-line"></i> Camp.Eng: 2% </cite>
+                  </small>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <div class="well well-sm">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="http://placehold.it/250x250" alt="" class="img-rounded img-responsive relatedimage" /></a>
+                </div>
+                <div class="col-sm-6 col-md-8">
+                    <a href="" target="_blank" rel="noopener noreferrer"><h4>Bhaumik Patel</h4></a> <i class="fab fa-twitter social" style="position: absolute;top: 13px;right: 13px;"></i>
+                    <div class="rela-block stars" id="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <small>
+                        <cite title="Category"><i class="fa fa-tasks"></i> Catagory: Fitness </cite> <br>
+                        <cite title="Followers/Subscribers"><i class="fa fa-users"></i> Followers/Subs: 251k </cite> <br>
+                        <cite title="Engagement"><i class="fa fa-chart-line"></i> Avg.Eng: 10% </cite> <br>
+                        <cite title="Campaign Engagement"><i class="fa fa-chart-line"></i> Camp.Eng: 20% </cite>
+                </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button style="padding:10px;border-radius: 5px;background-color:#00000000;margin: 0 auto;">Load more</button>
+      </div>
+      </div>
+    </div>
+    <br>
+    <div class="card shadow mb-4v h-100">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Campaign Posts</h6>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+            <div class="rela-inline postimage" title="🔥 Best of @ansufati in training.
+          🔗 Link in bio for FULL video...">
+          <div class="boxsec abltpos">
+            <div class="passets"><span><i class="fab fa-instagram social"></i>@zonemedia</span></div>
+            <!--div class="passets"><span>0</span> Engage</div>-->
+            <div class="clearfix"></div>
+            </div>
+              <img src="https://www.fillmurray.com/400/404" alt="" width="100%">
+              <div class="boxsec">
+                
+                <div class="boxsec abltpos">
+                  <div class="passets1"><span>424.1K</span> Like</div>
+                  <div class="passets1"><span>1.7K</span> Comment</div>
+                  <div class="passets1"><span>5%</span> Engagment</div>
+                  <div class="passets1"><span>2.5 M</span> Reach</div>
+                  <!--div class="passets"><span>0</span> Engage</div>-->
+                  <div class="clearfix"></div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+          <div class="rela-inline postimage" title="🔥 Best of @ansufati in training.
+        🔗 Link in bio for FULL video...">
+        <div class="boxsec abltpos">
+          <div class="passets"><span><i class="fab fa-twitter social"></i>@zonemedia</span></div>
+          <!--div class="passets"><span>0</span> Engage</div>-->
+          <div class="clearfix"></div>
+          </div>
+            <img src="https://www.fillmurray.com/400/404" alt="" width="100%">
+            <div class="boxsec">
+              
+              <div class="boxsec abltpos">
+                <div class="passets1"><span>424.1K</span> Like</div>
+                <div class="passets1"><span>1.7K</span> Comment</div>
+                <div class="passets1"><span>5%</span> Engagment</div>
+                <div class="passets1"><span>2.5 M</span> Reach</div>
+                <!--div class="passets"><span>0</span> Engage</div>-->
+                <div class="clearfix"></div>
+                </div>
+              </div>
+        </div>
+      </div>
+          <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+            <div class="rela-inline postimage" title="🔥 Best of @ansufati in training.
+          🔗 Link in bio for FULL video...">
+          <div class="boxsec abltpos">
+            <div class="passets"><span><i class="fab fa-instagram social"></i>@zonemedia</span></div>
+            <!--div class="passets"><span>0</span> Engage</div>-->
+            <div class="clearfix"></div>
+            </div>
+              <img src="https://www.fillmurray.com/400/404" alt="" width="100%">
+              <div class="boxsec">
+                
+                <div class="boxsec abltpos">
+                  <div class="passets1"><span>424.1K</span> Like</div>
+                  <div class="passets1"><span>1.7K</span> Comment</div>
+                  <div class="passets1"><span>5%</span> Engagment</div>
+                  <div class="passets1"><span>2.5 M</span> Reach</div>
+                  <!--div class="passets"><span>0</span> Engage</div>-->
+                  <div class="clearfix"></div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+          <div class="rela-inline postimage" title="🔥 Best of @ansufati in training.
+        🔗 Link in bio for FULL video...">
+        <div class="boxsec abltpos">
+          <div class="passets"><span><i class="fab fa-youtube social"></i>@zonemedia</span></div>
+          <!--div class="passets"><span>0</span> Engage</div>-->
+          <div class="clearfix"></div>
+          </div>
+            <img src="https://www.fillmurray.com/400/404" alt="" width="100%">
+            <div class="boxsec">
+              
+              <div class="boxsec abltpos">
+                <div class="passets1"><span>424.1K</span> Like</div>
+                <div class="passets1"><span>1.7K</span> Comment</div>
+                <div class="passets1"><span>5%</span> Engagment</div>
+                <div class="passets1"><span>2.5 M</span> Reach</div>
+                <!--div class="passets"><span>0</span> Engage</div>-->
+                <div class="clearfix"></div>
+                </div>
+              </div>
+        </div>
+      </div>
+          <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+            <div class="rela-inline postimage" title="🔥 Best of @ansufati in training.
+          🔗 Link in bio for FULL video...">
+          <div class="boxsec abltpos">
+            <div class="passets"><span><i class="fab fa-instagram social"></i>@zonemedia</span></div>
+            <!--div class="passets"><span>0</span> Engage</div>-->
+            <div class="clearfix"></div>
+            </div>
+              <img src="https://www.fillmurray.com/400/404" alt="" width="100%">
+              <div class="boxsec">
+                
+                <div class="boxsec abltpos">
+                  <div class="passets1"><span>424.1K</span> Like</div>
+                  <div class="passets1"><span>1.7K</span> Comment</div>
+                  <div class="passets1"><span>5%</span> Engagment</div>
+                  <div class="passets1"><span>2.5 M</span> Reach</div>
+                  <!--div class="passets"><span>0</span> Engage</div>-->
+                  <div class="clearfix"></div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+          <div class="rela-inline postimage" title="🔥 Best of @ansufati in training.
+        🔗 Link in bio for FULL video...">
+        <div class="boxsec abltpos">
+          <div class="passets"><span><i class="fab fa-youtube social"></i>@abhinehaji</span></div>
+          <!--div class="passets"><span>0</span> Engage</div>-->
+          <div class="clearfix"></div>
+          </div>
+            <img src="https://www.fillmurray.com/400/404" alt="" width="100%">
+            <div class="boxsec">
+              
+              <div class="boxsec abltpos">
+                <div class="passets1"><span>424.1K</span> Like</div>
+                <div class="passets1"><span>1.7K</span> Comment</div>
+                <div class="passets1"><span>5%</span> Engagment</div>
+                <div class="passets1"><span>2.5 M</span> Reach</div>
+                <!--div class="passets"><span>0</span> Engage</div>-->
+                <div class="clearfix"></div>
+                </div>
+              </div>
+        </div>
+      </div>
+          <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+            <div class="rela-inline postimage" title="🔥 Best of @ansufati in training.
+          🔗 Link in bio for FULL video...">
+          <div class="boxsec abltpos">
+            <div class="passets"><span><i class="fab fa-instagram social"></i>@zonemedia</span></div>
+            <!--div class="passets"><span>0</span> Engage</div>-->
+            <div class="clearfix"></div>
+            </div>
+              <img src="https://www.fillmurray.com/400/404" alt="" width="100%">
+              <div class="boxsec">
+                
+                <div class="boxsec abltpos">
+                  <div class="passets1"><span>424.1K</span> Like</div>
+                  <div class="passets1"><span>1.7K</span> Comment</div>
+                  <div class="passets1"><span>5%</span> Engagment</div>
+                  <div class="passets1"><span>2.5 M</span> Reach</div>
+                  <!--div class="passets"><span>0</span> Engage</div>-->
+                  <div class="clearfix"></div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+          <div class="rela-inline postimage" title="🔥 Best of @ansufati in training.
+        🔗 Link in bio for FULL video...">
+        <div class="boxsec abltpos">
+          <div class="passets"><span><i class="fab fa-instagram social"></i>@zonemedia</span></div>
+          <!--div class="passets"><span>0</span> Engage</div>-->
+          <div class="clearfix"></div>
+          </div>
+            <img src="https://www.fillmurray.com/400/404" alt="" width="100%">
+            <div class="boxsec">
+              
+              <div class="boxsec abltpos">
+                <div class="passets1"><span>424.1K</span> Like</div>
+                <div class="passets1"><span>1.7K</span> Comment</div>
+                <div class="passets1"><span>5%</span> Engagment</div>
+                <div class="passets1"><span>2.5 M</span> Reach</div>
+                <!--div class="passets"><span>0</span> Engage</div>-->
+                <div class="clearfix"></div>
+                </div>
+              </div>
+        </div>
+      </div>
+      <button style="padding:10px;border-radius: 5px;background-color:#00000000;margin: 0 auto;">Load more</button>
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+<!-- main ends starts here -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="container-fluid  container-fixed-lg footer">
+            <div class="copyright sm-text-center">
+                <p class="small no-margin pull-right sm-pull-reset">
+                    <span class="hint-text">Copyright © 2019 </span>
+                    <span class="font-montserrat">Viral Pitch</span>.
+                    <span class="hint-text">All rights reserved. </span>
+                    <span class="sm-block">
+                        <a href="javascript:void(0);" class="m-l-10 m-r-10">Terms of use</a>
+                        <span class="muted">|</span>
+                        <a href="javascript:void(0);" class="m-l-10">Privacy Policy</a>
+                    </span>
+                </p>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/modernizr.custom.js" type="text/javascript">
+    </script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/jquery-ui/jquery-ui.min.js"
+        type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/popper/umd/popper.min.js" type="text/javascript">
+    </script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/bootstrap/js/bootstrap.min.js"
+        type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/jquery/jquery-easy.js" type="text/javascript">
+    </script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/jquery-unveil/jquery.unveil.min.js"
+        type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/jquery-ios-list/jquery.ioslist.min.js"
+        type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js">
+    </script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/select2/js/select2.full.min.js"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/classie/classie.js"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/switchery/js/switchery.min.js"
+        type="text/javascript"></script>
+    <script
+        src="https://viralpitch.co/d2/admin-panel1/assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.all.min.js">
+    </script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/jquery-autonumeric/autoNumeric.js"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/dropzone/dropzone.min.js"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js">
+    </script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/jquery-inputmask/jquery.inputmask.min.js">
+    </script>
+    <script
+        src="https://viralpitch.co/d2/admin-panel1/assets/plugins/bootstrap-form-wizard/js/jquery.bootstrap.wizard.min.js"
+        type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/jquery-validation/js/jquery.validate.min.js"
+        type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"
+        type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/summernote/js/summernote.min.js"
+        type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/moment/moment.min.js"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/bootstrap-daterangepicker/daterangepicker.js">
+    </script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.js">
+    </script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/ion-slider/js/ion.rangeSlider.min.js"
+        type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/bootstrap-typehead/typeahead.bundle.min.js">
+    </script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/bootstrap-typehead/typeahead.jquery.min.js">
+    </script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/plugins/handlebars/handlebars-v4.0.5.js"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/pages/js/pages.js"></script>
+    <div
+        style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+        <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+        </div>
+    </div>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/js/scripts.js" type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/js/slider.js" type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/js/form_wizard.js" type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/js/form_elements.js" type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/js/scripts.js" type="text/javascript"></script>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/js/chart.bundel.min.js"></script>
+    <div id="pg-visible-sm" class="visible-sm"></div>
+    <div id="pg-visible-xs" class="visible-xs"></div>
+    <script src="https://viralpitch.co/d2/admin-panel1/assets/js/theme.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.summernote-editor').summernote({
+                height: 100,
+                onfocus: function (e) {
+                    $('body').addClass('overlay-disabled');
+                },
+                onblur: function (e) {
+                    $('body').removeClass('overlay-disabled');
+                }
+            });
+            $(".clPaymentPageSlider").ionRangeSlider({
+                onFinish: function (data) {
+                    $('#js-input-from').val(data['from']);
+                    $('#js-input-to').val(data['to']);
+
+
+                }
+            });
+            $(".clPaymentPageSliderBudget").ionRangeSlider({
+                min: 0,
+                max: 100000,
+                type: 'single',
+                prefix: " $",
+                from: 500,
+                maxPostfix: "+",
+                prettify_enabled: false,
+                grid: true,
+                onFinish: function (data) {
+                    $('#myRange').val(data['from']);
+
+                }
+            });
+            /*$('.daterangepicker').daterangepicker({
+             timePicker: true,
+             timePickerIncrement: 30,
+             format: 'MM/DD/YYYY h:mm A'
+             }, function (start, end, label) {
+             console.log(start.toISOString(), end.toISOString(), label);
+             });*/
+        });
+    </script>
+
+    <input type="file" multiple="multiple"
+        style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;">
+    <div class="daterangepicker dropdown-menu show-calendar opensright" style="top: 0px; left: 0px; right: auto;">
+        <div class="calendar first right">
+            <div class="calendar-date">
+                <table class="table-condensed">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th colspan="5" class="month">Aug 2013</th>
+                            <th class="next available"><i
+                                    class="fa fa-chevron-right icon icon-arrow-right glyphicon glyphicon-arrow-right"></i>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Su</th>
+                            <th>Mo</th>
+                            <th>Tu</th>
+                            <th>We</th>
+                            <th>Th</th>
+                            <th>Fr</th>
+                            <th>Sa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="off disabled" data-title="r0c0">28</td>
+                            <td class="off disabled" data-title="r0c1">29</td>
+                            <td class="off disabled" data-title="r0c2">30</td>
+                            <td class="off disabled" data-title="r0c3">31</td>
+                            <td class="available active start-date end-date" data-title="r0c4">1</td>
+                            <td class="available" data-title="r0c5">2</td>
+                            <td class="available" data-title="r0c6">3</td>
+                        </tr>
+                        <tr>
+                            <td class="available" data-title="r1c0">4</td>
+                            <td class="available" data-title="r1c1">5</td>
+                            <td class="available" data-title="r1c2">6</td>
+                            <td class="available" data-title="r1c3">7</td>
+                            <td class="available" data-title="r1c4">8</td>
+                            <td class="available" data-title="r1c5">9</td>
+                            <td class="available" data-title="r1c6">10</td>
+                        </tr>
+                        <tr>
+                            <td class="available" data-title="r2c0">11</td>
+                            <td class="available" data-title="r2c1">12</td>
+                            <td class="available" data-title="r2c2">13</td>
+                            <td class="available" data-title="r2c3">14</td>
+                            <td class="available" data-title="r2c4">15</td>
+                            <td class="available" data-title="r2c5">16</td>
+                            <td class="available" data-title="r2c6">17</td>
+                        </tr>
+                        <tr>
+                            <td class="available" data-title="r3c0">18</td>
+                            <td class="available" data-title="r3c1">19</td>
+                            <td class="available" data-title="r3c2">20</td>
+                            <td class="available" data-title="r3c3">21</td>
+                            <td class="available" data-title="r3c4">22</td>
+                            <td class="available" data-title="r3c5">23</td>
+                            <td class="available" data-title="r3c6">24</td>
+                        </tr>
+                        <tr>
+                            <td class="available" data-title="r4c0">25</td>
+                            <td class="available" data-title="r4c1">26</td>
+                            <td class="available" data-title="r4c2">27</td>
+                            <td class="available" data-title="r4c3">28</td>
+                            <td class="available" data-title="r4c4">29</td>
+                            <td class="available" data-title="r4c5">30</td>
+                            <td class="available" data-title="r4c6">31</td>
+                        </tr>
+                        <tr>
+                            <td class="available off" data-title="r5c0">1</td>
+                            <td class="available off" data-title="r5c1">2</td>
+                            <td class="available off" data-title="r5c2">3</td>
+                            <td class="available off" data-title="r5c3">4</td>
+                            <td class="available off" data-title="r5c4">5</td>
+                            <td class="available off" data-title="r5c5">6</td>
+                            <td class="available off" data-title="r5c6">7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar-time"><select class="hourselect">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select> : <select class="minuteselect">
+                    <option value="0">00</option>
+                    <option value="30" selected="selected">30</option>
+                </select> <select class="ampmselect">
+                    <option value="AM">AM</option>
+                    <option value="PM" selected="selected">PM</option>
+                </select></div>
+        </div>
+        <div class="calendar second left">
+            <div class="calendar-date">
+                <table class="table-condensed">
+                    <thead>
+                        <tr>
+                            <th class="prev available"><i
+                                    class="fa fa-chevron-left icon icon-arrow-left glyphicon glyphicon-arrow-left"></i>
+                            </th>
+                            <th colspan="5" class="month">Aug 2013</th>
+                            <th class="next available"><i
+                                    class="fa fa-chevron-right icon icon-arrow-right glyphicon glyphicon-arrow-right"></i>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Su</th>
+                            <th>Mo</th>
+                            <th>Tu</th>
+                            <th>We</th>
+                            <th>Th</th>
+                            <th>Fr</th>
+                            <th>Sa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="available off" data-title="r0c0">28</td>
+                            <td class="available off" data-title="r0c1">29</td>
+                            <td class="available off" data-title="r0c2">30</td>
+                            <td class="available off" data-title="r0c3">31</td>
+                            <td class="available active start-date end-date" data-title="r0c4">1</td>
+                            <td class="available" data-title="r0c5">2</td>
+                            <td class="available" data-title="r0c6">3</td>
+                        </tr>
+                        <tr>
+                            <td class="available" data-title="r1c0">4</td>
+                            <td class="available" data-title="r1c1">5</td>
+                            <td class="available" data-title="r1c2">6</td>
+                            <td class="available" data-title="r1c3">7</td>
+                            <td class="available" data-title="r1c4">8</td>
+                            <td class="available" data-title="r1c5">9</td>
+                            <td class="available" data-title="r1c6">10</td>
+                        </tr>
+                        <tr>
+                            <td class="available" data-title="r2c0">11</td>
+                            <td class="available" data-title="r2c1">12</td>
+                            <td class="available" data-title="r2c2">13</td>
+                            <td class="available" data-title="r2c3">14</td>
+                            <td class="available" data-title="r2c4">15</td>
+                            <td class="available" data-title="r2c5">16</td>
+                            <td class="available" data-title="r2c6">17</td>
+                        </tr>
+                        <tr>
+                            <td class="available" data-title="r3c0">18</td>
+                            <td class="available" data-title="r3c1">19</td>
+                            <td class="available" data-title="r3c2">20</td>
+                            <td class="available" data-title="r3c3">21</td>
+                            <td class="available" data-title="r3c4">22</td>
+                            <td class="available" data-title="r3c5">23</td>
+                            <td class="available" data-title="r3c6">24</td>
+                        </tr>
+                        <tr>
+                            <td class="available" data-title="r4c0">25</td>
+                            <td class="available" data-title="r4c1">26</td>
+                            <td class="available" data-title="r4c2">27</td>
+                            <td class="available" data-title="r4c3">28</td>
+                            <td class="available" data-title="r4c4">29</td>
+                            <td class="available" data-title="r4c5">30</td>
+                            <td class="available" data-title="r4c6">31</td>
+                        </tr>
+                        <tr>
+                            <td class="available off" data-title="r5c0">1</td>
+                            <td class="available off" data-title="r5c1">2</td>
+                            <td class="available off" data-title="r5c2">3</td>
+                            <td class="available off" data-title="r5c3">4</td>
+                            <td class="available off" data-title="r5c4">5</td>
+                            <td class="available off" data-title="r5c5">6</td>
+                            <td class="available off" data-title="r5c6">7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar-time"><select class="hourselect">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select> : <select class="minuteselect">
+                    <option value="0" selected="selected">00</option>
+                    <option value="30">30</option>
+                </select> <select class="ampmselect">
+                    <option value="AM">AM</option>
+                    <option value="PM" selected="selected">PM</option>
+                </select></div>
+        </div>
+        <div class="ranges">
+            <div class="range_inputs">
+                <div class="daterangepicker_start_input form-group form-group-default "><label
+                        for="daterangepicker_start">From</label><input class="form-control" type="text"
+                        name="daterangepicker_start" value=""></div>
+                <div class="daterangepicker_end_input form-group form-group-default "><label
+                        for="daterangepicker_end">To</label><input class="form-control" type="text"
+                        name="daterangepicker_end" value=""></div><button
+                    class="applyBtn btn btn-small btn-sm btn-success">Apply</button>&nbsp;<button
+                    class="cancelBtn btn btn-small btn-sm btn-default">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
