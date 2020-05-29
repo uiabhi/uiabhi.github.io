@@ -50,12 +50,10 @@
                 <div class="floated profile-stat ytpost" id="ytpost">56<br></div>
                 <div class="floated profile-stat ytsubsribers" id="ytsubsribers">2.8 M<br></div>
                 <div class="floated profile-stat views" id="views">245 M<br></div>
+                <div class="floated profile-stat estimatedearning" id="estimatedearning">56K<br></div>
                 <div class="floated profile-stat avglike" id="avglikes">726<br></div>
                 <div class="floated profile-stat engrate" id="engrate">5.3%<br></div>
                 <div class="floated profile-stat avgcomment" id="avgcomment">26<br></div>
-                <div class="floated profile-stat likecommntratio" id="likecommntratio">110:12<br></div>
-                <div class="floated profile-stat likedislikeratio" id="likedislikeratio">3:1<br></div>
-                <div class="floated profile-stat viewslikesratio" id="viewslikesratio">135K:1<br></div>
                 <div class="floated profile-stat fraudscore" id="fraudscore">10%<br></div>
             </div>
             
@@ -111,17 +109,17 @@
         <div class="rela-block profile-card-two top-posts height50 fiftypercent margintopzero" id="analytics">
             <div class="rela-block profile-card-stats" style="text-align: center;">
                 <div class="rela-block user-name" id="topmentions"><i class="fa fa-check-circle-o"></i>Analytics</div>
-                <div class="floated profile-stat-m charts followerfollowingratio" id="followerfollowingratiochart">
+                <div class="floated profile-stat-m charts likecommntratio" id="likecommntratiochart">
                     <div class="chart-pie pt-4 pb-2">
                         <canvas id="myPieChart"></canvas>
                     </div>
                 </div>
-                <div class="floated profile-stat-m charts photovideoratio" id="followerfollowingratiochart">
+                <div class="floated profile-stat-m charts likedislikeratio" id="likedislikeratiochart">
                     <div class="chart-pie pt-4 pb-2">
                         <canvas id="pvchart"></canvas>
                     </div>
                 </div>
-                <div class="floated profile-stat-m charts likecommntratio" id="followerfollowingratiochart">
+                <div class="floated profile-stat-m charts viewslikesratio" id="viewslikesratiochart">
                     <div class="chart-pie pt-4 pb-2">
                         <canvas id="lcchart"></canvas>
                     </div>
@@ -510,9 +508,9 @@
 
 
     <!-- chart script -->
-    <script src="js/followers-following.js"></script>
-    <script src="js/photo-video.js"></script>
-    <script src="js/like-comment.js"></script>
+    <script src="js/likecommentyt.js"></script>
+    <script src="js/likesdislikes.js"></script>
+    <script src="js/viewslikes.js"></script>
     <script src="js/hastagwordcloud.js"></script>
     <script src="js/weeklygainsubs.js"></script>
     <script src="js/weeklyengagment.js"></script>
