@@ -23,7 +23,9 @@
   right: ;
   bottom: ;
 }
-
+cite{
+  color: #0f0d13;
+}
 .floated {
   position: relative;
   margin: false;
@@ -41,12 +43,12 @@ body {
   letter-spacing: 2px;
   font-weight: 400;
   line-height: 24px;
-  background-color: #2e44b9;
+  background-color: #172082;
 }
 
 .container-profile {
   z-index: 1;
-  background-color: #2e44b9;
+  background-color: #172082;
   padding-top: 20px;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -59,12 +61,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   width: calc(100% - 40px);
   margin: 0px auto;
   background-color: #fff;
-  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.1);
 
 }
-.topmentionsmobile, .tophashtagmobile{
-  display: none;
-}
+
 
 .profile-card-two {
   padding-top: 1px;
@@ -74,21 +74,41 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .fiftypercent {
-  width: 47.8%;
+  width: 47.3%;
   margin-right: 0;
   float: left;
 }
 .floatnone{
   float: none!important;
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  color: #0f0d13!important;
+}
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+.well-sm {
+  padding: 9px;
+  border-radius: 3px;
+}
+.section-padding {
+  padding: 60px 0 0 60px;
+}
 
 .height90 {
-  height: 90vh;
+  height: 116vh;
   overflow: auto;
 }
 
 .height50 {
-  height: 50vh;
+  height: 58vh;
   overflow: auto;
 }
 
@@ -101,7 +121,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   /* position: absolute; */
   margin: false;
 
-  height: 180px;
+  height: 170px;
   width: 180px;
   border: 10px solid #fff;
   /* border-radius: 100%; */
@@ -124,7 +144,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #0f0d13;
   font-size: 24px;
   letter-spacing: 3px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 30px;
   margin-bottom: 12px;
 }
@@ -163,11 +183,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .profile-stat {
   padding-top: 20px;
   height: 100%;
-  width: 25%;
+  width: 23%;
+  margin: 10px;
+  border: 1px solid;
   border-radius: 5px;
   font-size: 29px;
   font-weight: 700;
-  color: rgb(0, 149, 0);
+  color: #009500;
 }
 
 .profile-stat-m {
@@ -201,10 +223,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: small;
 }
 
-.profile-stat:hover {
-  background-color: #d0dfdc;
-  z-index: 200;
-}
 
 .profile-stat:after {
   color: #999;
@@ -254,7 +272,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   content: "Fraud Score";
 }
 .estimatedearning::after {
-  content: "Est. Earning/Post";
+  content: "Est. Earning";
 }
 
 .weeklypost::after {
@@ -291,10 +309,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .image {
-  width: 240px;
-  height: 200px;
+  width: 40%;
+  height: 240px;
   cursor: pointer;
-  margin: 0 18px 18px;
+  margin: 0 10px 10px;
   overflow: hidden;
   border-radius: 5px;
   border: 10px solid #fff;
@@ -307,8 +325,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .image:hover {
 
-  -webkit-transform: scale(1.09);
-  transform: scale(1.09);
   box-shadow: 0 2px 18px -2px rgba(0, 0, 0, 0.3);
 }
 
@@ -557,7 +573,7 @@ a.profilecatagory{
   }
   .profile-stat {
     padding-top: 10px;
-    width: 50%;
+    width: 43%;
     border-radius: 5px;
     font-size: 22px;
     font-weight: 700;
@@ -572,9 +588,7 @@ a.profilecatagory{
   float: none;
   
 }
-.topmentionsmobile, .tophashtagmobile{
-  display: block;
-}
+
 #analytics{
   display: none;
 }
@@ -591,9 +605,7 @@ div.rela-block.profile-name-container > i{
 .height50{
   height: max-content;
 }
- .topmentions, .tophashtag{
-   display: none;
- }
+
  .tagged-users-list li .insta-profile .details {
   padding-left: 0px;
 }

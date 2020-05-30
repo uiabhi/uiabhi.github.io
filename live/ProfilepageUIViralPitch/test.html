@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Insta</title>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css">
+    <link href="https://cdn.anychart.com/releases/8.7.1/css/anychart-ui.min.css?hcode=a0c21fc77e1449cc86299c5faa067dc4" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <!-- FONTS -->
+    <!-- Roboto, Yellowtail, and Montserrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400|Yellowtail" rel="stylesheet">
+    <!-- PAGE STUFF -->     
+
+
+    <div class="rela-block container row">
+
+        <div class="rela-block profile-card">
+            <div class="profile-pic" id="profile_pic" style="background-image: url('https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/s960x960/82440198_2396143890490929_9221768974671282176_o.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=8bfaSVLqj6cAX_V_y2b&_nc_ht=scontent.fdel3-1.fna&_nc_tp=7&oh=99df269543abd444d4a3f73a0bc13cdb&oe=5EEA8774');background-position: center;background-repeat: no-repeat;"></div>
+            <div class="rela-block profile-name-container">
+                <div class="rela-block user-name" id="user_name">Abhishek Singh <i class="fa fa-check-circle" title="verified account"></i> <span>@abhinehaji</span> <span class="profilegender"><i class="fa fa-male"></i> Male </span></div>
+                        <i class="fab fa-instagram social socialtop"></i>
+                        <p style="font-size: small;" class="d-sm-none">(Data Updated on Tue, 26 May 2020 08:37:28 GMT) <a href="#" title="refresh"><i class="glyphicon glyphicon-refresh" style="color: green;"></i></a> </p>
+                <div class="rela-block user-name stars" id="stars" title="viral pitch ratings">
+                    <span style="font-size:smaller;">Viral Pitch Rating:-</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="rela-block user-desc" id="user_description">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Esse suscipit tenetur corporis voluptatum incidunt aliquam excepturi
+                    provident, dolores unde accusamus quasi dignissimos id!
+                </div>
+
+            </div>
+            <div class="rela-block profile-card-stats">
+                <div class="floated profile-stat post" id="num_post">56<br></div>
+                <div class="floated profile-stat followers" id="num_followers">2.8 M<br></div>
+                <div class="floated profile-stat following" id="num_following">245<br></div>
+                <div class="floated profile-stat estimatedearning" id="estimatedearning">56K<br></div>
+                <div class="floated profile-stat avglike" id="avglikes">726<br></div>
+                <div class="floated profile-stat engrate" id="engrate">5.3%<br></div>
+                <div class="floated profile-stat avgcomment" id="avgcomment">26<br></div>
+                <div class="floated profile-stat fraudscore" id="fraudscore">10%<br></div>
+            </div>
+        </div>
+<!-- profile catagory -->
+        <div class="rela-block profile-card-two top-posts margintopzero">
+            <div class="rela-block profile-card-stats">
+            <div class="rela-block user-name"><i class="fa fa-check-circle-o"></i>Profile Catagories</div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center ">
+                <div class="well-sm">
+                    <ul class="tagged-users-list clearfix">
+                        <li><a href="#" target="_blank" rel="noreferrer noopener">
+                                <div class="profile"><div class="tag-photo hcimg photography"></div>
+                                    <div class="details"><span class="uname">Photography</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#" target="_blank" rel="noreferrer noopener">
+                                <div class="profile"><div class="tag-photo hcimg gaming"></div>
+                                    <div class="details"><span class="uname">Gaming</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#" target="_blank" rel="noreferrer noopener">
+                                <div class="profile"><div class="tag-photo hcimg entertainment"></div>
+                                    <div class="details"><span class="uname">Entertainment</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#" target="_blank" rel="noreferrer noopener">
+                                <div class="profile"><div class="tag-photo hcimg Craft-DIY"></div>
+                                    <div class="details"><span class="uname">Craft-DIY</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#" target="_blank" rel="noreferrer noopener">
+                                <div class="profile"><div class="tag-photo hcimg family"></div>
+                                    <div class="details"><span class="uname">Family</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        
+                    
+                    </ul>
+                    
+                </div>
+            </div>
+            </div>
+            </div>
+        </div><!-- /profile catagory -->
+        <!-- weekly stats profile -->
+
+        <div class="rela-block profile-card-two top-posts height50 fiftypercent margintopzero" id="analytics">
+            <div class="rela-block profile-card-stats" style="text-align: center;">
+                <div class="rela-block user-name" id="topmentions"><i class="fa fa-check-circle-o"></i>Analytics</div>
+                <div class="floated profile-stat-m charts followerfollowingratio" id="followerfollowingratiochart">
+                    <div class="chart-pie pt-4 pb-2">
+                        <canvas id="myPieChart"></canvas>
+                    </div>
+                </div>
+                <div class="floated profile-stat-m charts photovideoratio" id="followerfollowingratiochart">
+                    <div class="chart-pie pt-4 pb-2">
+                        <canvas id="pvchart"></canvas>
+                    </div>
+                </div>
+                <div class="floated profile-stat-m charts likecommntratio" id="followerfollowingratiochart">
+                    <div class="chart-pie pt-4 pb-2">
+                        <canvas id="lcchart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="rela-block profile-card-two top-posts height50 fiftypercent margintopzero text-center">
+            <div class="rela-block profile-card-stats weeklystats">
+                <div class="rela-block user-name" id="weeklystats"><i class="fa fa-check-circle-o"
+                        style="padding-bottom: 10px;"></i>Weekly stats
+                </div>
+                <div class="floated profile-stat-m-4 weeklypost" id="weeklypost"><i class="glyphicon glyphicon-export weeklystatglyf"></i><br>56<br></div>
+                <div class="floated profile-stat-m-4 avglike" id="avgweeklylikes"><i class="glyphicon glyphicon-thumbs-up weeklystatglyf"></i><br>726<br></div>
+                <div class="floated profile-stat-m-4 avgcomment" id="avgweeklycomment"><i class="glyphicon glyphicon-comment weeklystatglyf"></i><br>26<br></div>
+                <div class="floated profile-stat-m-4 followershike" id="followershike"><i class="glyphicon glyphicon-user weeklystatglyf"></i><br>26<br></div>
+            </div>
+        </div>
+        <div class="rela-block profile-card-two height90 fiftypercent margintopzero">
+            <div class="rela-block profile-card-stats">
+                <div class="rela-block user-name" id="topmentions"><i class="fa fa-check-circle-o"></i>Stats</div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover text-left" style="color: black;">
+                        <thead class="text-primary">
+                            <tr>
+                                <th>Date</th>
+                                <th>Like </th>
+                                <th>Comment</th>
+                                <th>Total</th>
+                                <th>Videos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2020-5-18</td>
+                                <td>133783</td>
+                                <td>1303</td>
+                                <td>12</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>2020-5-16</td>
+                                <td>308538</td>
+                                <td>2752</td>
+                                <td>24</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>2020-5-12</td>
+                                <td>168318</td>
+                                <td>1315</td>
+                                <td>12</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>2020-3-12</td>
+                                <td>358608</td>
+                                <td>2582</td>
+                                <td>12</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>2020-3-20</td>
+                                <td>311425</td>
+                                <td>2232</td>
+                                <td>10</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>2020-5-19</td>
+                                <td>136358</td>
+                                <td>1348</td>
+                                <td>12</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>2020-5-5</td>
+                                <td>289585</td>
+                                <td>2364</td>
+                                <td>12</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>2020-5-11</td>
+                                <td>178890</td>
+                                <td>1374</td>
+                                <td>12</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>2020-5-5</td>
+                                <td>289585</td>
+                                <td>2364</td>
+                                <td>12</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>2020-5-11</td>
+                                <td>178890</td>
+                                <td>1374</td>
+                                <td>12</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="rela-block profile-card-two top-posts height90 fiftypercent margintopzero">
+            <div class="rela-block profile-card-stats">
+                <div class="rela-block user-name" id="topmentions"><i class="fa fa-check-circle-o"></i>Recent Post</div>
+
+                <div class="rela-inline image" title="🔥 Best of @ansufati in training.
+                🔗 Link in bio for FULL video...">
+                    <img src="https://www.fillmurray.com/400/404" alt="" width="100%">
+                    <div class="boxsec">
+                      </div>
+                      <div class="boxsec abltpos">
+                        <div class="passets1"><span>424.1K</span> Like</div>
+                        <div class="passets1"><span>1.7K</span> Comment</div>
+                        <!--div class="passets"><span>0</span> Engage</div>-->
+                        <div class="clearfix"></div>
+                        </div>
+                </div>
+                <div class="rela-inline image" title="🔥 Best of @ansufati in training.
+                🔗 Link in bio for FULL video...">
+                    <img src="https://www.fillmurray.com/400/404" alt="" width="100%">
+                    <div class="boxsec">
+                      </div>
+                      <div class="boxsec abltpos">
+                        <div class="passets1"><span>424.1K</span> Like</div>
+                        <div class="passets1"><span>1.7K</span> Comment</div>
+                        <!--div class="passets"><span>0</span> Engage</div>-->
+                        <div class="clearfix"></div>
+                        </div>
+                </div><div class="rela-inline image" title="🔥 Best of @ansufati in training.
+                🔗 Link in bio for FULL video...">
+                    <img src="https://www.fillmurray.com/400/404" alt="" width="100%">
+                    <div class="boxsec">
+                      </div>
+                      <div class="boxsec abltpos">
+                        <div class="passets1"><span>424.1K</span> Like</div>
+                        <div class="passets1"><span>1.7K</span> Comment</div>
+                        <!--div class="passets"><span>0</span> Engage</div>-->
+                        <div class="clearfix"></div>
+                        </div>
+                </div><div class="rela-inline image" title="🔥 Best of @ansufati in training.
+                🔗 Link in bio for FULL video...">
+                    <img src="https://www.fillmurray.com/400/404" alt="" width="100%">
+                    <div class="boxsec">
+                      </div>
+                      <div class="boxsec abltpos">
+                        <div class="passets1"><span>424.1K</span> Like</div>
+                        <div class="passets1"><span>1.7K</span> Comment</div>
+                        <!--div class="passets"><span>0</span> Engage</div>-->
+                        <div class="clearfix"></div>
+                        </div>
+                </div>
+                <button style="padding:10px;border-radius: 5px;background-color:#00000000;">Load more</button>
+            </div>
+
+        </div>
+        <div class="rela-block profile-card-two height90 fiftypercent margintopzero" style="margin-right: 20px;">
+            <div class="rela-block profile-card-stats topmentions">
+
+                <div class="rela-block user-name" id="topmentions"><i class="fab fa-check-circle-o"></i>Top Mentions
+                </div>
+
+                <div id="testone" style=" height: 60vh;padding-top: 50px;"></div>
+
+
+            </div>
+            
+
+        </div>
+        <div class="rela-block profile-card-two top-posts height90 fiftypercent floatnone margintopzero">
+            <div class="rela-block profile-card-stats tophashtag">
+                <div class="rela-block user-name"><i class="fa fa-hashtag"></i>Top Hashtags</div>
+
+                <div id="test" style=" height: 60vh;padding-top: 50px;"></div>
+                
+            </div>
+
+
+        </div>
+
+            <!-- weekly stats profile -->
+            <div class="rela-block profile-card-two top-posts margintopzero">
+                <div class="rela-block profile-card-stats">
+                  <div class="rela-block user-name paddingbotton20"><i class="fa fa-check-circle-o"></i>Weekly Gains
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 text-left">
+                      <div class="well-sm">
+                        <canvas id="WeeklymyChart" width="" height="150"></canvas>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 text-left">
+                      <div class="well-sm">
+                        <canvas id="WeeklymyChart2" width="" height="150"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+    <!-- similar profile -->
+        <div class="rela-block profile-card-two top-posts height90 margintopzero">
+            <div class="rela-block profile-card-stats">
+                <div class="rela-block user-name paddingbotton20"><i class="fa fa-check-circle-o"></i>Similar Influncers
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-left">
+                        <div class="well well-sm">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="http://placehold.it/250x250" alt="" class="img-rounded img-responsive relatedimage" /></a>
+                                </div>
+                                <div class="col-sm-6 col-md-8">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><h4>Bhaumik Patel</h4></a> <i class="fab fa-instagram social" style="position: absolute;top: 13px;right: 13px;"></i>
+                                    <div class="rela-block stars" id="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <small>
+                                        <cite title="Category"><i class="glyphicon glyphicon-tasks"></i> Fitness </cite> <br>
+                                        <cite title="Followers/Subscribers"><i class="fa fa-users"></i> 251k </cite>
+                                        <cite title="Engagement"><i class="glyphicon glyphicon-stats"></i> 10% </cite>
+                                </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-left">
+                        <div class="well well-sm">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="http://placehold.it/250x250" alt="" class="img-rounded img-responsive relatedimage" /></a>
+                                </div>
+                                <div class="col-sm-6 col-md-8">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><h4>Bhaumik Patel</h4></a> <i class="fab fa-instagram social" style="position: absolute;top: 13px;right: 13px;"></i>
+                                    <div class="rela-block stars" id="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <small>
+                                        <cite title="Category"><i class="glyphicon glyphicon-tasks"></i> Fitness </cite> <br>
+                                        <cite title="Followers/Subscribers"><i class="fa fa-users"></i> 251k </cite>
+                                        <cite title="Engagement"><i class="glyphicon glyphicon-stats"></i> 10% </cite>
+                                </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-left">
+                        <div class="well well-sm">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="http://placehold.it/250x250" alt="" class="img-rounded img-responsive relatedimage" /></a>
+                                </div>
+                                <div class="col-sm-6 col-md-8">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><h4>Bhaumik Patel</h4></a> <i class="fab fa-instagram social" style="position: absolute;top: 13px;right: 13px;"></i>
+                                    <div class="rela-block stars" id="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <small>
+                                        <cite title="Category"><i class="glyphicon glyphicon-tasks"></i> Fitness </cite> <br>
+                                        <cite title="Followers/Subscribers"><i class="fa fa-users"></i> 251k </cite>
+                                        <cite title="Engagement"><i class="glyphicon glyphicon-stats"></i> 10% </cite>
+                                </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-left">
+                        <div class="well well-sm">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="http://placehold.it/250x250" alt="" class="img-rounded img-responsive relatedimage" /></a>
+                                </div>
+                                <div class="col-sm-6 col-md-8">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><h4>Bhaumik Patel</h4></a> <i class="fab fa-instagram social" style="position: absolute;top: 13px;right: 13px;"></i>
+                                    <div class="rela-block stars" id="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <small>
+                                        <cite title="Category"><i class="glyphicon glyphicon-tasks"></i> Fitness </cite> <br>
+                                        <cite title="Followers/Subscribers"><i class="fa fa-users"></i> 251k </cite>
+                                        <cite title="Engagement"><i class="glyphicon glyphicon-stats"></i> 10% </cite>
+                                </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-left">
+                        <div class="well well-sm">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="http://placehold.it/250x250" alt="" class="img-rounded img-responsive relatedimage" /></a>
+                                </div>
+                                <div class="col-sm-6 col-md-8">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><h4>Bhaumik Patel</h4></a> <i class="fab fa-instagram social" style="position: absolute;top: 13px;right: 13px;"></i>
+                                    <div class="rela-block stars" id="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <small>
+                                        <cite title="Category"><i class="glyphicon glyphicon-tasks"></i> Fitness </cite> <br>
+                                        <cite title="Followers/Subscribers"><i class="fa fa-users"></i> 251k </cite>
+                                        <cite title="Engagement"><i class="glyphicon glyphicon-stats"></i> 10% </cite>
+                                </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 text-left">
+                        <div class="well well-sm">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="http://placehold.it/250x250" alt="" class="img-rounded img-responsive relatedimage" /></a>
+                                </div>
+                                <div class="col-sm-6 col-md-8">
+                                    <a href="" target="_blank" rel="noopener noreferrer"><h4>Bhaumik Patel</h4></a> <i class="fab fa-instagram social" style="position: absolute;top: 13px;right: 13px;"></i>
+                                    <div class="rela-block stars" id="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <small>
+                                        <cite title="Category"><i class="glyphicon glyphicon-tasks"></i> Fitness </cite> <br>
+                                        <cite title="Followers/Subscribers"><i class="fa fa-users"></i> 251k </cite>
+                                        <cite title="Engagement"><i class="glyphicon glyphicon-stats"></i> 10% </cite>
+                                </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button style="padding:10px;border-radius: 5px;background-color:#00000000;">Load more</button>
+            </div>
+            
+
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-base.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-tag-cloud.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+
+      <!-- chart.js lib -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+
+
+
+
+    <!-- chart script -->
+    <script src="js/followers-following.js"></script>
+    <script src="js/photo-video.js"></script>
+    <script src="js/like-comment.js"></script>
+    <script src="js/hastagwordcloud.js"></script>
+    <script src="js/mentioncloud.js"></script>
+    <script src="js/weeklygainfollow.js"></script>
+    <script src="js/weeklygainpost.js"></script>
+</body>
+
+</html>

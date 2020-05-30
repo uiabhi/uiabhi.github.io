@@ -30,6 +30,6 @@ var myPieChart = new Chart(ctx, {
     legend: {
       display: false
     },
-    cutoutPercentage: 50,
+    cutoutPercentage: 40,
   },
 });
