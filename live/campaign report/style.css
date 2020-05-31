@@ -1,10 +1,11 @@
-.display-4{
+.display-4 {
     font-size: 2.5rem;
 }
 
-.engagments{
+.engagments {
     font-size: 1.0rem;
     display: flex;
+    font-weight: 200;
 }
 
 .fa-instagram {
@@ -14,12 +15,100 @@
     background-clip: text;
     -webkit-background-clip: text;
 }
+
 .fa-twitter {
     color: #00acee;
 }
+
 .fa-youtube {
-    color: red;
+    color: rgb(187, 22, 22);
 }
-#Duration>option{
+
+#Duration>option {
     margin: 4px 0 4px 0;
+}
+
+option>span {
+    color: #000000;
+    padding: 8px 16px;
+    border: none !important;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fs25 {
+    font-size: 25px;
+}
+
+.hastags {
+    background-color: #f0efe4;
+    border-radius: 10px 0 10px 0;
+    padding: 5px;
+    line-height: 3rem;
+}
+
+.infimage {
+    grid-area: infimage;
+    width: 400px;
+}
+
+.infusername {
+    grid-area: infusername;
+}
+
+.infsocial {
+    grid-area: infsocial;
+    font-size: 50px;
+}
+
+.infmediacount {
+    grid-area: infmediacount;
+}
+
+.inffollowers {
+    grid-area: inffollowers;
+}
+
+.infengrate {
+    grid-area: infengrate;
+}
+
+.infcampainer {
+    grid-area: infcampainer;
+}
+
+.influncerlist {
+    display: grid;
+    grid-template-areas:
+        'infimage infusername infusername infusername infsocial'
+        'infimage infmediacount inffollowers infengrate infcampainer'
+        'infimage infmediacount inffollowers infengrate infcampainer';
+    background-color: rgb(235, 235, 235);
+    border-bottom: #6d0606 4px solid;
+    margin-top: 20px;
+}
+
+.influncerlist>div {
+    background-color: rgb(235, 235, 235);
+}
+
+.infusername,.infsocial,.infmediacount,.inffollowers,.infengrate, .infcampainer, .userimage {
+    text-align: center;
+    padding: 2px;
+}
+.infusername{
+    text-align: left;
+}
+.userimage{
+    background-position: right 50% bottom 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    border: solid #6d0606;
+    border-bottom: 0px;
+}
+.infsocial>i{
+    padding: 10px;
+    font-size: 50px;
 }

@@ -180,15 +180,12 @@
                     }
                 </style>
                 <div class="dropdown pull-right d-lg-block d-none">
-                    <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-
+                    <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <p data-letters="G"></p>
 
                     </button>
                     <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
-                        <a href="#" class="dropdown-item"><i
-                                class="pg-settings_small"></i> Settings</a>
+                        <a href="#" class="dropdown-item"><i class="pg-settings_small"></i> Settings</a>
 
                         <a href="#" class="clearfix bg-master-lighter dropdown-item">
                             <span class="pull-left">Logout</span>
@@ -198,7 +195,7 @@
                 </div>
             </div>
         </div>
-        <div class="page-content-wrapper ">
+        <div class="page-content-wrapper">
 
 
 
@@ -219,17 +216,45 @@
 <!-- main area starts here -->
 
 <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Language', 'Speakers (in millions)'],
+    ['Micro', 33], ['Nano', 53], ['Celeb', 10],
+  ]);
+
+  var options = {
+    title: '',
+    backgroundColor: 'transparent',
+    pieSliceText: 'value',
+    pieHole: 0.4,
+    sliceVisibilityThreshold: 0,             
+    legend: 'labeled',
+    chartArea:{left:0,top:'10px',width:'100%',height:'80%'},
+    height: 300,
+    enableInteractivity: false,
+  };
+
+  var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+  chart.draw(data, options);
+}
+
+</script>
 <div class="container-fluid">
 
     <!-- Page Heading -->
     <div class="d-sm-flex mb-4">
-      <h1 class="h3 mb-0 text-gray-800" style="width: 50%;">Social Media Audit Report</h1>
+      <h1 class="h3 mb-0 text-gray-800" style="width: 50%;">Social Media Audit Report </h1>
       <div class="float-right" style="padding-left: 21%;">
         <select class="form-control d-sm-inline-block btn shadow-sm" id="Duration"
           style="width: 300px;margin-top: 4px;">
-          <option>7 Days</option>
-          <option>30 Days</option>
-          <option>90 Days</option>
+          <option><span>Select Duration</span></option>
+          <option><span>7 Days</span></option>
+          <option><span>30 Days</span></option>
+          <option><span>90 Days</span></option>
         </select>
       </div>
     </div>
@@ -237,7 +262,7 @@
     <!-- Content Row -->
     <div class="row">
 
-      <!-- Total Reach-->
+      <!-- TOTAL REACH-->
       <div class="col-xl-3 col-md-3 mb-3">
         <div class="card border-left-primary shadow h-100 py-2">
           <div class="card-body">
@@ -250,15 +275,16 @@
                     <span class="display-4 text-primary">7.5M</span> <span class="text-success">-1.8% ↑</span>
                   </div>
                   <div class="engagments">
-                    <div class="instagram"><i class="fa fa-instagram"></i><span
+                    <div class="instagram">
+                      <i class="fa fa-instagram fs25"></i><span
                       class="mb-0 font-weight-bold p-1"> $42K</span>
                     </div>
                     <div class="twitter">
-                      <i class="fa fa-twitter"></i><span
+                      <i class="fa fa-twitter fs25"></i><span
                         class="mb-0 font-weight-bold p-1"> $12K</span>
                     </div>
                     <div class="youtube">
-                      <i class="fa fa-youtube"></i><span
+                      <i class="fa fa-youtube fs25"></i><span
                         class="mb-0 font-weight-bold p-1"> $26K</span>
                     </div>
                 </div>
@@ -268,7 +294,7 @@
           </div>
         </div>
       </div>
-      <!-- Total Engagment-->
+      <!-- ENGAGMENTS-->
       <div class="col-xl-3 col-md-3 mb-3">
         <div class="card border-left-primary shadow h-100 py-2">
           <div class="card-body">
@@ -281,15 +307,16 @@
                     <span class="display-4 text-primary">7.5M</span> <span class="text-success">-1.8% ↑</span>
                   </div>
                   <div class="engagments">
-                    <div class="instagram"><i class="fa fa-instagram"></i><span
+                    <div class="instagram">
+                      <i class="fa fa-instagram fs25"></i><span
                       class="mb-0 font-weight-bold p-1"> $42K</span>
                     </div>
                     <div class="twitter">
-                      <i class="fa fa-twitter"></i><span
+                      <i class="fa fa-twitter fs25"></i><span
                         class="mb-0 font-weight-bold p-1"> $12K</span>
                     </div>
                     <div class="youtube">
-                      <i class="fa fa-youtube"></i><span
+                      <i class="fa fa-youtube fs25"></i><span
                         class="mb-0 font-weight-bold p-1"> $26K</span>
                     </div>
                 </div>
@@ -299,7 +326,7 @@
           </div>
         </div>
       </div>
-      <!-- Total Engagment-->
+      <!-- EST. PAID REACH-->
       <div class="col-xl-3 col-md-3 mb-3">
         <div class="card border-left-primary shadow h-100 py-2">
           <div class="card-body">
@@ -312,15 +339,16 @@
                     <span class="display-4 text-primary">6.5%</span> <span class="text-success">-1.9% ↑</span>
                   </div>
                   <div class="engagments">
-                    <div class="instagram"><i class="fa fa-instagram"></i><span
+                    <div class="instagram">
+                      <i class="fa fa-instagram fs25"></i><span
                       class="mb-0 font-weight-bold p-1"> $42K</span>
                     </div>
                     <div class="twitter">
-                      <i class="fa fa-twitter"></i><span
+                      <i class="fa fa-twitter fs25"></i><span
                         class="mb-0 font-weight-bold p-1"> $12K</span>
                     </div>
                     <div class="youtube">
-                      <i class="fa fa-youtube"></i><span
+                      <i class="fa fa-youtube fs25"></i><span
                         class="mb-0 font-weight-bold p-1"> $26K</span>
                     </div>
                 </div>
@@ -330,6 +358,7 @@
           </div>
         </div>
       </div>
+      <!-- ESTIMATED. SPENDS-->
       <div class="col-xl-3 col-md-3 mb-3">
         <div class="card border-left-primary shadow h-100 py-2">
           <div class="card-body">
@@ -342,15 +371,16 @@
                     <span class="display-4 text-primary">$200k</span> <span class="text-success">25% ↑</span>
                   </div>
                   <div class="engagments">
-                      <div class="instagram"><i class="fa fa-instagram"></i><span
+                      <div class="instagram">
+                        <i class="fa fa-instagram fs25"></i><span
                         class="mb-0 font-weight-bold p-1"> $42K</span>
                       </div>
                       <div class="twitter">
-                        <i class="fa fa-twitter"></i><span
+                        <i class="fa fa-twitter fs25"></i><span
                           class="mb-0 font-weight-bold p-1"> $12K</span>
                       </div>
                       <div class="youtube">
-                        <i class="fa fa-youtube"></i><span
+                        <i class="fa fa-youtube fs25"></i><span
                           class="mb-0 font-weight-bold p-1"> $26K</span>
                       </div>
                   </div>
@@ -365,126 +395,209 @@
     <!-- Content Row -->
 
     <div class="row ">
-      <!-- Pie Chart -->
-      <div class="col-xl-4 col-lg-4 mb-4">
-        <div class="card shadow mb-4 border-left-primary justify-content-center h-100">
-          <!-- Card Header - Dropdown -->
-          <div class="card-header py-3 d-flex flex-row">
-            <h6 class="m-0 font-weight-bold text-primary text-uppercase">influncer type</h6>
-          </div>
-          <!-- Card Body -->
-          <div class="card-body">
-            <div class="chart-pie pb-2">
-              <canvas id="myPieChart"></canvas>
+        <!-- INFLUNCER TYPE donut Chart -->
+        <div class="col-xl-6 col-lg-6 mb-3">
+          <div class="card shadow mb-4 border-left-primary justify-content-center h-100">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row">
+              <h6 class="m-0 font-weight-bold text-primary text-uppercase">influncer type</h6>
             </div>
-            <div class="mt-4 text-center small">
-              <span class="mr-2">
-                <i class="fas fa-circle text-primary"></i> Nano
-              </span>
-              <span class="mr-2">
-                <i class="fas fa-circle text-success"></i> Celeb
-              </span>
-              <span class="mr-2">
-                <i class="fas fa-circle text-info"></i> Micro
-              </span>
-              <span class="mr-2">
-                <i class="fas fa-circle text-danger"></i> Macro
-              </span>
+            <!-- Card Body -->
+            <div class="card-body">
+              <div class="chart-pie pb-2">
+                <div id="donutchart" style="width: 100%;height: 100%;"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- table  -->
-      <div class="col-xl-4 col-lg-4 mb-4">
+        <!-- POSTS -->
+        <div class="col-xl-6 col-lg-6 mb-3">
+          <div class="card shadow mb-4 border-left-primary h-100">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row">
+              <h6 class="m-0 font-weight-bold text-primary text-uppercase">Posts</h6>
+
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+              
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-lg font-weight-bold text-primary text-uppercase mb-1 text-center">Total Post
+                    </div>
+                    <div class="col-sm-12  text-center">
+                      <div class="col-auto h5 mb-10 font-weight-bold text-sucess-800 text-center">
+                        <span class="display-3 text-primary">250</span></div>
+                      <div class="engagments col-auto" style="display: inline-flex;">
+                        <div class="instagram h3"><i class="fa fa-leaf"></i><span
+                          class="mb-0 font-weight-bold p-1 pr-4"> 50 </span>
+                        </div>
+                        <div class="twitter h3">
+                          <i class="fa fa-money"></i><span
+                            class="mb-0 font-weight-bold p-1"> 200 </span>
+                        </div>
+                      </div>
+                      <div class="engagments p-4" style="display: inline-flex;">
+                        <div class="instagram "><i class="fa fa-instagram" style="font-size: 50px;"></i> <br>
+                          <span class="mb-0 font-weight-bold p-1"><i class="fa fa-leaf"></i> 50</span>
+                          <span class="mb-0 font-weight-bold p-1"><i class="fa fa-money"></i> 10</span>
+                        </div>
+                        <div class="twitter" style="border-left: 1px solid gray;">
+                          <i class="fa fa-twitter" style="font-size: 50px;"></i><br>
+                          <span class="mb-0 font-weight-bold p-1"><i class="fa fa-leaf"></i> 50</span>
+                          <span class="mb-0 font-weight-bold p-1"><i class="fa fa-money"></i> 10</span>
+                        </div>
+                        <div class="youtube" style="border-left: 1px solid gray;">
+                          <i class="fa fa-youtube" style="font-size: 50px;"></i><br>
+                          <span class="mb-0 font-weight-bold p-1"><i class="fa fa-leaf"></i> 50</span>
+                          <span class="mb-0 font-weight-bold p-1"><i class="fa fa-money"></i> 10</span>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <span class="mb-0 font-weight-bold p-1"><i class="fa fa-leaf"></i> -Paid</span>
+                        <span class="mb-0 font-weight-bold p-1"><i class="fa fa-money"></i> -Organic</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+        </div>
+        <!-- CAMPAIGN HASTAGS  -->
+        <div class="col-xl-12 col-lg-12 mb-3">
+          <div class="card shadow mb-4 border-left-primary h-100">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row">
+              <h6 class="m-0 font-weight-bold text-primary text-uppercase">Campaign Hastags</h6>
+
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+              
+              <div class="col-auto h5 mb-10 font-weight-bold text-sucess-800 text-center">
+                
+                <span class="text-sucess p3 hastags"><i class="fa fa-hashtag"></i>Anotherhastags</span>
+                <span class="text-sucess p3 hastags"><i class="fa fa-hashtag"></i>Anotherhastags</span>
+                <span class="text-sucess p3 hastags"><i class="fa fa-hashtag"></i>Anotherhastags</span>
+                <span class="text-sucess p3 hastags"><i class="fa fa-hashtag"></i>Anotherhastags</span>
+                <span class="text-sucess p3 hastags"><i class="fa fa-hashtag"></i>Anotherhastags</span>
+                <span class="text-sucess p3 hastags"><i class="fa fa-hashtag"></i>Anotherhastags</span>
+
+            </div>
+          </div>
+        </div>
+
+
+        </div>
+    </div>
+    <!-- influncers list -->
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 mb-3">
         <div class="card shadow mb-4 border-left-primary h-100">
           <!-- Card Header - Dropdown -->
           <div class="card-header py-3 d-flex flex-row">
-            <h6 class="m-0 font-weight-bold text-primary text-uppercase">Posts</h6>
+            <h6 class="m-0 font-weight-bold text-primary text-uppercase">Top Influncers</h6>
 
           </div>
           <!-- Card Body -->
           <div class="card-body">
-            <table style="text-align: center;" class="table pt-4 pb-2">
-              <tr>
-                <th colspan="6">150</th>
-              </tr>
-              <tr>
-                <td colspan="3"><i class="fas fa-leaf"></i> 50</td>
-                <td colspan="3"><i class="fas fa-money-bill-wave"></i> 100</td>
-              </tr>
-              <tr style="padding-top: 10px;">
-                <td colspan="2"><i class="fab fa-instagram"></i></td>
-                <td colspan="2"><i class="fab fa-twitter"></i></td>
-                <td colspan="2"><i class="fab fa-youtube"></i></td>
-              </tr>
-              <tr>
-                <td title="Organic post on instagram"><i class="fas fa-leaf"></i>50</td>
-                <td title="paid post on instagram"><i class="fas fa-money-bill-wave"></i>20</td>
-                <td><i class="fas fa-leaf"></i>30</td>
-                <td><i class="fas fa-money-bill-wave"></i>50</td>
-                <td>
-                  <i class="fas fa-leaf"></i>44
-                </td>
-                <td><i class="fas fa-money-bill-wave"></i>30</td>
-              </tr>
+            
+            <!-- campaign influncer individual -->
+            <div class="mb-10 influncerlist">
+              <div class="infimage"> 
+                <div class="userimage" style="background-image: url('https://kmntj38o0gut3ouv1k3kkj13-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/influencer-marketing-girl-680x350.jpg');"></div>
+              </div>
+              <div class="infusername">
+                <div style="padding: 0 10px;">
+                <h2>User Name</h2> <span>@username</span>
+                </div>
+              </div>
+              <div class="infsocial"><i class="fa fa-youtube" ></i></div>
+              <div class="infmediacount">
+                <div>MEDIA UPLOADS</div>
+                <div>50</div>
+              </div>
+              <div class="inffollowers">
+                <div>FOLLOWERS</div>
+                <div>50</div>
+              </div>
+              <div class="infengrate">
+                <div>ENGAGMENT RATE</div>
+                <div>50</div>
+              </div>
+              <div class="infcampainer">
+                <div>CAMP. ENG. RATE</div>
+                <div>50</div>
+              </div>
 
-            </table>
-          </div>
-        </div>
-      </div>
-      <!-- campaign hastag table  -->
-      <div class="col-xl-4 col-lg-4 mb-4">
-        <div class="card shadow mb-4 border-left-primary h-100">
-          <!-- Card Header - Dropdown -->
-          <div class="card-header py-3 d-flex flex-row">
-            <h6 class="m-0 font-weight-bold text-primary text-uppercase">Campaign Hastags</h6>
+            </div>
+            <!-- campaign influncer individual -->
+            <div class="mb-10 influncerlist">
+              <div class="infimage"> 
+                <div class="userimage" style="background-image: url('https://wp-en.oberlo.com/wp-content/uploads/2019/05/Copy-of-Vasco-San-Payo-The-Lion-Chain-1-min.jpg');"></div>
+              </div>
+              <div class="infusername">
+                <div style="padding: 0 10px;">
+                <h2>User Name</h2> <span>@username</span>
+                </div>
+              </div>
+              <div class="infsocial"><i class="fa fa-instagram" ></i></div>
+              <div class="infmediacount">
+                <div>MEDIA UPLOADS</div>
+                <div>50</div>
+              </div>
+              <div class="inffollowers">
+                <div>FOLLOWERS</div>
+                <div>50</div>
+              </div>
+              <div class="infengrate">
+                <div>ENGAGMENT RATE</div>
+                <div>50</div>
+              </div>
+              <div class="infcampainer">
+                <div>CAMP. ENG. RATE</div>
+                <div>50</div>
+              </div>
 
-          </div>
-          <!-- Card Body -->
-          <table class="pt-4 pb-2">
-            <tr>
-              <td>
-                <ul>
-                  <li>testtag</li>
-                  <li>testsdsd</li>
-                  <li>somethingnew</li>
-                  <li>githhubzindah</li>
-                  <li>nindia</li>
-                  <li>nindiatests</li>
-                  <li>somethingnew</li>
-                  <li>githhubzindah</li>
-                  <li>nindia</li>
-                  <li>nindiatests</li>
-                  <li>somethingnew</li>
-                  <li>githhubzindah</li>
-                </ul>
-              </td>
-              <td>
-                <ul>
-                  <li>testtag</li>
-                  <li>testsdsd</li>
-                  <li>somethingnew</li>
-                  <li>githhubzindah</li>
-                  <li>nindia</li>
-                  <li>nindiatests</li>
-                  <li>somethingnew</li>
-                  <li>githhubzindah</li>
-                  <li>nindia</li>
-                  <li>nindiatests</li>
-                  <li>somethingnew</li>
-                  <li>githhubzindah</li>
-                </ul>
-              </td>
-            </tr>
-          </table>
+            </div>
+             
+            <!-- campaign influncer individual -->
+            <div class="mb-10 influncerlist">
+              <div class="infimage"> 
+                <div class="userimage" style="background-image: url('https://www.topshop.com/blog/images/2017/07/Alessa.jpg');"></div>
+              </div>
+              <div class="infusername">
+                <div style="padding: 0 10px;">
+                <h2>User Name</h2> <span>@username</span>
+                </div>
+              </div>
+              <div class="infsocial"><i class="fa fa-twitter" ></i></div>
+              <div class="infmediacount">
+                <div>MEDIA UPLOADS</div>
+                <div>50</div>
+              </div>
+              <div class="inffollowers">
+                <div>FOLLOWERS</div>
+                <div>50</div>
+              </div>
+              <div class="infengrate">
+                <div>ENGAGMENT RATE</div>
+                <div>50</div>
+              </div>
+              <div class="infcampainer">
+                <div>CAMP. ENG. RATE</div>
+                <div>50</div>
+              </div>
+
+            </div>
+             
         </div>
       </div>
 
 
     </div>
-
-
-  </div>
+    </div>
 
 
 
