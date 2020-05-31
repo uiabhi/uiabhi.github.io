@@ -1,0 +1,25 @@
+.display-4{
+    font-size: 2.5rem;
+}
+
+.engagments{
+    font-size: 1.0rem;
+    display: flex;
+}
+
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.fa-twitter {
+    color: #00acee;
+}
+.fa-youtube {
+    color: red;
+}
+#Duration>option{
+    margin: 4px 0 4px 0;
+}
