@@ -85,7 +85,7 @@ option>span {
         'infimage infmediacount inffollowers infengrate infcampainer'
         'infimage infmediacount inffollowers infengrate infcampainer';
     background-color: rgb(235, 235, 235);
-    border-bottom: #6d0606 4px solid;
+    border-bottom: #9900ff 4px solid;
     margin-top: 20px;
 }
 
@@ -105,7 +105,6 @@ option>span {
     background-repeat: no-repeat;
     background-size: cover;
     height: 130px;
-    border: solid #6d0606;
     border-bottom: 0px;
 }
 .infsocial>i{
@@ -113,17 +112,7 @@ option>span {
     font-size: 50px;
 }
 
-@media screen and (max-width: 440px) {
-    .influncerlist {
-        display: grid;
-        grid-template-areas:
-            'infimage infimage',
-            'infimage infimage',
-            'infusername infsocial',
-            'infusername infsocial',
-            'infmediacount inffollowers',
-            'infengrate infcampainer';
-    
-    }
-  }
-  
+.engagments span {
+    display: block;
+    min-width: 58px;
+}
