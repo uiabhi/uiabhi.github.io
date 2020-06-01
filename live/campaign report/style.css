@@ -113,6 +113,10 @@ option>span {
 }
 
 .engagments span {
+    display: ;
+    min-width: 58px;
+}
+.engagments span.shortcount{
     display: block;
     min-width: 58px;
 }
