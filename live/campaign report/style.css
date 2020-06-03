@@ -4,7 +4,7 @@
 
 .engagments {
     font-size: 1.0rem;
-    display: flex;
+    display: inline-flex;
     font-weight: 200;
 }
 
@@ -119,4 +119,35 @@ option>span {
 .engagments span.shortcount{
     display: block;
     min-width: 58px;
+}
+.influncerImageInTable{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    float: left;
+    border-radius: 50% 50% 10% 50% ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
+.socialmediaiconintable {
+    position: absolute;
+    font-size: 22px;
+    width: 32px;
+    height: 32px;
+    left: 73px;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50% 0 0 0;
+}
+tbody>tr>td:nth-child(1){
+    width: 100px;
+}
+tbody>tr>td:nth-child(2){
+    text-align: left!important;
 }
