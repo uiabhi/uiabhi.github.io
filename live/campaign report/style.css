@@ -23,6 +23,15 @@
 .fa-youtube {
     color: rgb(187, 22, 22);
 }
+.fa-thumbs-up{
+    color: #00acee;
+}
+.fa-comment{
+    color: #00acee;
+}
+.fa-bar-chart{
+    color: #00acee;
+}
 
 #Duration>option {
     margin: 4px 0 4px 0;
@@ -150,4 +159,79 @@ tbody>tr>td:nth-child(1){
 }
 tbody>tr>td:nth-child(2){
     text-align: left!important;
+}
+tbody>tr{
+    border-radius: 50px 0 0 50px;
+}
+.InfluncerNameInTable{
+    font-size: 23px;
+}
+.socialmediapostdbd{
+    height: 350px;
+    overflow: hidden;
+}
+.socialmediapostimage {
+    margin: 10px;
+    height: 200px;
+    background-color: burlywood;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.postengagments {
+    font-size: 1.0rem;
+    display: inline-flex;
+    font-weight: 200;
+}
+.aboutpost{
+    max-height: 50px;
+    overflow-y: hidden;
+
+}
+.boxss {
+    box-shadow: 0 0 5px #bfbfbf;
+    border-radius: 0;
+    font-size: 14px;
+    padding-top: 0;
+    margin-top: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.tabs-wraper {
+    color: #444;
+    display: block;
+    width: 100%;
+}
+.tabs-wraper .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    background: #edeff1;
+    display: flex;
+    justify-content: space-around;
+}
+.tabs-wraper .nav-tabs .nav-item {
+    margin-bottom: -1px;
+    flex: 100;
+}
+.nav-tabs .nav-item a.nav-link {
+    color: #000!important;
+    padding: 10px 40px;
+    border-right: 1px solid #dee2e6;
+    border-radius: 0;
+    text-align: center;
+}
+.nav-tabs > li > a.active:hover, .nav-tabs > li > a.active:focus {
+    border-color: #e1e1e1;
+    color: #575757;
+    background-color: #8377f6;
+}
+.socialmediaiconinposts {
+    position: absolute;
+    font-size: 22px;
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    /* bottom: 0; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 20% 0;
 }
