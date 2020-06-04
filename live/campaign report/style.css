@@ -229,7 +229,8 @@ tbody>tr{
     position: absolute;
     font-size: 22px;
     width: 32px;
-    height: 32px;
+    height: 27px;
+    top: 5px;
     left: 0px;
     /* bottom: 0; */
     background-color: rgb(255, 255, 255);
