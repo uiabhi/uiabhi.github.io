@@ -554,21 +554,22 @@ a.profilecatagory{
   }
 
   .profile-pic {
-    display: false;
-    position: absolute;
-    margin: false;
-    top: -70px;
-    left: 50%;
-    right: false;
-    bottom: false;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    height: 140px;
-    width: 140px;
-    border: 10px solid #fff;
-    border-radius: 100%;
-    background-size: cover;
+      display: false;
+      position: absolute;
+      margin: false;
+      top: -70px;
+      left: 50%;
+      right: false;
+      bottom: false;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      height: 140px;
+      width: 140px;
+      border: 10px solid #fff;
+      border-radius: 100%;
+      background-size: cover;
   }
+  
   #user_description{
     display: none;
   }
