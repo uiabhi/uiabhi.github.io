@@ -1,669 +1,727 @@
-<style>
-
-    * {
-  box-sizing: border-box;
-  -webkit-transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
-  transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
+* {
+    box-sizing: border-box;
+    -webkit-transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
+    transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
 }
 
 .rela-block {
-  display: block;
-  position: relative;
-  margin: auto;
-  top: ;
-  left: ;
-  right: ;
-  bottom: ;
+    display: block;
+    position: relative;
+    margin: auto;
+    top: ;
+    left: ;
+    right: ;
+    bottom: ;
 }
 
 .rela-inline {
-  display: inline-block;
-  position: relative;
-  margin: auto;
-  top: ;
-  left: ;
-  right: ;
-  bottom: ;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    top: ;
+    left: ;
+    right: ;
+    bottom: ;
 }
 
 .floated {
-  position: relative;
-  margin: false;
-  top: ;
-  left: ;
-  right: ;
-  bottom: ;
-  float: left;
-  height: max-content;
+    position: relative;
+    margin: false;
+    top: ;
+    left: ;
+    right: ;
+    bottom: ;
+    float: left;
+    height: max-content;
 }
 
 body {
-  font-family: "Roboto";
-  font-size: 18px;
-  letter-spacing: 2px;
-  font-weight: 400;
-  line-height: 24px;
-  background-color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: #fff;
 }
 
 .container-profile {
-  z-index: 1;
-  background-color: #FFF;
-  padding-top: 20px;
+    z-index: 1;
+    background-color: #FFF;
+    padding-top: 20px;
 }
+
 .h4 {
-  font-family: "Roboto";
-  font-weight: 500;
-  line-height: 1.1;
+    font-family: "Roboto";
+    font-weight: 500;
+    line-height: 1.1;
 }
 
 .profile-card {
-  width: calc(100% - 40px);
-  margin: 0px auto;
-  background-color: #fff;
-  box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.6);
+    width: calc(100% - 40px);
+    margin: 0px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.6);
 
 }
 
 
 .profile-card-two {
-  padding-top: 1px;
-  margin: 30px 20px;
-  background-color: #fff;
-box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.6);
+    padding-top: 1px;
+    margin: 30px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.6);
 }
 
 .fiftypercent {
-  width: 47.3%;
-  margin-right: 0;
-  float: left;
+    width: 47.3%;
+    margin-right: 0;
+    float: left;
 }
-.floatnone{
-  float: none!important;
+
+.floatnone {
+    float: none !important;
 }
+
 h5.infltitle {
-    color: #0f0d13!important;
+    color: #0f0d13 !important;
 }
-small>cite{
-    color:#0f0d13!important;
+
+small>cite {
+    color: #0f0d13 !important;
 }
-infltitle{
-    color: #0f0d13!important;
+
+infltitle {
+    color: #0f0d13 !important;
 }
+
 .well {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
+
 .well-sm {
-  padding: 9px;
-  border-radius: 3px;
+    padding: 9px;
+    border-radius: 3px;
 }
 
 .height90 {
-  height: 116vh;
-  overflow: auto;
+    height: 116vh;
+    overflow: auto;
 }
 
 .height50 {
-  height: 58vh;
-  overflow: auto;
+    height: 58vh;
+    overflow: auto;
 }
 
 .margintopzero {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .profile-pic {
-  display: false;
-  /* position: absolute; */
-  margin: false;
-
-  height: 170px;
-  width: 180px;
-  border: 10px solid #fff;
-  /* border-radius: 100%; */
-  background-size: cover;
-  float: left;
+    display: false;
+    margin: false;
+    height: 170px;
+    width: 180px;
+    border: 10px solid #fff;
+    background-size: cover;
+    float: left;
 }
 
 .charts {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 .profile-name-container {
-  margin: 0 auto 10px;
-  padding: 10px;
+    margin: 0 auto 10px;
+    padding: 10px;
 }
 
 .user-name {
-  padding-top: 20px;
-  font-family: "Montserrat";
-  color: #0f0d13;
-  font-size: 24px;
-  letter-spacing: 3px;
-  font-weight: 400;
-  line-height: 30px;
+    padding-top: 20px;
+    font-family: "Montserrat";
+    color: #0f0d13;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    line-height: 30px;
 }
 
 .stars {
-  padding-top: 0px;
+    padding-top: 0px;
 }
 
 
 .user-desc {
-  font-family: "Roboto";
-  letter-spacing: 1px;
-  color: #999;
-  padding-top:10px;
-  padding-bottom:10px;
-  text-align: left;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 20px;
+    font-family: "Roboto";
+    letter-spacing: 1px;
+    color: #999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
 }
 
 .profile-card-stats {
-  padding: 10px 0px;
-  margin: 10px 10px;
-  text-align: center;
-  overflow: hidden;
+    padding: 10px 0px;
+    margin: 10px 10px;
+    text-align: center;
+    overflow: hidden;
 }
 
 .profile-card-stats-two {
-  padding: 10px 0px;
-  margin: 0px 0px;
-  width: 50%;
-  height: max-content;
-  text-align: center;
-  overflow: hidden;
+    padding: 10px 0px;
+    margin: 0px 0px;
+    width: 50%;
+    height: max-content;
+    text-align: center;
+    overflow: hidden;
 }
 
 .profile-stat {
-  padding-top: 0px;
-  height: 100%;
-  width: 23%;
-  margin: 10px;
-  border-radius: 5px;
-  font-size: 29px;
-  font-weight: 700;
-  color: #009500;
+    padding: 10px;
+    height: 100%;
+    width: 25%;
+    border-radius: 5px;
+    font-size: 29px;
+    font-weight: 700;
+    color: #009500;
 }
 
 .profile-stat-m {
-  padding-top: 20px;
-  text-align: center;
-  height: 100%;
-  width: 33.3333%;
-  border-radius: 5px;
-  font-size: 29px;
-  font-weight: 700;
-  color: rgb(35, 47, 187);
+    padding-top: 20px;
+    text-align: center;
+    height: 100%;
+    width: 33.3333%;
+    border-radius: 5px;
+    font-size: 29px;
+    font-weight: 700;
+    color: rgb(35, 47, 187);
 }
 
 .profile-stat-m:after {
-  color: #999;
-  font-size: small;
+    color: #999;
+    font-size: small;
 }
+
 .profile-stat-m-4 {
-  padding-top: 58px;
-  text-align: center;
-  height: 100%;
-  width: 25%;
-  border-radius: 5px;
-  font-size: 29px;
-  font-weight: 700;
-  color: rgb(35, 47, 187);
+    padding-top: 58px;
+    text-align: center;
+    height: 100%;
+    width: 25%;
+    border-radius: 5px;
+    font-size: 29px;
+    font-weight: 700;
+    color: rgb(35, 47, 187);
 }
 
 .profile-stat-m-4:after {
-  color: #999;
-  font-size: small;
+    color: #999;
+    font-size: small;
 }
 
 
 .profile-stat:after {
-  color: #999;
-  font-size: small;
+    color: #999;
+    font-size: small;
 }
 
 .post::after {
-  content: "Total Post";
+    content: "Total Post";
 }
 
 .followers::after {
-  content: "Followers";
+    content: "Followers";
 }
 
 .following::after {
-  content: "Following";
+    content: "Following";
 }
 
 .avglike::after {
-  content: "Avg. Likes";
+    content: "Avg. Likes";
 }
 
 .engrate::after {
-  content: "Eng. Rates";
+    content: "Eng. Rates";
 }
 
 .avgcomment::after {
-  content: "Avg. Comments";
+    content: "Avg. Comments";
 }
 
 .likecommntratio::after {
-  content: "Like:Comment";
+    content: "Like:Comment";
 }
 
 .photovideoratio::after {
-  content: "Photo:Video";
+    content: "Photo:Video";
 }
+
 .subshike::after {
-  content: "New Subscribers";
+    content: "New Subscribers";
 }
 
 .followerfollowingratio::after {
-  content: "Follower:Following";
+    content: "Follower:Following";
 }
 
 .fraudscore::after {
-  content: "Fraud Score";
+    content: "Fraud Score";
 }
+
 .estimatedearning::after {
-  content: "Est. Earning/post";
+    content: "Est. Earning/post";
 }
 
 .weeklypost::after {
-  content: "Weekly Post";
+    content: "Weekly Post";
 }
+
 .followershike::after {
-  content: "New Followers";
+    content: "New Followers";
 }
+
 .ytpost::after {
-  content: "Total Videos";
+    content: "Total Videos";
 }
+
 .ytsubsribers::after {
-  content: "Subscribers";
+    content: "Subscribers";
 }
+
 .views::after {
-  content: "Views";
+    content: "Views";
 }
+
 .likedislikeratio::after {
-  content: "Likes:Dislikes";
+    content: "Likes:Dislikes";
 }
+
 .viewslikesratio::after {
-  content: "Views:Likes";
+    content: "Views:Likes";
 }
 
 .checked {
-  color: orange;
+    color: orange;
 }
 
 .monthlystats {
-  font-size: 5em;
+    font-size: 5em;
 }
-.paddingbotton20{
-  padding-bottom: 40px;
+
+.paddingbotton20 {
+    padding-bottom: 40px;
 }
 
 .image {
-  width: 40%;
-  height: 240px;
-  cursor: pointer;
-  margin: 0 10px 10px;
-  overflow: hidden;
-  border-radius: 5px;
-  border: 10px solid #fff;
-  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.26);
-  background-color: rgba(0, 0, 0, 0.4);
-  background-size: cover !important;
-  -webkit-transition: 0.2s cubic-bezier(0.5, 0, 0.2, 1);
-  transition: 0.2s cubic-bezier(0.5, 0, 0.2, 1);
+    width: 14rem;
+    height: 14rem;
+    cursor: pointer;
+    margin: 0 0.3rem 0.3rem;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.26);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover !important;
+    -webkit-transition: 0.2s cubic-bezier(0.5, 0, 0.2, 1);
+    transition: 0.2s cubic-bezier(0.5, 0, 0.2, 1);
 }
 
 .image:hover {
 
-  box-shadow: 0 2px 18px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 18px -2px rgba(0, 0, 0, 0.3);
 }
 
 .tagged-users-list {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .tagged-users-list li {
-  display: inline-flex;
-  margin: 0 5px 5px 0;
-  padding: 0 8px 5px 0;
-  align-items: center;
+    display: inline-flex;
+    margin: 0 5px 5px 0;
+    padding: 0 8px 5px 0;
+    align-items: center;
 }
 
 .tagged-users-list li a {
-  text-decoration: none;
-  color: #22baa0;
+    text-decoration: none;
+    color: #22baa0;
 }
 
 .tagged-users-list li .profile {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .tagged-users-list li .profile .tag-photo {
-  height: 30px;
-  width: 30px;
-  display: block;
-  border-radius: 2px;
+    height: 30px;
+    width: 30px;
+    display: block;
+    border-radius: 2px;
 }
 
 .tagged-users-list li .profile .details {
-  padding-left: 10px;
+    padding-left: 10px;
 }
 
 .tagged-users-list li .profile .details .uname {
-  font-weight: 500;
-  display: block;
-  color: #22baa0;
+    font-weight: 500;
+    display: block;
+    color: #22baa0;
 }
 
 .tagged-hastags-list li.hastags {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  box-sizing: border-box;
-  border-radius: 2px;
-  overflow: hidden;
-  display: inline-flex;
-  align-items: center;
-  line-height: 1.2;
-  padding: 0;
-  margin: 0 5px 5px 0;
-  color: #2e44b9;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-radius: 2px;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0 5px 5px 0;
+    color: #2e44b9;
 }
 
-.social{
-  position: absolute;
-  top: 13px;
-  right: 13px;
+.social {
+    position: absolute;
+    top: 13px;
+    right: 13px;
 }
 
-.socialtop{
+.socialtop {
     font-size: 85px;
 }
+
 /* hideinchart */
-.anychart-credits{
-  display: none;
-  height: 0;
-  width: 0;
-  margin: 0;
-  padding: 0;
+.anychart-credits {
+    display: none;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
 }
 
-.weeklystatglyf{
-  padding-bottom: 20px;
-  font-size:100px;
+.weeklystatglyf {
+    padding-bottom: 20px;
+    font-size: 100px;
 }
+
 .fa-instagram {
-  color: transparent;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background-clip: text;
-  -webkit-background-clip: text;
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
+
 #profile-reload {
     color: #515b61;
 }
-.fa-youtube{
-  color: red;
+
+.fa-youtube {
+    color: red;
 }
-.fa-sync{
-  color: blue ;
-  width: 26px;
-  height: 26px;
+
+.fa-sync {
+    color: blue;
+    width: 26px;
+    height: 26px;
 }
-.fa-check-circle{
-  color:#3897f0;
+
+.fa-check-circle {
+    color: #3897f0;
 }
-.fa-twitter{
-  color: #00acee;
+
+.fa-twitter {
+    color: #00acee;
 }
+
 .boxsec {
-  width: 100%;
-  position: relative;
-  margin-top: 5px;
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
 }
-.profilegender{
-  display: inline-block;
+
+.profilegender {
+    display: inline-block;
     padding: 2px 6px;
     border-radius: 0%;
     background-color: #3897f0;
     color: white;
 }
+
 .boxsec.abltpos {
-  width: 100%;
-  position: relative;
-  margin-top: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #0b1370;
-  padding-top: 2px;
-  padding-bottom: 3px;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0b1370;
+    padding-top: 2px;
+    padding-bottom: 3px;
 }
+
 .image p {
-  margin-bottom: 0;
-  line-height: 14px;
+    margin-bottom: 0;
+    line-height: 14px;
 }
-a.profilecatagory{
-  background-color: rgb(200, 199, 199);
-  padding:8px;
-  line-height: 50px;
+
+a.profilecatagory {
+    background-color: rgb(200, 199, 199);
+    padding: 8px;
+    line-height: 50px;
 }
+
 .ld {
-  color: #2d2d2d;
-  font-weight: 400;
-  font-size: 12px;
-  margin-bottom: 0;
-  line-height: 14px;
-  text-overflow: ellipsis;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  padding-left: 2px;
-  padding-right: 2px;
-  text-align: center;
+    color: #2d2d2d;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 14px;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
 }
+
 .passets1 {
-  width: 50%;
-  float: left;
-  display: inline;
-  text-align: center;
-  color: #e8e9ff;
-  font-weight: 300;
-  font-size: 15px;
+    width: 50%;
+    float: left;
+    display: inline;
+    text-align: center;
+    color: #e8e9ff;
+    font-weight: 300;
+    font-size: 15px;
 }
+
 .passets1 span {
-  display: block;
-  font-size: 18px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 10px;
-  padding-top: 10px;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 10px;
+    padding-top: 10px;
 }
-.hcimg{
-  background:url(https://viralpitch.co/public/image/category/cate-sprt.png) no-repeat;
-  background-size:100% 1200%
+
+.hcimg {
+    background: url(https://viralpitch.co/public/image/category/cate-sprt.png) no-repeat;
+    background-size: 100% 1200%
 }
-.photography{
-  background-position:0 0
+
+.photography {
+    background-position: 0 0
 }
-.gaming{
-  background-position:0 9.1%
+
+.gaming {
+    background-position: 0 9.1%
 }
-.entertainment{
-  background-position:0 18.2%
+
+.entertainment {
+    background-position: 0 18.2%
 }
-.Craft-DIY{
-  background-position:0 27.2%
+
+.Craft-DIY {
+    background-position: 0 27.2%
 }
-.family{
-  background-position:0 36.4%
+
+.family {
+    background-position: 0 36.4%
 }
-.Lifestyle{
-  background-position:0 45.4%
+
+.Lifestyle {
+    background-position: 0 45.4%
 }
-.technology{
-  background-position:0 54.6%
+
+.technology {
+    background-position: 0 54.6%
 }
-.food{
-  background-position:0 63.6%
+
+.food {
+    background-position: 0 63.6%
 }
-.Sports{
-  background-position:0 72.8%
+
+.Sports {
+    background-position: 0 72.8%
 }
-.Beauty{
-  background-position:0 81.9%
+
+.Beauty {
+    background-position: 0 81.9%
 }
-.fashion{
-  background-position:0 90.8%
+
+.fashion {
+    background-position: 0 90.8%
 }
-.travel{
-  background-position:0 100%
+
+.travel {
+    background-position: 0 100%
 }
-.d-sm-block{
-  color:black;
-  padding-bottom:0px;
-  margin-bottom:0px;
-}
+
+.d-sm-block {
+    color: black;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width: 600px) {
-  .image {
-    width: 130px;
-    height: max-content;
-  }
-  .profile-card-stats {
-    padding: 20px 10px;
-    margin: 20px 0px;
-  }
+    .image {
+        width: 130px;
+        height: max-content;
+    }
 
-  .profile-pic {
-      display: false;
-      position: absolute;
-      margin: false;
-      top: -70px;
-      left: 50%;
-      right: false;
-      bottom: false;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-      height: 140px;
-      width: 140px;
-      border: 10px solid #fff;
-      border-radius: 100%;
-      background-size: cover;
-  }
-  
-  #user_description{
-    display: none;
-  }
-  .profile-card {
-    padding-top: 70px;
-    margin: 50px auto 0px;
-  }
-  .user-name{
-    padding-top: 0px;
-    font-family: "Montserrat";
-    color: #0f0d13;
-    font-size: 28px;
-    text-align: center;
-  }
-  .profile-stat {
-    padding-top: 10px;
-    width: 43%;
-    border-radius: 5px;
-    font-size: 22px;
-    font-weight: 700;
- }
- .profile-name-container {
-  padding: 0px;
-}
+    .profile-card-stats {
+        padding: 20px 10px;
+        margin: 20px 0px;
+    }
 
-.fiftypercent {
-  width: calc(100% - 40px);
-  margin: 0 10px 20px 20px;
-  float: none;
-  
-}
+    .profile-pic {
+        display: false;
+        position: absolute;
+        margin: false;
+        top: -70px;
+        left: 50%;
+        right: false;
+        bottom: false;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        height: 140px;
+        width: 140px;
+        border: 10px solid #fff;
+        border-radius: 100%;
+        background-size: cover;
+    }
 
-#analytics{
-  display: none;
-}
-.height90{
-  height: max-content;
-}
-div.rela-block.profile-name-container > i{
-  top: -59px!important;
-}
-.weeklystatglyf {
-  font-size: 47px;
-}
+    #user_description {
+        display: none;
+    }
 
-.height50{
-  height: max-content;
-}
+    .profile-card {
+        padding-top: 70px;
+        margin: 50px auto 0px;
+    }
 
- .tagged-users-list li .insta-profile .details {
-  padding-left: 0px;
-}
-.relatedimage{
-  width: 120px;
-  float: left;
-  padding-right: 10px;
-}
-div.col-sm-6.col-md-8 > i{
-  position: absolute;
-    top: 0px!important;
-    right: 13px;
-}
-.refresharea{
-  text-align: center;
-}
-.section-padding{
-  padding: 70px 0 0 0;
-}
-.socialtop{
-  font-size: 50px;
-}
-.socialbottom{
-  position: absolute;
-  top: 0px;
-  right: 13px;
-  font-size: 42px;
-}
-.profilegender{
-  font-size: 24px;
-}
+    .user-name {
+        padding-top: 0px;
+        font-family: "Montserrat";
+        color: #0f0d13;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .profile-stat {
+        width: 50%;
+        border-radius: 5px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .profile-name-container {
+        padding: 0px;
+    }
+
+    .profile-stat-m-4 {
+        padding-top: 40px;
+        text-align: center;
+        height: 100%;
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .fiftypercent {
+        width: calc(100% - 40px);
+        margin: 0 10px 20px 20px;
+        float: none;
+
+    }
+
+    .profile-stat:after {
+        color: #999;
+        font-size: x-small;
+    }
+
+    #analytics {
+        display: none;
+    }
+
+    .height90 {
+        height: max-content;
+    }
+
+    div.rela-block.profile-name-container>i {
+        top: -59px !important;
+    }
+
+    .weeklystatglyf {
+        font-size: 47px;
+    }
+
+    .height50 {
+        height: max-content;
+    }
+
+    .tagged-users-list li .insta-profile .details {
+        padding-left: 0px;
+    }
+
+    .relatedimage {
+        width: 120px;
+        float: left;
+        padding-right: 10px;
+    }
+
+    div.col-sm-6.col-md-8>i {
+        position: absolute;
+        top: 0px !important;
+        right: 13px;
+    }
+
+    .refresharea {
+        text-align: center;
+    }
+
+    .section-padding {
+        padding: 70px 0 0 0;
+    }
+
+    .socialtop {
+        font-size: 50px;
+    }
+
+    .socialbottom {
+        position: absolute;
+        top: 0px;
+        right: 13px;
+        font-size: 42px;
+    }
+
+    .profilegender {
+        /* font-size: 24px; */
+        display: none;
+    }
+
+    .datatextcenter {
+        text-align: center;
+    }
 }
 
 .fa-check-circle {
-  color: #3897f0;
+    color: #3897f0;
 }
-@media screen and (min-width: 1280px) {
-
-}
-
-@media screen and (max-width: 340px) {
-  .image {
-    width: 115px;
-    height: 115px;
-  }
-}
-
-</style>
