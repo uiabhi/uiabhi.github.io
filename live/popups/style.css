@@ -1,0 +1,244 @@
+.display-4 {
+    font-size: 2.5rem;
+}
+.moveright{
+    display: flex;
+    flex: 50%;
+    flex-direction: row-reverse;
+}
+
+.engagments {
+    font-size: 1.0rem;
+    display: inline-flex;
+    font-weight: 200;
+}
+
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fa-twitter {
+    color: #00acee;
+}
+
+.fa-youtube {
+    color: rgb(187, 22, 22);
+}
+.fa-thumbs-up{
+    color: #00acee;
+}
+.fa-comment{
+    color: #00acee;
+}
+.fa-bar-chart{
+    color: #00acee;
+}
+
+#Duration>option {
+    margin: 4px 0 4px 0;
+}
+
+option>span {
+    color: #000000;
+    padding: 8px 16px;
+    border: none !important;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fs25 {
+    font-size: 25px;
+}
+
+.hastags {
+    background-color: #f0efe4;
+    border-radius: 10px 0 10px 0;
+    padding: 5px;
+    line-height: 3rem;
+}
+
+.infimage {
+    grid-area: infimage;
+    width: 400px;
+}
+
+.infusername {
+    grid-area: infusername;
+}
+
+.infsocial {
+    grid-area: infsocial;
+    font-size: 50px;
+}
+
+.infmediacount {
+    grid-area: infmediacount;
+}
+
+.inffollowers {
+    grid-area: inffollowers;
+}
+
+.infengrate {
+    grid-area: infengrate;
+}
+
+.infcampainer {
+    grid-area: infcampainer;
+}
+
+.influncerlist {
+    display: grid;
+    grid-template-areas:
+        'infimage infusername infusername infusername infsocial'
+        'infimage infmediacount inffollowers infengrate infcampainer'
+        'infimage infmediacount inffollowers infengrate infcampainer';
+    background-color: rgb(235, 235, 235);
+    border-bottom: #9900ff 4px solid;
+    margin-top: 20px;
+}
+
+.influncerlist>div {
+    background-color: rgb(235, 235, 235);
+}
+
+.infusername,.infsocial,.infmediacount,.inffollowers,.infengrate, .infcampainer, .userimage {
+    text-align: center;
+    padding: 2px;
+}
+.infusername{
+    text-align: left;
+}
+.userimage{
+    background-position: right 50% bottom 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    border-bottom: 0px;
+}
+.infsocial>i{
+    padding: 10px;
+    font-size: 50px;
+}
+
+.engagments span {
+    display: ;
+    min-width: 58px;
+}
+.engagments span.shortcount{
+    display: block;
+    min-width: 58px;
+}
+.influncerImageInTable{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    float: left;
+    border-radius: 50% 50% 10% 50% ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
+.socialmediaiconintable {
+    position: absolute;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20% 0 0 0;
+}
+tbody>tr>td:nth-child(1){
+    width: 100px;
+}
+tbody>tr>td:nth-child(2){
+    text-align: left!important;
+}
+tbody>tr{
+    border-radius: 50px 0 0 50px;
+}
+.InfluncerNameInTable{
+    font-size: 23px;
+}
+.socialmediapostdbd{
+    height: 350px;
+    overflow: hidden;
+}
+.socialmediapostimage {
+    margin: 10px;
+    height: 200px;
+    background-color: burlywood;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.postengagments {
+    font-size: 1.0rem;
+    display: inline-flex;
+    font-weight: 200;
+}
+.aboutpost{
+    max-height: 50px;
+    overflow-y: hidden;
+
+}
+.boxss {
+    box-shadow: 0 0 5px #bfbfbf;
+    border-radius: 0;
+    font-size: 14px;
+    padding-top: 0;
+    margin-top: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.tabs-wraper {
+    color: #444;
+    display: block;
+    width: 100%;
+}
+.tabs-wraper .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    background: #edeff1;
+    display: flex;
+    justify-content: space-around;
+}
+.tabs-wraper .nav-tabs .nav-item {
+    margin-bottom: -1px;
+    flex: 100;
+}
+.nav-tabs .nav-item a.nav-link {
+    color: #000!important;
+    padding: 10px 40px;
+    border-right: 1px solid #dee2e6;
+    border-radius: 0;
+    text-align: center;
+}
+.nav-tabs > li > a.active:hover, .nav-tabs > li > a.active:focus {
+    border-color: #e1e1e1;
+    color: #575757;
+    background-color: #8377f6;
+}
+.socialmediaiconinposts {
+    position: absolute;
+    font-size: 22px;
+    width: 32px;
+    height: 27px;
+    top: 5px;
+    left: 0px;
+    /* bottom: 0; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 20% 0;
+}
+
