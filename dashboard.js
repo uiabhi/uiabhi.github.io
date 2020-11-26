@@ -28,6 +28,8 @@
   
   }).call(this);
   
+  
+  //# sourceURL=coffeescript
 
 
   
