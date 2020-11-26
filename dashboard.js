@@ -10,6 +10,9 @@
       if (itemId === 'my_trip') {
         $('.dashboard-preview').show();
       } else {
+      if (itemId === 'logout') {
+        $(location).attr('href', 'http://uiabhi.github.io/dashboard.html');
+      } else {
         $('.dashboard-preview').hide();
       }
       return console.log(itemId);

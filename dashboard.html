@@ -45,6 +45,10 @@
                     <li class="dashboard-nav__item"><a href="settings"><img
                                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/planner_dashboard_settings.svg" />Settings</a>
                     </li>
+                    <li class="dashboard-nav__item"><a href="/" class="logout" ><img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/planner_dashboard_settings.svg" />Log
+                            Out</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -87,7 +91,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td width="10%">
-                                                            Select Route: 
+                                                            Select Route:
                                                         </td>
                                                         <td>
                                                             <select name="ctl00$ContentPlaceHolder1$ddlRoute"
@@ -161,840 +165,836 @@
 
                                                     </tr>
                                                     <tr>
-                                                        <tr>
-                                                            <td colspan="3" class="Smsheading">
-                                                                Step 3 : Select City
-                                                            </td>
-                                                        </tr>
-                                                        <td width="10%">
-                                                            Select City:
-                                                        </td>
-                                                        <td>
-                                                            <select name="ctl00$ContentPlaceHolder1$ddlRoute"
-                                                                onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlRoute\',\'\')', 0)"
-                                                                id="ctl00_ContentPlaceHolder1_ddlRoute"
-                                                                class="selectRoute">
-                                                                <option selected="selected" value="0">Select City
-                                                                </option>
-                                                                        <option value="2">North India</option>
-                                                                        <option value="2">South India</option>
-                                                                        <option value="2">East India</option>
-                                                                        <option value="2">West India</option>
-                                                                        <option value="2">Central India</option>
-                                                                        <option value="2">Agra</option>
-                                                                        <option value="2">Ahmedabad</option>
-                                                                        <option value="2">Ahmednagar</option>
-                                                                        <option value="2">Aizawl</option>
-                                                                        <option value="2">Ajitgarh (Mohali)</option>
-                                                                        <option value="2">Ajmer</option>
-                                                                        <option value="2">Akola</option>
-                                                                        <option value="2">Alappuzha</option>
-                                                                        <option value="2">Aligarh</option>
-                                                                        <option value="2">Alirajpur</option>
-                                                                        <option value="2">Allahabad</option>
-                                                                        <option value="2">Almora</option>
-                                                                        <option value="2">Alwar</option>
-                                                                        <option value="2">Ambala</option>
-                                                                        <option value="2">Ambedkar Nagar</option>
-                                                                        <option value="2">Amravati</option>
-                                                                        <option value="2">Amreli district</option>
-                                                                        <option value="2">Amritsar</option>
-                                                                        <option value="2">Anand</option>
-                                                                        <option value="2">Anantapur</option>
-                                                                        <option value="2">Anantnag</option>
-                                                                        <option value="2">Angul</option>
-                                                                        <option value="2">Anjaw</option>
-                                                                        <option value="2">Anuppur</option>
-                                                                        <option value="2">Araria</option>
-                                                                        <option value="2">Ariyalur</option>
-                                                                        <option value="2">Arwal</option>
-                                                                        <option value="2">Ashok Nagar</option>
-                                                                        <option value="2">Auraiya</option>
-                                                                        <option value="2">Aurangabad</option>
-                                                                        <option value="2">Aurangabad</option>
-                                                                        <option value="2">Azamgarh</option>
-                                                                        <option value="2">Badgam</option>
-                                                                        <option value="2">Bagalkot</option>
-                                                                        <option value="2">Bageshwar</option>
-                                                                        <option value="2">Bagpat</option>
-                                                                        <option value="2">Bahraich</option>
-                                                                        <option value="2">Baksa</option>
-                                                                        <option value="2">Balaghat</option>
-                                                                        <option value="2">Balangir</option>
-                                                                        <option value="2">Balasore</option>
-                                                                        <option value="2">Ballia</option>
-                                                                        <option value="2">Balrampur</option>
-                                                                        <option value="2">Banaskantha</option>
-                                                                        <option value="2">Banda</option>
-                                                                        <option value="2">Bandipora</option>
-                                                                        <option value="2">Bangalore Rural</option>
-                                                                        <option value="2">Bangalore Urban</option>
-                                                                        <option value="2">Banka</option>
-                                                                        <option value="2">Bankura</option>
-                                                                        <option value="2">Banswara</option>
-                                                                        <option value="2">Barabanki</option>
-                                                                        <option value="2">Baramulla</option>
-                                                                        <option value="2">Baran</option>
-                                                                        <option value="2">Bardhaman</option>
-                                                                        <option value="2">Bareilly</option>
-                                                                        <option value="2">Bargarh (Baragarh)</option>
-                                                                        <option value="2">Barmer</option>
-                                                                        <option value="2">Barnala</option>
-                                                                        <option value="2">Barpeta</option>
-                                                                        <option value="2">Barwani</option>
-                                                                        <option value="2">Bastar</option>
-                                                                        <option value="2">Basti</option>
-                                                                        <option value="2">Bathinda</option>
-                                                                        <option value="2">Beed</option>
-                                                                        <option value="2">Begusarai</option>
-                                                                        <option value="2">Belgaum</option>
-                                                                        <option value="2">Bellary</option>
-                                                                        <option value="2">Betul</option>
-                                                                        <option value="2">Bhadrak</option>
-                                                                        <option value="2">Bhagalpur</option>
-                                                                        <option value="2">Bhandara</option>
-                                                                        <option value="2">Bharatpur</option>
-                                                                        <option value="2">Bharuch</option>
-                                                                        <option value="2">Bhavnagar</option>
-                                                                        <option value="2">Bhilwara</option>
-                                                                        <option value="2">Bhind</option>
-                                                                        <option value="2">Bhiwani</option>
-                                                                        <option value="2">Bhojpur</option>
-                                                                        <option value="2">Bhopal</option>
-                                                                        <option value="2">Bidar</option>
-                                                                        <option value="2">Bijapur</option>
-                                                                        <option value="2">Bijapur</option>
-                                                                        <option value="2">Bijnor</option>
-                                                                        <option value="2">Bikaner</option>
-                                                                        <option value="2">Bilaspur</option>
-                                                                        <option value="2">Bilaspur</option>
-                                                                        <option value="2">Birbhum</option>
-                                                                        <option value="2">Bishnupur</option>
-                                                                        <option value="2">Bokaro</option>
-                                                                        <option value="2">Bongaigaon</option>
-                                                                        <option value="2">Boudh (Bauda)</option>
-                                                                        <option value="2">Budaun</option>
-                                                                        <option value="2">Bulandshahr</option>
-                                                                        <option value="2">Buldhana</option>
-                                                                        <option value="2">Bundi</option>
-                                                                        <option value="2">Burhanpur</option>
-                                                                        <option value="2">Buxar</option>
-                                                                        <option value="2">Cachar</option>
-                                                                        <option value="2">Central Delhi</option>
-                                                                        <option value="2">Chamarajnagar</option>
-                                                                        <option value="2">Chamba</option>
-                                                                        <option value="2">Chamoli</option>
-                                                                        <option value="2">Champawat</option>
-                                                                        <option value="2">Champhai</option>
-                                                                        <option value="2">Chandauli</option>
-                                                                        <option value="2">Chandel</option>
-                                                                        <option value="2">Chandigarh</option>
-                                                                        <option value="2">Chandrapur</option>
-                                                                        <option value="2">Changlang</option>
-                                                                        <option value="2">Chatra</option>
-                                                                        <option value="2">Chennai</option>
-                                                                        <option value="2">Chhatarpur</option>
-                                                                        <option value="2">Chhatrapati Shahuji Maharaj Nagar</option>
-                                                                        <option value="2">Chhindwara</option>
-                                                                        <option value="2">Chikkaballapur</option>
-                                                                        <option value="2">Chikkamagaluru</option>
-                                                                        <option value="2">Chirang</option>
-                                                                        <option value="2">Chitradurga</option>
-                                                                        <option value="2">Chitrakoot</option>
-                                                                        <option value="2">Chittoor</option>
-                                                                        <option value="2">Chittorgarh</option>
-                                                                        <option value="2">Churachandpur</option>
-                                                                        <option value="2">Churu</option>
-                                                                        <option value="2">Coimbatore</option>
-                                                                        <option value="2">Cooch Behar</option>
-                                                                        <option value="2">Cuddalore</option>
-                                                                        <option value="2">Cuttack</option>
-                                                                        <option value="2">Dadra and Nagar Haveli</option>
-                                                                        <option value="2">Dahod</option>
-                                                                        <option value="2">Dakshin Dinajpur</option>
-                                                                        <option value="2">Dakshina Kannada</option>
-                                                                        <option value="2">Daman</option>
-                                                                        <option value="2">Damoh</option>
-                                                                        <option value="2">Dantewada</option>
-                                                                        <option value="2">Darbhanga</option>
-                                                                        <option value="2">Darjeeling</option>
-                                                                        <option value="2">Darrang</option>
-                                                                        <option value="2">Datia</option>
-                                                                        <option value="2">Dausa</option>
-                                                                        <option value="2">Davanagere</option>
-                                                                        <option value="2">Debagarh (Deogarh)</option>
-                                                                        <option value="2">Dehradun</option>
-                                                                        <option value="2">Deoghar</option>
-                                                                        <option value="2">Deoria</option>
-                                                                        <option value="2">Dewas</option>
-                                                                        <option value="2">Dhalai</option>
-                                                                        <option value="2">Dhamtari</option>
-                                                                        <option value="2">Dhanbad</option>
-                                                                        <option value="2">Dhar</option>
-                                                                        <option value="2">Dharmapuri</option>
-                                                                        <option value="2">Dharwad</option>
-                                                                        <option value="2">Dhemaji</option>
-                                                                        <option value="2">Dhenkanal</option>
-                                                                        <option value="2">Dholpur</option>
-                                                                        <option value="2">Dhubri</option>
-                                                                        <option value="2">Dhule</option>
-                                                                        <option value="2">Dibang Valley</option>
-                                                                        <option value="2">Dibrugarh</option>
-                                                                        <option value="2">Dima Hasao</option>
-                                                                        <option value="2">Dimapur</option>
-                                                                        <option value="2">Dindigul</option>
-                                                                        <option value="2">Dindori</option>
-                                                                        <option value="2">Diu</option>
-                                                                        <option value="2">Doda</option>
-                                                                        <option value="2">Dumka</option>
-                                                                        <option value="2">Dungapur</option>
-                                                                        <option value="2">Durg</option>
-                                                                        <option value="2">East Champaran</option>
-                                                                        <option value="2">East Delhi</option>
-                                                                        <option value="2">East Garo Hills</option>
-                                                                        <option value="2">East Khasi Hills</option>
-                                                                        <option value="2">East Siang</option>
-                                                                        <option value="2">East Sikkim</option>
-                                                                        <option value="2">East Singhbhum</option>
-                                                                        <option value="2">Eluru</option>
-                                                                        <option value="2">Ernakulam</option>
-                                                                        <option value="2">Erode</option>
-                                                                        <option value="2">Etah</option>
-                                                                        <option value="2">Etawah</option>
-                                                                        <option value="2">Faizabad</option>
-                                                                        <option value="2">Faridabad</option>
-                                                                        <option value="2">Faridkot</option>
-                                                                        <option value="2">Farrukhabad</option>
-                                                                        <option value="2">Fatehabad</option>
-                                                                        <option value="2">Fatehgarh Sahib</option>
-                                                                        <option value="2">Fatehpur</option>
-                                                                        <option value="2">Fazilka</option>
-                                                                        <option value="2">Firozabad</option>
-                                                                        <option value="2">Firozpur</option>
-                                                                        <option value="2">Gadag</option>
-                                                                        <option value="2">Gadchiroli</option>
-                                                                        <option value="2">Gajapati</option>
-                                                                        <option value="2">Ganderbal</option>
-                                                                        <option value="2">Gandhinagar</option>
-                                                                        <option value="2">Ganganagar</option>
-                                                                        <option value="2">Ganjam</option>
-                                                                        <option value="2">Garhwa</option>
-                                                                        <option value="2">Gautam Buddh Nagar</option>
-                                                                        <option value="2">Gaya</option>
-                                                                        <option value="2">Ghaziabad</option>
-                                                                        <option value="2">Ghazipur</option>
-                                                                        <option value="2">Giridih</option>
-                                                                        <option value="2">Goalpara</option>
-                                                                        <option value="2">Godda</option>
-                                                                        <option value="2">Golaghat</option>
-                                                                        <option value="2">Gonda</option>
-                                                                        <option value="2">Gondia</option>
-                                                                        <option value="2">Gopalganj</option>
-                                                                        <option value="2">Gorakhpur</option>
-                                                                        <option value="2">Gulbarga</option>
-                                                                        <option value="2">Gumla</option>
-                                                                        <option value="2">Guna</option>
-                                                                        <option value="2">Guntur</option>
-                                                                        <option value="2">Gurdaspur</option>
-                                                                        <option value="2">Gurgaon</option>
-                                                                        <option value="2">Gwalior</option>
-                                                                        <option value="2">Hailakandi</option>
-                                                                        <option value="2">Hamirpur</option>
-                                                                        <option value="2">Hamirpur</option>
-                                                                        <option value="2">Hanumangarh</option>
-                                                                        <option value="2">Harda</option>
-                                                                        <option value="2">Hardoi</option>
-                                                                        <option value="2">Haridwar</option>
-                                                                        <option value="2">Hassan</option>
-                                                                        <option value="2">Haveri district</option>
-                                                                        <option value="2">Hazaribag</option>
-                                                                        <option value="2">Hingoli</option>
-                                                                        <option value="2">Hissar</option>
-                                                                        <option value="2">Hooghly</option>
-                                                                        <option value="2">Hoshangabad</option>
-                                                                        <option value="2">Hoshiarpur</option>
-                                                                        <option value="2">Howrah</option>
-                                                                        <option value="2">Hyderabad</option>
-                                                                        <option value="2">Hyderabad</option>
-                                                                        <option value="2">Idukki</option>
-                                                                        <option value="2">Imphal East</option>
-                                                                        <option value="2">Imphal West</option>
-                                                                        <option value="2">Indore</option>
-                                                                        <option value="2">Jabalpur</option>
-                                                                        <option value="2">Jagatsinghpur</option>
-                                                                        <option value="2">Jaintia Hills</option>
-                                                                        <option value="2">Jaipur</option>
-                                                                        <option value="2">Jaisalmer</option>
-                                                                        <option value="2">Jajpur</option>
-                                                                        <option value="2">Jalandhar</option>
-                                                                        <option value="2">Jalaun</option>
-                                                                        <option value="2">Jalgaon</option>
-                                                                        <option value="2">Jalna</option>
-                                                                        <option value="2">Jalore</option>
-                                                                        <option value="2">Jalpaiguri</option>
-                                                                        <option value="2">Jammu</option>
-                                                                        <option value="2">Jamnagar</option>
-                                                                        <option value="2">Jamtara</option>
-                                                                        <option value="2">Jamui</option>
-                                                                        <option value="2">Janjgir-Champa</option>
-                                                                        <option value="2">Jashpur</option>
-                                                                        <option value="2">Jaunpur district</option>
-                                                                        <option value="2">Jehanabad</option>
-                                                                        <option value="2">Jhabua</option>
-                                                                        <option value="2">Jhajjar</option>
-                                                                        <option value="2">Jhalawar</option>
-                                                                        <option value="2">Jhansi</option>
-                                                                        <option value="2">Jharsuguda</option>
-                                                                        <option value="2">Jhunjhunu</option>
-                                                                        <option value="2">Jind</option>
-                                                                        <option value="2">Jodhpur</option>
-                                                                        <option value="2">Jorhat</option>
-                                                                        <option value="2">Junagadh</option>
-                                                                        <option value="2">Jyotiba Phule Nagar</option>
-                                                                        <option value="2">Kabirdham (formerly Kawardha)</option>
-                                                                        <option value="2">Kadapa</option>
-                                                                        <option value="2">Kaimur</option>
-                                                                        <option value="2">Kaithal</option>
-                                                                        <option value="2">Kakinada</option>
-                                                                        <option value="2">Kalahandi</option>
-                                                                        <option value="2">Kamrup</option>
-                                                                        <option value="2">Kamrup Metropolitan</option>
-                                                                        <option value="2">Kanchipuram</option>
-                                                                        <option value="2">Kandhamal</option>
-                                                                        <option value="2">Kangra</option>
-                                                                        <option value="2">Kanker</option>
-                                                                        <option value="2">Kannauj</option>
-                                                                        <option value="2">Kannur</option>
-                                                                        <option value="2">Kanpur</option>
-                                                                        <option value="2">Kanshi Ram Nagar</option>
-                                                                        <option value="2">Kanyakumari</option>
-                                                                        <option value="2">Kapurthala</option>
-                                                                        <option value="2">Karaikal</option>
-                                                                        <option value="2">Karauli</option>
-                                                                        <option value="2">Karbi Anglong</option>
-                                                                        <option value="2">Kargil</option>
-                                                                        <option value="2">Karimganj</option>
-                                                                        <option value="2">Karimnagar</option>
-                                                                        <option value="2">Karnal</option>
-                                                                        <option value="2">Karur</option>
-                                                                        <option value="2">Kasaragod</option>
-                                                                        <option value="2">Kathua</option>
-                                                                        <option value="2">Katihar</option>
-                                                                        <option value="2">Katni</option>
-                                                                        <option value="2">Kaushambi</option>
-                                                                        <option value="2">Kendrapara</option>
-                                                                        <option value="2">Kendujhar (Keonjhar)</option>
-                                                                        <option value="2">Khagaria</option>
-                                                                        <option value="2">Khammam</option>
-                                                                        <option value="2">Khandwa (East Nimar)</option>
-                                                                        <option value="2">Khargone (West Nimar)</option>
-                                                                        <option value="2">Kheda</option>
-                                                                        <option value="2">Khordha</option>
-                                                                        <option value="2">Khowai</option>
-                                                                        <option value="2">Khunti</option>
-                                                                        <option value="2">Kinnaur</option>
-                                                                        <option value="2">Kishanganj</option>
-                                                                        <option value="2">Kishtwar</option>
-                                                                        <option value="2">Kodagu</option>
-                                                                        <option value="2">Koderma</option>
-                                                                        <option value="2">Kohima</option>
-                                                                        <option value="2">Kokrajhar</option>
-                                                                        <option value="2">Kolar</option>
-                                                                        <option value="2">Kolasib</option>
-                                                                        <option value="2">Kolhapur</option>
-                                                                        <option value="2">Kolkata</option>
-                                                                        <option value="2">Kollam</option>
-                                                                        <option value="2">Koppal</option>
-                                                                        <option value="2">Koraput</option>
-                                                                        <option value="2">Korba</option>
-                                                                        <option value="2">Koriya</option>
-                                                                        <option value="2">Kota</option>
-                                                                        <option value="2">Kottayam</option>
-                                                                        <option value="2">Kozhikode</option>
-                                                                        <option value="2">Krishna</option>
-                                                                        <option value="2">Kulgam</option>
-                                                                        <option value="2">Kullu</option>
-                                                                        <option value="2">Kupwara</option>
-                                                                        <option value="2">Kurnool</option>
-                                                                        <option value="2">Kurukshetra</option>
-                                                                        <option value="2">Kurung Kumey</option>
-                                                                        <option value="2">Kushinagar</option>
-                                                                        <option value="2">Kutch</option>
-                                                                        <option value="2">Lahaul and Spiti</option>
-                                                                        <option value="2">Lakhimpur</option>
-                                                                        <option value="2">Lakhimpur Kheri</option>
-                                                                        <option value="2">Lakhisarai</option>
-                                                                        <option value="2">Lalitpur</option>
-                                                                        <option value="2">Latehar</option>
-                                                                        <option value="2">Latur</option>
-                                                                        <option value="2">Lawngtlai</option>
-                                                                        <option value="2">Leh</option>
-                                                                        <option value="2">Lohardaga</option>
-                                                                        <option value="2">Lohit</option>
-                                                                        <option value="2">Lower Dibang Valley</option>
-                                                                        <option value="2">Lower Subansiri</option>
-                                                                        <option value="2">Lucknow</option>
-                                                                        <option value="2">Ludhiana</option>
-                                                                        <option value="2">Lunglei</option>
-                                                                        <option value="2">Madhepura</option>
-                                                                        <option value="2">Madhubani</option>
-                                                                        <option value="2">Madurai</option>
-                                                                        <option value="2">Mahamaya Nagar</option>
-                                                                        <option value="2">Maharajganj</option>
-                                                                        <option value="2">Mahasamund</option>
-                                                                        <option value="2">Mahbubnagar</option>
-                                                                        <option value="2">Mahe</option>
-                                                                        <option value="2">Mahendragarh</option>
-                                                                        <option value="2">Mahoba</option>
-                                                                        <option value="2">Mainpuri</option>
-                                                                        <option value="2">Malappuram</option>
-                                                                        <option value="2">Maldah</option>
-                                                                        <option value="2">Malkangiri</option>
-                                                                        <option value="2">Mamit</option>
-                                                                        <option value="2">Mandi</option>
-                                                                        <option value="2">Mandla</option>
-                                                                        <option value="2">Mandsaur</option>
-                                                                        <option value="2">Mandya</option>
-                                                                        <option value="2">Mansa</option>
-                                                                        <option value="2">Marigaon</option>
-                                                                        <option value="2">Mathura</option>
-                                                                        <option value="2">Mau</option>
-                                                                        <option value="2">Mayurbhanj</option>
-                                                                        <option value="2">Medak</option>
-                                                                        <option value="2">Meerut</option>
-                                                                        <option value="2">Mehsana</option>
-                                                                        <option value="2">Mewat</option>
-                                                                        <option value="2">Mirzapur</option>
-                                                                        <option value="2">Moga</option>
-                                                                        <option value="2">Mokokchung</option>
-                                                                        <option value="2">Mon</option>
-                                                                        <option value="2">Moradabad</option>
-                                                                        <option value="2">Morena</option>
-                                                                        <option value="2">Mumbai City</option>
-                                                                        <option value="2">Mumbai suburban</option>
-                                                                        <option value="2">Munger</option>
-                                                                        <option value="2">Murshidabad</option>
-                                                                        <option value="2">Muzaffarnagar</option>
-                                                                        <option value="2">Muzaffarpur</option>
-                                                                        <option value="2">Mysore</option>
-                                                                        <option value="2">Nabarangpur</option>
-                                                                        <option value="2">Nadia</option>
-                                                                        <option value="2">Nagaon</option>
-                                                                        <option value="2">Nagapattinam</option>
-                                                                        <option value="2">Nagaur</option>
-                                                                        <option value="2">Nagpur</option>
-                                                                        <option value="2">Nainital</option>
-                                                                        <option value="2">Nalanda</option>
-                                                                        <option value="2">Nalbari</option>
-                                                                        <option value="2">Nalgonda</option>
-                                                                        <option value="2">Namakkal</option>
-                                                                        <option value="2">Nanded</option>
-                                                                        <option value="2">Nandurbar</option>
-                                                                        <option value="2">Narayanpur</option>
-                                                                        <option value="2">Narmada</option>
-                                                                        <option value="2">Narsinghpur</option>
-                                                                        <option value="2">Nashik</option>
-                                                                        <option value="2">Navsari</option>
-                                                                        <option value="2">Nawada</option>
-                                                                        <option value="2">Nawanshahr</option>
-                                                                        <option value="2">Nayagarh</option>
-                                                                        <option value="2">Neemuch</option>
-                                                                        <option value="2">Nellore</option>
-                                                                        <option value="2">New Delhi</option>
-                                                                        <option value="2">Nilgiris</option>
-                                                                        <option value="2">Nizamabad</option>
-                                                                        <option value="2">North 24 Parganas</option>
-                                                                        <option value="2">North Delhi</option>
-                                                                        <option value="2">North East Delhi</option>
-                                                                        <option value="2">North Goa</option>
-                                                                        <option value="2">North Sikkim</option>
-                                                                        <option value="2">North Tripura</option>
-                                                                        <option value="2">North West Delhi</option>
-                                                                        <option value="2">Nuapada</option>
-                                                                        <option value="2">Ongole</option>
-                                                                        <option value="2">Osmanabad</option>
-                                                                        <option value="2">Pakur</option>
-                                                                        <option value="2">Palakkad</option>
-                                                                        <option value="2">Palamu</option>
-                                                                        <option value="2">Pali</option>
-                                                                        <option value="2">Palwal</option>
-                                                                        <option value="2">Panchkula</option>
-                                                                        <option value="2">Panchmahal</option>
-                                                                        <option value="2">Panchsheel Nagar district (Hapur)</option>
-                                                                        <option value="2">Panipat</option>
-                                                                        <option value="2">Panna</option>
-                                                                        <option value="2">Papum Pare</option>
-                                                                        <option value="2">Parbhani</option>
-                                                                        <option value="2">Paschim Medinipur</option>
-                                                                        <option value="2">Patan</option>
-                                                                        <option value="2">Pathanamthitta</option>
-                                                                        <option value="2">Pathankot</option>
-                                                                        <option value="2">Patiala</option>
-                                                                        <option value="2">Patna</option>
-                                                                        <option value="2">Pauri Garhwal</option>
-                                                                        <option value="2">Perambalur</option>
-                                                                        <option value="2">Phek</option>
-                                                                        <option value="2">Pilibhit</option>
-                                                                        <option value="2">Pithoragarh</option>
-                                                                        <option value="2">Pondicherry</option>
-                                                                        <option value="2">Poonch</option>
-                                                                        <option value="2">Porbandar</option>
-                                                                        <option value="2">Pratapgarh</option>
-                                                                        <option value="2">Pratapgarh</option>
-                                                                        <option value="2">Pudukkottai</option>
-                                                                        <option value="2">Pulwama</option>
-                                                                        <option value="2">Pune</option>
-                                                                        <option value="2">Purba Medinipur</option>
-                                                                        <option value="2">Puri</option>
-                                                                        <option value="2">Purnia</option>
-                                                                        <option value="2">Purulia</option>
-                                                                        <option value="2">Raebareli</option>
-                                                                        <option value="2">Raichur</option>
-                                                                        <option value="2">Raigad</option>
-                                                                        <option value="2">Raigarh</option>
-                                                                        <option value="2">Raipur</option>
-                                                                        <option value="2">Raisen</option>
-                                                                        <option value="2">Rajauri</option>
-                                                                        <option value="2">Rajgarh</option>
-                                                                        <option value="2">Rajkot</option>
-                                                                        <option value="2">Rajnandgaon</option>
-                                                                        <option value="2">Rajsamand</option>
-                                                                        <option value="2">Ramabai Nagar (Kanpur Dehat)</option>
-                                                                        <option value="2">Ramanagara</option>
-                                                                        <option value="2">Ramanathapuram</option>
-                                                                        <option value="2">Ramban</option>
-                                                                        <option value="2">Ramgarh</option>
-                                                                        <option value="2">Rampur</option>
-                                                                        <option value="2">Ranchi</option>
-                                                                        <option value="2">Ratlam</option>
-                                                                        <option value="2">Ratnagiri</option>
-                                                                        <option value="2">Rayagada</option>
-                                                                        <option value="2">Reasi</option>
-                                                                        <option value="2">Rewa</option>
-                                                                        <option value="2">Rewari</option>
-                                                                        <option value="2">Ri Bhoi</option>
-                                                                        <option value="2">Rohtak</option>
-                                                                        <option value="2">Rohtas</option>
-                                                                        <option value="2">Rudraprayag</option>
-                                                                        <option value="2">Rupnagar</option>
-                                                                        <option value="2">Sabarkantha</option>
-                                                                        <option value="2">Sagar</option>
-                                                                        <option value="2">Saharanpur</option>
-                                                                        <option value="2">Saharsa</option>
-                                                                        <option value="2">Sahibganj</option>
-                                                                        <option value="2">Saiha</option>
-                                                                        <option value="2">Salem</option>
-                                                                        <option value="2">Samastipur</option>
-                                                                        <option value="2">Samba</option>
-                                                                        <option value="2">Sambalpur</option>
-                                                                        <option value="2">Sangli</option>
-                                                                        <option value="2">Sangrur</option>
-                                                                        <option value="2">Sant Kabir Nagar</option>
-                                                                        <option value="2">Sant Ravidas Nagar</option>
-                                                                        <option value="2">Saran</option>
-                                                                        <option value="2">Satara</option>
-                                                                        <option value="2">Satna</option>
-                                                                        <option value="2">Sawai Madhopur</option>
-                                                                        <option value="2">Sehore</option>
-                                                                        <option value="2">Senapati</option>
-                                                                        <option value="2">Seoni</option>
-                                                                        <option value="2">Seraikela Kharsawan</option>
-                                                                        <option value="2">Serchhip</option>
-                                                                        <option value="2">Shahdol</option>
-                                                                        <option value="2">Shahjahanpur</option>
-                                                                        <option value="2">Shajapur</option>
-                                                                        <option value="2">Shamli</option>
-                                                                        <option value="2">Sheikhpura</option>
-                                                                        <option value="2">Sheohar</option>
-                                                                        <option value="2">Sheopur</option>
-                                                                        <option value="2">Shimla</option>
-                                                                        <option value="2">Shimoga</option>
-                                                                        <option value="2">Shivpuri</option>
-                                                                        <option value="2">Shopian</option>
-                                                                        <option value="2">Shravasti</option>
-                                                                        <option value="2">Sibsagar</option>
-                                                                        <option value="2">Siddharthnagar</option>
-                                                                        <option value="2">Sidhi</option>
-                                                                        <option value="2">Sikar</option>
-                                                                        <option value="2">Simdega</option>
-                                                                        <option value="2">Sindhudurg</option>
-                                                                        <option value="2">Singrauli</option>
-                                                                        <option value="2">Sirmaur</option>
-                                                                        <option value="2">Sirohi</option>
-                                                                        <option value="2">Sirsa</option>
-                                                                        <option value="2">Sitamarhi</option>
-                                                                        <option value="2">Sitapur</option>
-                                                                        <option value="2">Sivaganga</option>
-                                                                        <option value="2">Siwan</option>
-                                                                        <option value="2">Solan</option>
-                                                                        <option value="2">Solapur</option>
-                                                                        <option value="2">Sonbhadra</option>
-                                                                        <option value="2">Sonipat</option>
-                                                                        <option value="2">Sonitpur</option>
-                                                                        <option value="2">South 24 Parganas</option>
-                                                                        <option value="2">South Delhi</option>
-                                                                        <option value="2">South Garo Hills</option>
-                                                                        <option value="2">South Goa</option>
-                                                                        <option value="2">South Sikkim</option>
-                                                                        <option value="2">South Tripura</option>
-                                                                        <option value="2">South West Delhi</option>
-                                                                        <option value="2">Sri Muktsar Sahib</option>
-                                                                        <option value="2">Srikakulam</option>
-                                                                        <option value="2">Srinagar</option>
-                                                                        <option value="2">Subarnapur (Sonepur)</option>
-                                                                        <option value="2">Sultanpur</option>
-                                                                        <option value="2">Sundergarh</option>
-                                                                        <option value="2">Supaul</option>
-                                                                        <option value="2">Surat</option>
-                                                                        <option value="2">Surendranagar</option>
-                                                                        <option value="2">Surguja</option>
-                                                                        <option value="2">Tamenglong</option>
-                                                                        <option value="2">Tarn Taran</option>
-                                                                        <option value="2">Tawang</option>
-                                                                        <option value="2">Tehri Garhwal</option>
-                                                                        <option value="2">Thane</option>
-                                                                        <option value="2">Thanjavur</option>
-                                                                        <option value="2">The Dangs</option>
-                                                                        <option value="2">Theni</option>
-                                                                        <option value="2">Thiruvananthapuram</option>
-                                                                        <option value="2">Thoothukudi</option>
-                                                                        <option value="2">Thoubal</option>
-                                                                        <option value="2">Thrissur</option>
-                                                                        <option value="2">Tikamgarh</option>
-                                                                        <option value="2">Tinsukia</option>
-                                                                        <option value="2">Tirap</option>
-                                                                        <option value="2">Tiruchirappalli</option>
-                                                                        <option value="2">Tirunelveli</option>
-                                                                        <option value="2">Tirupur</option>
-                                                                        <option value="2">Tiruvallur</option>
-                                                                        <option value="2">Tiruvannamalai</option>
-                                                                        <option value="2">Tiruvarur</option>
-                                                                        <option value="2">Tonk</option>
-                                                                        <option value="2">Tuensang</option>
-                                                                        <option value="2">Tumkur</option>
-                                                                        <option value="2">Udaipur</option>
-                                                                        <option value="2">Udalguri</option>
-                                                                        <option value="2">Udham Singh Nagar</option>
-                                                                        <option value="2">Udhampur</option>
-                                                                        <option value="2">Udupi</option>
-                                                                        <option value="2">Ujjain</option>
-                                                                        <option value="2">Ukhrul</option>
-                                                                        <option value="2">Umaria</option>
-                                                                        <option value="2">Una</option>
-                                                                        <option value="2">Unnao</option>
-                                                                        <option value="2">Upper Siang</option>
-                                                                        <option value="2">Upper Subansiri</option>
-                                                                        <option value="2">Uttar Dinajpur</option>
-                                                                        <option value="2">Uttara Kannada</option>
-                                                                        <option value="2">Uttarkashi</option>
-                                                                        <option value="2">Vadodara</option>
-                                                                        <option value="2">Vaishali</option>
-                                                                        <option value="2">Valsad</option>
-                                                                        <option value="2">Varanasi</option>
-                                                                        <option value="2">Vellore</option>
-                                                                        <option value="2">Vidisha</option>
-                                                                        <option value="2">Viluppuram</option>
-                                                                        <option value="2">Virudhunagar</option>
-                                                                        <option value="2">Visakhapatnam</option>
-                                                                        <option value="2">Vizianagaram</option>
-                                                                        <option value="2">Vyara</option>
-                                                                        <option value="2">Warangal</option>
-                                                                        <option value="2">Wardha</option>
-                                                                        <option value="2">Washim</option>
-                                                                        <option value="2">Wayanad</option>
-                                                                        <option value="2">West Champaran</option>
-                                                                        <option value="2">West Delhi</option>
-                                                                        <option value="2">West Garo Hills</option>
-                                                                        <option value="2">West Kameng</option>
-                                                                        <option value="2">West Khasi Hills</option>
-                                                                        <option value="2">West Siang</option>
-                                                                        <option value="2">West Sikkim</option>
-                                                                        <option value="2">West Singhbhum</option>
-                                                                        <option value="2">West Tripura</option>
-                                                                        <option value="2">Wokha</option>
-                                                                        <option value="2">Yadgir</option>
-                                                                        <option value="2">Yamuna Nagar</option>
-                                                                        <option value="2">Yanam</option>
-                                                                        <option value="2">Yavatmal</option>
-                                                                        <option value="2">Zunheboto</option>
-
-
-                                                            </select>
-                                                        </td>
-
-                                                    </tr>
-
                                                     <tr>
-                                                        <tr>
-                                                            <td colspan="3" class="Smsheading">
-                                                                Step 4 : Select Income Group and catagory (Not Manadatory)
-                                                            </td>
-                                                        </tr>
-                                                        <td width="10%">
-                                                            Select Income Group:
-                                                        </td>
-                                                        <td>
-                                                            <select name="ctl00$ContentPlaceHolder1$ddlRoute"
-                                                                onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlRoute\',\'\')', 0)"
-                                                                id="ctl00_ContentPlaceHolder1_ddlRoute"
-                                                                class="selectRoute">
-                                                                <option selected="selected" value="0">Select Income
-                                                                </option>
-                                                                <option value="2">Students</option>
-                                                                <option value="2">Housewives</option>
-                                                                <option value="2">0-20k</option>
-                                                                <option value="2">20k-40k</option>
-                                                                <option value="2">40-75k    </option>
-                                                                <option value="2">75k-1lac</option>
-                                                                <option value="2"> Above 1 Lac</option>
-                                                                <option value="2">All</option>
-                                                            </select>
-                                                        </td>
-                                                        <td>
-                                                            <select name="ctl00$ContentPlaceHolder1$ddlRoute"
-                                                                onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlRoute\',\'\')', 0)"
-                                                                id="ctl00_ContentPlaceHolder1_ddlRoute"
-                                                                class="selectRoute">
-                                                                <option selected="selected" value="0">Select Catagory
-                                                                </option>
-                                                                <option value="2">MSME Owners</option>
-<option value="2">Small Car Owners</option>
-<option value="2">Premium car owners</option>
-<option value="2">Luxury car owners</option>
-<option value="2">Organisation owners, </option>
-<option value="2">Directors, CEOs, CXOs</option>
-<option value="2">IT Heads</option>
-<option value="2">HR Heads</option>
-<option value="2">Credit Card Holders</option>
-<option value="2">Premium Credit Card Holders</option>
-<option value="2">iPhone Users</option>
-<option value="2">Android Users</option>
-<option value="2">Basic Phone Users</option>
-<option value="2">Frequent Flyers</option>
-<option value="2">Restaurant owners</option>
-<option value="2">Frequent shoppers</option>
-<option value="2">Beauty shoppers</option>
-<option value="2">Luxury Shoppers</option>
-
-                                                            </select>
-                                                        </td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                    </tr>
-
-
-                                    <tr>
-                                        <td colspan="3">
-                                            <textarea name="ctl00$ContentPlaceHolder1$txtmsg" rows="2" cols="20"
-                                                id="ctl00_ContentPlaceHolder1_txtmsg" class="textbox"
-                                                onkeyup="CountMessage_Mozilla(event);" onselect="setCaret();"
-                                                onclick="setCaret();" onblur="sms_textcount()"
-                                                style="height:115px;width:100%;"></textarea>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="3">
-                                            <table width="100%">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="4" class="Smsheading">
-                                                            Step 2 : you can send sms NOW or you can SCHEDULE
+                                                        <td colspan="3" class="Smsheading">
+                                                            Step 3 : Select City
                                                         </td>
                                                     </tr>
-                                                    <tr>
-                                                        <td width="15%">
-                                                            <input id="ctl00_ContentPlaceHolder1_ChkSchedular"
-                                                                type="checkbox"
-                                                                name="ctl00$ContentPlaceHolder1$ChkSchedular"><label
-                                                                for="ctl00_ContentPlaceHolder1_ChkSchedular">Schedule
-                                                            </label>
-                                                        </td>
-                                                        <td width="20%" colspan="2" style="width: 100%">
-                                                            <input name="ctl00$ContentPlaceHolder1$txtSchedule"
-                                                                type="date" id="txtSchedule" class="textbox_Schedule">
+                                                    <td width="10%">
+                                                        Select City:
+                                                    </td>
+                                                    <td>
+                                                        <select name="ctl00$ContentPlaceHolder1$ddlRoute"
+                                                            onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlRoute\',\'\')', 0)"
+                                                            id="ctl00_ContentPlaceHolder1_ddlRoute" class="selectRoute">
+                                                            <option selected="selected" value="0">Select City
+                                                            </option>
+                                                            <option value="2">North India</option>
+                                                            <option value="2">South India</option>
+                                                            <option value="2">East India</option>
+                                                            <option value="2">West India</option>
+                                                            <option value="2">Central India</option>
+                                                            <option value="2">Agra</option>
+                                                            <option value="2">Ahmedabad</option>
+                                                            <option value="2">Ahmednagar</option>
+                                                            <option value="2">Aizawl</option>
+                                                            <option value="2">Ajitgarh (Mohali)</option>
+                                                            <option value="2">Ajmer</option>
+                                                            <option value="2">Akola</option>
+                                                            <option value="2">Alappuzha</option>
+                                                            <option value="2">Aligarh</option>
+                                                            <option value="2">Alirajpur</option>
+                                                            <option value="2">Allahabad</option>
+                                                            <option value="2">Almora</option>
+                                                            <option value="2">Alwar</option>
+                                                            <option value="2">Ambala</option>
+                                                            <option value="2">Ambedkar Nagar</option>
+                                                            <option value="2">Amravati</option>
+                                                            <option value="2">Amreli district</option>
+                                                            <option value="2">Amritsar</option>
+                                                            <option value="2">Anand</option>
+                                                            <option value="2">Anantapur</option>
+                                                            <option value="2">Anantnag</option>
+                                                            <option value="2">Angul</option>
+                                                            <option value="2">Anjaw</option>
+                                                            <option value="2">Anuppur</option>
+                                                            <option value="2">Araria</option>
+                                                            <option value="2">Ariyalur</option>
+                                                            <option value="2">Arwal</option>
+                                                            <option value="2">Ashok Nagar</option>
+                                                            <option value="2">Auraiya</option>
+                                                            <option value="2">Aurangabad</option>
+                                                            <option value="2">Aurangabad</option>
+                                                            <option value="2">Azamgarh</option>
+                                                            <option value="2">Badgam</option>
+                                                            <option value="2">Bagalkot</option>
+                                                            <option value="2">Bageshwar</option>
+                                                            <option value="2">Bagpat</option>
+                                                            <option value="2">Bahraich</option>
+                                                            <option value="2">Baksa</option>
+                                                            <option value="2">Balaghat</option>
+                                                            <option value="2">Balangir</option>
+                                                            <option value="2">Balasore</option>
+                                                            <option value="2">Ballia</option>
+                                                            <option value="2">Balrampur</option>
+                                                            <option value="2">Banaskantha</option>
+                                                            <option value="2">Banda</option>
+                                                            <option value="2">Bandipora</option>
+                                                            <option value="2">Bangalore Rural</option>
+                                                            <option value="2">Bangalore Urban</option>
+                                                            <option value="2">Banka</option>
+                                                            <option value="2">Bankura</option>
+                                                            <option value="2">Banswara</option>
+                                                            <option value="2">Barabanki</option>
+                                                            <option value="2">Baramulla</option>
+                                                            <option value="2">Baran</option>
+                                                            <option value="2">Bardhaman</option>
+                                                            <option value="2">Bareilly</option>
+                                                            <option value="2">Bargarh (Baragarh)</option>
+                                                            <option value="2">Barmer</option>
+                                                            <option value="2">Barnala</option>
+                                                            <option value="2">Barpeta</option>
+                                                            <option value="2">Barwani</option>
+                                                            <option value="2">Bastar</option>
+                                                            <option value="2">Basti</option>
+                                                            <option value="2">Bathinda</option>
+                                                            <option value="2">Beed</option>
+                                                            <option value="2">Begusarai</option>
+                                                            <option value="2">Belgaum</option>
+                                                            <option value="2">Bellary</option>
+                                                            <option value="2">Betul</option>
+                                                            <option value="2">Bhadrak</option>
+                                                            <option value="2">Bhagalpur</option>
+                                                            <option value="2">Bhandara</option>
+                                                            <option value="2">Bharatpur</option>
+                                                            <option value="2">Bharuch</option>
+                                                            <option value="2">Bhavnagar</option>
+                                                            <option value="2">Bhilwara</option>
+                                                            <option value="2">Bhind</option>
+                                                            <option value="2">Bhiwani</option>
+                                                            <option value="2">Bhojpur</option>
+                                                            <option value="2">Bhopal</option>
+                                                            <option value="2">Bidar</option>
+                                                            <option value="2">Bijapur</option>
+                                                            <option value="2">Bijapur</option>
+                                                            <option value="2">Bijnor</option>
+                                                            <option value="2">Bikaner</option>
+                                                            <option value="2">Bilaspur</option>
+                                                            <option value="2">Bilaspur</option>
+                                                            <option value="2">Birbhum</option>
+                                                            <option value="2">Bishnupur</option>
+                                                            <option value="2">Bokaro</option>
+                                                            <option value="2">Bongaigaon</option>
+                                                            <option value="2">Boudh (Bauda)</option>
+                                                            <option value="2">Budaun</option>
+                                                            <option value="2">Bulandshahr</option>
+                                                            <option value="2">Buldhana</option>
+                                                            <option value="2">Bundi</option>
+                                                            <option value="2">Burhanpur</option>
+                                                            <option value="2">Buxar</option>
+                                                            <option value="2">Cachar</option>
+                                                            <option value="2">Central Delhi</option>
+                                                            <option value="2">Chamarajnagar</option>
+                                                            <option value="2">Chamba</option>
+                                                            <option value="2">Chamoli</option>
+                                                            <option value="2">Champawat</option>
+                                                            <option value="2">Champhai</option>
+                                                            <option value="2">Chandauli</option>
+                                                            <option value="2">Chandel</option>
+                                                            <option value="2">Chandigarh</option>
+                                                            <option value="2">Chandrapur</option>
+                                                            <option value="2">Changlang</option>
+                                                            <option value="2">Chatra</option>
+                                                            <option value="2">Chennai</option>
+                                                            <option value="2">Chhatarpur</option>
+                                                            <option value="2">Chhatrapati Shahuji Maharaj Nagar</option>
+                                                            <option value="2">Chhindwara</option>
+                                                            <option value="2">Chikkaballapur</option>
+                                                            <option value="2">Chikkamagaluru</option>
+                                                            <option value="2">Chirang</option>
+                                                            <option value="2">Chitradurga</option>
+                                                            <option value="2">Chitrakoot</option>
+                                                            <option value="2">Chittoor</option>
+                                                            <option value="2">Chittorgarh</option>
+                                                            <option value="2">Churachandpur</option>
+                                                            <option value="2">Churu</option>
+                                                            <option value="2">Coimbatore</option>
+                                                            <option value="2">Cooch Behar</option>
+                                                            <option value="2">Cuddalore</option>
+                                                            <option value="2">Cuttack</option>
+                                                            <option value="2">Dadra and Nagar Haveli</option>
+                                                            <option value="2">Dahod</option>
+                                                            <option value="2">Dakshin Dinajpur</option>
+                                                            <option value="2">Dakshina Kannada</option>
+                                                            <option value="2">Daman</option>
+                                                            <option value="2">Damoh</option>
+                                                            <option value="2">Dantewada</option>
+                                                            <option value="2">Darbhanga</option>
+                                                            <option value="2">Darjeeling</option>
+                                                            <option value="2">Darrang</option>
+                                                            <option value="2">Datia</option>
+                                                            <option value="2">Dausa</option>
+                                                            <option value="2">Davanagere</option>
+                                                            <option value="2">Debagarh (Deogarh)</option>
+                                                            <option value="2">Dehradun</option>
+                                                            <option value="2">Deoghar</option>
+                                                            <option value="2">Deoria</option>
+                                                            <option value="2">Dewas</option>
+                                                            <option value="2">Dhalai</option>
+                                                            <option value="2">Dhamtari</option>
+                                                            <option value="2">Dhanbad</option>
+                                                            <option value="2">Dhar</option>
+                                                            <option value="2">Dharmapuri</option>
+                                                            <option value="2">Dharwad</option>
+                                                            <option value="2">Dhemaji</option>
+                                                            <option value="2">Dhenkanal</option>
+                                                            <option value="2">Dholpur</option>
+                                                            <option value="2">Dhubri</option>
+                                                            <option value="2">Dhule</option>
+                                                            <option value="2">Dibang Valley</option>
+                                                            <option value="2">Dibrugarh</option>
+                                                            <option value="2">Dima Hasao</option>
+                                                            <option value="2">Dimapur</option>
+                                                            <option value="2">Dindigul</option>
+                                                            <option value="2">Dindori</option>
+                                                            <option value="2">Diu</option>
+                                                            <option value="2">Doda</option>
+                                                            <option value="2">Dumka</option>
+                                                            <option value="2">Dungapur</option>
+                                                            <option value="2">Durg</option>
+                                                            <option value="2">East Champaran</option>
+                                                            <option value="2">East Delhi</option>
+                                                            <option value="2">East Garo Hills</option>
+                                                            <option value="2">East Khasi Hills</option>
+                                                            <option value="2">East Siang</option>
+                                                            <option value="2">East Sikkim</option>
+                                                            <option value="2">East Singhbhum</option>
+                                                            <option value="2">Eluru</option>
+                                                            <option value="2">Ernakulam</option>
+                                                            <option value="2">Erode</option>
+                                                            <option value="2">Etah</option>
+                                                            <option value="2">Etawah</option>
+                                                            <option value="2">Faizabad</option>
+                                                            <option value="2">Faridabad</option>
+                                                            <option value="2">Faridkot</option>
+                                                            <option value="2">Farrukhabad</option>
+                                                            <option value="2">Fatehabad</option>
+                                                            <option value="2">Fatehgarh Sahib</option>
+                                                            <option value="2">Fatehpur</option>
+                                                            <option value="2">Fazilka</option>
+                                                            <option value="2">Firozabad</option>
+                                                            <option value="2">Firozpur</option>
+                                                            <option value="2">Gadag</option>
+                                                            <option value="2">Gadchiroli</option>
+                                                            <option value="2">Gajapati</option>
+                                                            <option value="2">Ganderbal</option>
+                                                            <option value="2">Gandhinagar</option>
+                                                            <option value="2">Ganganagar</option>
+                                                            <option value="2">Ganjam</option>
+                                                            <option value="2">Garhwa</option>
+                                                            <option value="2">Gautam Buddh Nagar</option>
+                                                            <option value="2">Gaya</option>
+                                                            <option value="2">Ghaziabad</option>
+                                                            <option value="2">Ghazipur</option>
+                                                            <option value="2">Giridih</option>
+                                                            <option value="2">Goalpara</option>
+                                                            <option value="2">Godda</option>
+                                                            <option value="2">Golaghat</option>
+                                                            <option value="2">Gonda</option>
+                                                            <option value="2">Gondia</option>
+                                                            <option value="2">Gopalganj</option>
+                                                            <option value="2">Gorakhpur</option>
+                                                            <option value="2">Gulbarga</option>
+                                                            <option value="2">Gumla</option>
+                                                            <option value="2">Guna</option>
+                                                            <option value="2">Guntur</option>
+                                                            <option value="2">Gurdaspur</option>
+                                                            <option value="2">Gurgaon</option>
+                                                            <option value="2">Gwalior</option>
+                                                            <option value="2">Hailakandi</option>
+                                                            <option value="2">Hamirpur</option>
+                                                            <option value="2">Hamirpur</option>
+                                                            <option value="2">Hanumangarh</option>
+                                                            <option value="2">Harda</option>
+                                                            <option value="2">Hardoi</option>
+                                                            <option value="2">Haridwar</option>
+                                                            <option value="2">Hassan</option>
+                                                            <option value="2">Haveri district</option>
+                                                            <option value="2">Hazaribag</option>
+                                                            <option value="2">Hingoli</option>
+                                                            <option value="2">Hissar</option>
+                                                            <option value="2">Hooghly</option>
+                                                            <option value="2">Hoshangabad</option>
+                                                            <option value="2">Hoshiarpur</option>
+                                                            <option value="2">Howrah</option>
+                                                            <option value="2">Hyderabad</option>
+                                                            <option value="2">Hyderabad</option>
+                                                            <option value="2">Idukki</option>
+                                                            <option value="2">Imphal East</option>
+                                                            <option value="2">Imphal West</option>
+                                                            <option value="2">Indore</option>
+                                                            <option value="2">Jabalpur</option>
+                                                            <option value="2">Jagatsinghpur</option>
+                                                            <option value="2">Jaintia Hills</option>
+                                                            <option value="2">Jaipur</option>
+                                                            <option value="2">Jaisalmer</option>
+                                                            <option value="2">Jajpur</option>
+                                                            <option value="2">Jalandhar</option>
+                                                            <option value="2">Jalaun</option>
+                                                            <option value="2">Jalgaon</option>
+                                                            <option value="2">Jalna</option>
+                                                            <option value="2">Jalore</option>
+                                                            <option value="2">Jalpaiguri</option>
+                                                            <option value="2">Jammu</option>
+                                                            <option value="2">Jamnagar</option>
+                                                            <option value="2">Jamtara</option>
+                                                            <option value="2">Jamui</option>
+                                                            <option value="2">Janjgir-Champa</option>
+                                                            <option value="2">Jashpur</option>
+                                                            <option value="2">Jaunpur district</option>
+                                                            <option value="2">Jehanabad</option>
+                                                            <option value="2">Jhabua</option>
+                                                            <option value="2">Jhajjar</option>
+                                                            <option value="2">Jhalawar</option>
+                                                            <option value="2">Jhansi</option>
+                                                            <option value="2">Jharsuguda</option>
+                                                            <option value="2">Jhunjhunu</option>
+                                                            <option value="2">Jind</option>
+                                                            <option value="2">Jodhpur</option>
+                                                            <option value="2">Jorhat</option>
+                                                            <option value="2">Junagadh</option>
+                                                            <option value="2">Jyotiba Phule Nagar</option>
+                                                            <option value="2">Kabirdham (formerly Kawardha)</option>
+                                                            <option value="2">Kadapa</option>
+                                                            <option value="2">Kaimur</option>
+                                                            <option value="2">Kaithal</option>
+                                                            <option value="2">Kakinada</option>
+                                                            <option value="2">Kalahandi</option>
+                                                            <option value="2">Kamrup</option>
+                                                            <option value="2">Kamrup Metropolitan</option>
+                                                            <option value="2">Kanchipuram</option>
+                                                            <option value="2">Kandhamal</option>
+                                                            <option value="2">Kangra</option>
+                                                            <option value="2">Kanker</option>
+                                                            <option value="2">Kannauj</option>
+                                                            <option value="2">Kannur</option>
+                                                            <option value="2">Kanpur</option>
+                                                            <option value="2">Kanshi Ram Nagar</option>
+                                                            <option value="2">Kanyakumari</option>
+                                                            <option value="2">Kapurthala</option>
+                                                            <option value="2">Karaikal</option>
+                                                            <option value="2">Karauli</option>
+                                                            <option value="2">Karbi Anglong</option>
+                                                            <option value="2">Kargil</option>
+                                                            <option value="2">Karimganj</option>
+                                                            <option value="2">Karimnagar</option>
+                                                            <option value="2">Karnal</option>
+                                                            <option value="2">Karur</option>
+                                                            <option value="2">Kasaragod</option>
+                                                            <option value="2">Kathua</option>
+                                                            <option value="2">Katihar</option>
+                                                            <option value="2">Katni</option>
+                                                            <option value="2">Kaushambi</option>
+                                                            <option value="2">Kendrapara</option>
+                                                            <option value="2">Kendujhar (Keonjhar)</option>
+                                                            <option value="2">Khagaria</option>
+                                                            <option value="2">Khammam</option>
+                                                            <option value="2">Khandwa (East Nimar)</option>
+                                                            <option value="2">Khargone (West Nimar)</option>
+                                                            <option value="2">Kheda</option>
+                                                            <option value="2">Khordha</option>
+                                                            <option value="2">Khowai</option>
+                                                            <option value="2">Khunti</option>
+                                                            <option value="2">Kinnaur</option>
+                                                            <option value="2">Kishanganj</option>
+                                                            <option value="2">Kishtwar</option>
+                                                            <option value="2">Kodagu</option>
+                                                            <option value="2">Koderma</option>
+                                                            <option value="2">Kohima</option>
+                                                            <option value="2">Kokrajhar</option>
+                                                            <option value="2">Kolar</option>
+                                                            <option value="2">Kolasib</option>
+                                                            <option value="2">Kolhapur</option>
+                                                            <option value="2">Kolkata</option>
+                                                            <option value="2">Kollam</option>
+                                                            <option value="2">Koppal</option>
+                                                            <option value="2">Koraput</option>
+                                                            <option value="2">Korba</option>
+                                                            <option value="2">Koriya</option>
+                                                            <option value="2">Kota</option>
+                                                            <option value="2">Kottayam</option>
+                                                            <option value="2">Kozhikode</option>
+                                                            <option value="2">Krishna</option>
+                                                            <option value="2">Kulgam</option>
+                                                            <option value="2">Kullu</option>
+                                                            <option value="2">Kupwara</option>
+                                                            <option value="2">Kurnool</option>
+                                                            <option value="2">Kurukshetra</option>
+                                                            <option value="2">Kurung Kumey</option>
+                                                            <option value="2">Kushinagar</option>
+                                                            <option value="2">Kutch</option>
+                                                            <option value="2">Lahaul and Spiti</option>
+                                                            <option value="2">Lakhimpur</option>
+                                                            <option value="2">Lakhimpur Kheri</option>
+                                                            <option value="2">Lakhisarai</option>
+                                                            <option value="2">Lalitpur</option>
+                                                            <option value="2">Latehar</option>
+                                                            <option value="2">Latur</option>
+                                                            <option value="2">Lawngtlai</option>
+                                                            <option value="2">Leh</option>
+                                                            <option value="2">Lohardaga</option>
+                                                            <option value="2">Lohit</option>
+                                                            <option value="2">Lower Dibang Valley</option>
+                                                            <option value="2">Lower Subansiri</option>
+                                                            <option value="2">Lucknow</option>
+                                                            <option value="2">Ludhiana</option>
+                                                            <option value="2">Lunglei</option>
+                                                            <option value="2">Madhepura</option>
+                                                            <option value="2">Madhubani</option>
+                                                            <option value="2">Madurai</option>
+                                                            <option value="2">Mahamaya Nagar</option>
+                                                            <option value="2">Maharajganj</option>
+                                                            <option value="2">Mahasamund</option>
+                                                            <option value="2">Mahbubnagar</option>
+                                                            <option value="2">Mahe</option>
+                                                            <option value="2">Mahendragarh</option>
+                                                            <option value="2">Mahoba</option>
+                                                            <option value="2">Mainpuri</option>
+                                                            <option value="2">Malappuram</option>
+                                                            <option value="2">Maldah</option>
+                                                            <option value="2">Malkangiri</option>
+                                                            <option value="2">Mamit</option>
+                                                            <option value="2">Mandi</option>
+                                                            <option value="2">Mandla</option>
+                                                            <option value="2">Mandsaur</option>
+                                                            <option value="2">Mandya</option>
+                                                            <option value="2">Mansa</option>
+                                                            <option value="2">Marigaon</option>
+                                                            <option value="2">Mathura</option>
+                                                            <option value="2">Mau</option>
+                                                            <option value="2">Mayurbhanj</option>
+                                                            <option value="2">Medak</option>
+                                                            <option value="2">Meerut</option>
+                                                            <option value="2">Mehsana</option>
+                                                            <option value="2">Mewat</option>
+                                                            <option value="2">Mirzapur</option>
+                                                            <option value="2">Moga</option>
+                                                            <option value="2">Mokokchung</option>
+                                                            <option value="2">Mon</option>
+                                                            <option value="2">Moradabad</option>
+                                                            <option value="2">Morena</option>
+                                                            <option value="2">Mumbai City</option>
+                                                            <option value="2">Mumbai suburban</option>
+                                                            <option value="2">Munger</option>
+                                                            <option value="2">Murshidabad</option>
+                                                            <option value="2">Muzaffarnagar</option>
+                                                            <option value="2">Muzaffarpur</option>
+                                                            <option value="2">Mysore</option>
+                                                            <option value="2">Nabarangpur</option>
+                                                            <option value="2">Nadia</option>
+                                                            <option value="2">Nagaon</option>
+                                                            <option value="2">Nagapattinam</option>
+                                                            <option value="2">Nagaur</option>
+                                                            <option value="2">Nagpur</option>
+                                                            <option value="2">Nainital</option>
+                                                            <option value="2">Nalanda</option>
+                                                            <option value="2">Nalbari</option>
+                                                            <option value="2">Nalgonda</option>
+                                                            <option value="2">Namakkal</option>
+                                                            <option value="2">Nanded</option>
+                                                            <option value="2">Nandurbar</option>
+                                                            <option value="2">Narayanpur</option>
+                                                            <option value="2">Narmada</option>
+                                                            <option value="2">Narsinghpur</option>
+                                                            <option value="2">Nashik</option>
+                                                            <option value="2">Navsari</option>
+                                                            <option value="2">Nawada</option>
+                                                            <option value="2">Nawanshahr</option>
+                                                            <option value="2">Nayagarh</option>
+                                                            <option value="2">Neemuch</option>
+                                                            <option value="2">Nellore</option>
+                                                            <option value="2">New Delhi</option>
+                                                            <option value="2">Nilgiris</option>
+                                                            <option value="2">Nizamabad</option>
+                                                            <option value="2">North 24 Parganas</option>
+                                                            <option value="2">North Delhi</option>
+                                                            <option value="2">North East Delhi</option>
+                                                            <option value="2">North Goa</option>
+                                                            <option value="2">North Sikkim</option>
+                                                            <option value="2">North Tripura</option>
+                                                            <option value="2">North West Delhi</option>
+                                                            <option value="2">Nuapada</option>
+                                                            <option value="2">Ongole</option>
+                                                            <option value="2">Osmanabad</option>
+                                                            <option value="2">Pakur</option>
+                                                            <option value="2">Palakkad</option>
+                                                            <option value="2">Palamu</option>
+                                                            <option value="2">Pali</option>
+                                                            <option value="2">Palwal</option>
+                                                            <option value="2">Panchkula</option>
+                                                            <option value="2">Panchmahal</option>
+                                                            <option value="2">Panchsheel Nagar district (Hapur)</option>
+                                                            <option value="2">Panipat</option>
+                                                            <option value="2">Panna</option>
+                                                            <option value="2">Papum Pare</option>
+                                                            <option value="2">Parbhani</option>
+                                                            <option value="2">Paschim Medinipur</option>
+                                                            <option value="2">Patan</option>
+                                                            <option value="2">Pathanamthitta</option>
+                                                            <option value="2">Pathankot</option>
+                                                            <option value="2">Patiala</option>
+                                                            <option value="2">Patna</option>
+                                                            <option value="2">Pauri Garhwal</option>
+                                                            <option value="2">Perambalur</option>
+                                                            <option value="2">Phek</option>
+                                                            <option value="2">Pilibhit</option>
+                                                            <option value="2">Pithoragarh</option>
+                                                            <option value="2">Pondicherry</option>
+                                                            <option value="2">Poonch</option>
+                                                            <option value="2">Porbandar</option>
+                                                            <option value="2">Pratapgarh</option>
+                                                            <option value="2">Pratapgarh</option>
+                                                            <option value="2">Pudukkottai</option>
+                                                            <option value="2">Pulwama</option>
+                                                            <option value="2">Pune</option>
+                                                            <option value="2">Purba Medinipur</option>
+                                                            <option value="2">Puri</option>
+                                                            <option value="2">Purnia</option>
+                                                            <option value="2">Purulia</option>
+                                                            <option value="2">Raebareli</option>
+                                                            <option value="2">Raichur</option>
+                                                            <option value="2">Raigad</option>
+                                                            <option value="2">Raigarh</option>
+                                                            <option value="2">Raipur</option>
+                                                            <option value="2">Raisen</option>
+                                                            <option value="2">Rajauri</option>
+                                                            <option value="2">Rajgarh</option>
+                                                            <option value="2">Rajkot</option>
+                                                            <option value="2">Rajnandgaon</option>
+                                                            <option value="2">Rajsamand</option>
+                                                            <option value="2">Ramabai Nagar (Kanpur Dehat)</option>
+                                                            <option value="2">Ramanagara</option>
+                                                            <option value="2">Ramanathapuram</option>
+                                                            <option value="2">Ramban</option>
+                                                            <option value="2">Ramgarh</option>
+                                                            <option value="2">Rampur</option>
+                                                            <option value="2">Ranchi</option>
+                                                            <option value="2">Ratlam</option>
+                                                            <option value="2">Ratnagiri</option>
+                                                            <option value="2">Rayagada</option>
+                                                            <option value="2">Reasi</option>
+                                                            <option value="2">Rewa</option>
+                                                            <option value="2">Rewari</option>
+                                                            <option value="2">Ri Bhoi</option>
+                                                            <option value="2">Rohtak</option>
+                                                            <option value="2">Rohtas</option>
+                                                            <option value="2">Rudraprayag</option>
+                                                            <option value="2">Rupnagar</option>
+                                                            <option value="2">Sabarkantha</option>
+                                                            <option value="2">Sagar</option>
+                                                            <option value="2">Saharanpur</option>
+                                                            <option value="2">Saharsa</option>
+                                                            <option value="2">Sahibganj</option>
+                                                            <option value="2">Saiha</option>
+                                                            <option value="2">Salem</option>
+                                                            <option value="2">Samastipur</option>
+                                                            <option value="2">Samba</option>
+                                                            <option value="2">Sambalpur</option>
+                                                            <option value="2">Sangli</option>
+                                                            <option value="2">Sangrur</option>
+                                                            <option value="2">Sant Kabir Nagar</option>
+                                                            <option value="2">Sant Ravidas Nagar</option>
+                                                            <option value="2">Saran</option>
+                                                            <option value="2">Satara</option>
+                                                            <option value="2">Satna</option>
+                                                            <option value="2">Sawai Madhopur</option>
+                                                            <option value="2">Sehore</option>
+                                                            <option value="2">Senapati</option>
+                                                            <option value="2">Seoni</option>
+                                                            <option value="2">Seraikela Kharsawan</option>
+                                                            <option value="2">Serchhip</option>
+                                                            <option value="2">Shahdol</option>
+                                                            <option value="2">Shahjahanpur</option>
+                                                            <option value="2">Shajapur</option>
+                                                            <option value="2">Shamli</option>
+                                                            <option value="2">Sheikhpura</option>
+                                                            <option value="2">Sheohar</option>
+                                                            <option value="2">Sheopur</option>
+                                                            <option value="2">Shimla</option>
+                                                            <option value="2">Shimoga</option>
+                                                            <option value="2">Shivpuri</option>
+                                                            <option value="2">Shopian</option>
+                                                            <option value="2">Shravasti</option>
+                                                            <option value="2">Sibsagar</option>
+                                                            <option value="2">Siddharthnagar</option>
+                                                            <option value="2">Sidhi</option>
+                                                            <option value="2">Sikar</option>
+                                                            <option value="2">Simdega</option>
+                                                            <option value="2">Sindhudurg</option>
+                                                            <option value="2">Singrauli</option>
+                                                            <option value="2">Sirmaur</option>
+                                                            <option value="2">Sirohi</option>
+                                                            <option value="2">Sirsa</option>
+                                                            <option value="2">Sitamarhi</option>
+                                                            <option value="2">Sitapur</option>
+                                                            <option value="2">Sivaganga</option>
+                                                            <option value="2">Siwan</option>
+                                                            <option value="2">Solan</option>
+                                                            <option value="2">Solapur</option>
+                                                            <option value="2">Sonbhadra</option>
+                                                            <option value="2">Sonipat</option>
+                                                            <option value="2">Sonitpur</option>
+                                                            <option value="2">South 24 Parganas</option>
+                                                            <option value="2">South Delhi</option>
+                                                            <option value="2">South Garo Hills</option>
+                                                            <option value="2">South Goa</option>
+                                                            <option value="2">South Sikkim</option>
+                                                            <option value="2">South Tripura</option>
+                                                            <option value="2">South West Delhi</option>
+                                                            <option value="2">Sri Muktsar Sahib</option>
+                                                            <option value="2">Srikakulam</option>
+                                                            <option value="2">Srinagar</option>
+                                                            <option value="2">Subarnapur (Sonepur)</option>
+                                                            <option value="2">Sultanpur</option>
+                                                            <option value="2">Sundergarh</option>
+                                                            <option value="2">Supaul</option>
+                                                            <option value="2">Surat</option>
+                                                            <option value="2">Surendranagar</option>
+                                                            <option value="2">Surguja</option>
+                                                            <option value="2">Tamenglong</option>
+                                                            <option value="2">Tarn Taran</option>
+                                                            <option value="2">Tawang</option>
+                                                            <option value="2">Tehri Garhwal</option>
+                                                            <option value="2">Thane</option>
+                                                            <option value="2">Thanjavur</option>
+                                                            <option value="2">The Dangs</option>
+                                                            <option value="2">Theni</option>
+                                                            <option value="2">Thiruvananthapuram</option>
+                                                            <option value="2">Thoothukudi</option>
+                                                            <option value="2">Thoubal</option>
+                                                            <option value="2">Thrissur</option>
+                                                            <option value="2">Tikamgarh</option>
+                                                            <option value="2">Tinsukia</option>
+                                                            <option value="2">Tirap</option>
+                                                            <option value="2">Tiruchirappalli</option>
+                                                            <option value="2">Tirunelveli</option>
+                                                            <option value="2">Tirupur</option>
+                                                            <option value="2">Tiruvallur</option>
+                                                            <option value="2">Tiruvannamalai</option>
+                                                            <option value="2">Tiruvarur</option>
+                                                            <option value="2">Tonk</option>
+                                                            <option value="2">Tuensang</option>
+                                                            <option value="2">Tumkur</option>
+                                                            <option value="2">Udaipur</option>
+                                                            <option value="2">Udalguri</option>
+                                                            <option value="2">Udham Singh Nagar</option>
+                                                            <option value="2">Udhampur</option>
+                                                            <option value="2">Udupi</option>
+                                                            <option value="2">Ujjain</option>
+                                                            <option value="2">Ukhrul</option>
+                                                            <option value="2">Umaria</option>
+                                                            <option value="2">Una</option>
+                                                            <option value="2">Unnao</option>
+                                                            <option value="2">Upper Siang</option>
+                                                            <option value="2">Upper Subansiri</option>
+                                                            <option value="2">Uttar Dinajpur</option>
+                                                            <option value="2">Uttara Kannada</option>
+                                                            <option value="2">Uttarkashi</option>
+                                                            <option value="2">Vadodara</option>
+                                                            <option value="2">Vaishali</option>
+                                                            <option value="2">Valsad</option>
+                                                            <option value="2">Varanasi</option>
+                                                            <option value="2">Vellore</option>
+                                                            <option value="2">Vidisha</option>
+                                                            <option value="2">Viluppuram</option>
+                                                            <option value="2">Virudhunagar</option>
+                                                            <option value="2">Visakhapatnam</option>
+                                                            <option value="2">Vizianagaram</option>
+                                                            <option value="2">Vyara</option>
+                                                            <option value="2">Warangal</option>
+                                                            <option value="2">Wardha</option>
+                                                            <option value="2">Washim</option>
+                                                            <option value="2">Wayanad</option>
+                                                            <option value="2">West Champaran</option>
+                                                            <option value="2">West Delhi</option>
+                                                            <option value="2">West Garo Hills</option>
+                                                            <option value="2">West Kameng</option>
+                                                            <option value="2">West Khasi Hills</option>
+                                                            <option value="2">West Siang</option>
+                                                            <option value="2">West Sikkim</option>
+                                                            <option value="2">West Singhbhum</option>
+                                                            <option value="2">West Tripura</option>
+                                                            <option value="2">Wokha</option>
+                                                            <option value="2">Yadgir</option>
+                                                            <option value="2">Yamuna Nagar</option>
+                                                            <option value="2">Yanam</option>
+                                                            <option value="2">Yavatmal</option>
+                                                            <option value="2">Zunheboto</option>
 
-                                                        </td>
-                                                        <td>
-                                                            &nbsp;</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </td>
+
+                                                        </select>
+                                                    </td>
+
                                     </tr>
+
                                     <tr>
-                                        <td colspan="3" align="left" valign="top">
-                                            &nbsp;
-                                        </td>
-                                    </tr>
-
                                     <tr>
-                                        <td colspan="3" align="left" valign="top">
-                                            <span id="ctl00_ContentPlaceHolder1_lblMsg"
-                                                style="color:Red;font-size:Medium;font-weight:bold;"></span>
+                                        <td colspan="3" class="Smsheading">
+                                            Step 4 : Select Income Group and catagory (Not Manadatory)
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <td width="10%">
+                                        Select Income Group:
+                                    </td>
+                                    <td>
+                                        <select name="ctl00$ContentPlaceHolder1$ddlRoute"
+                                            onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlRoute\',\'\')', 0)"
+                                            id="ctl00_ContentPlaceHolder1_ddlRoute" class="selectRoute">
+                                            <option selected="selected" value="0">Select Income
+                                            </option>
+                                            <option value="2">Students</option>
+                                            <option value="2">Housewives</option>
+                                            <option value="2">0-20k</option>
+                                            <option value="2">20k-40k</option>
+                                            <option value="2">40-75k </option>
+                                            <option value="2">75k-1lac</option>
+                                            <option value="2"> Above 1 Lac</option>
+                                            <option value="2">All</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="ctl00$ContentPlaceHolder1$ddlRoute"
+                                            onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlRoute\',\'\')', 0)"
+                                            id="ctl00_ContentPlaceHolder1_ddlRoute" class="selectRoute">
+                                            <option selected="selected" value="0">Select Catagory
+                                            </option>
+                                            <option value="2">MSME Owners</option>
+                                            <option value="2">Small Car Owners</option>
+                                            <option value="2">Premium car owners</option>
+                                            <option value="2">Luxury car owners</option>
+                                            <option value="2">Organisation owners, </option>
+                                            <option value="2">Directors, CEOs, CXOs</option>
+                                            <option value="2">IT Heads</option>
+                                            <option value="2">HR Heads</option>
+                                            <option value="2">Credit Card Holders</option>
+                                            <option value="2">Premium Credit Card Holders</option>
+                                            <option value="2">iPhone Users</option>
+                                            <option value="2">Android Users</option>
+                                            <option value="2">Basic Phone Users</option>
+                                            <option value="2">Frequent Flyers</option>
+                                            <option value="2">Restaurant owners</option>
+                                            <option value="2">Frequent shoppers</option>
+                                            <option value="2">Beauty shoppers</option>
+                                            <option value="2">Luxury Shoppers</option>
 
-                                        <td colspan="2" align="center" valign="top">
-
-                                            <div id="ctl00_ContentPlaceHolder1_UPSendSMS">
-
-                                                <input type="submit" name="ctl00$ContentPlaceHolder1$btnSend"
-                                                    value="Send SMS" id="ctl00_ContentPlaceHolder1_btnSend" class="btn">
-
-                                            </div>
-
-
-                                        </td>
-                                        <td align="center">
-
-                                            <div id="ctl00_ContentPlaceHolder1_UpdateProgress1" style="display:none;"
-                                                role="status" aria-hidden="true">
-
-                                                <div>
-                                                    <table id="MyTable" bgcolor="#9F0D10">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td> <img src="images/wait2.gif"></td>
-                                                                <td>
-                                                                    <b>
-                                                                        <font color="white">Please Wait...</font>
-                                                                    </b>
-
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-
-
-                                            </div>
-
-                                        </td>
-                                    </tr>
-                                    <tr style="display:none">
-
-                                        <td colspan="2" align="center" valign="top">
-                                            <table class="style1">
-                                                <tbody>
-                                                    <tr>
-                                                        <td valign="top">
-
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-
-                                        </td>
+                                        </select>
+                                    </td>
 
                                     </tr>
-
                                 </tbody>
                             </table>
-                            
+                            </td>
+                            </tr>
+
+
+                            <tr>
+                                <td colspan="3">
+                                    <textarea name="ctl00$ContentPlaceHolder1$txtmsg" rows="2" cols="20"
+                                        id="ctl00_ContentPlaceHolder1_txtmsg" class="textbox"
+                                        onkeyup="CountMessage_Mozilla(event);" onselect="setCaret();"
+                                        onclick="setCaret();" onblur="sms_textcount()"
+                                        style="height:115px;width:100%;"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <table width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="4" class="Smsheading">
+                                                    Step 2 : you can send sms NOW or you can SCHEDULE
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="15%">
+                                                    <input id="ctl00_ContentPlaceHolder1_ChkSchedular" type="checkbox"
+                                                        name="ctl00$ContentPlaceHolder1$ChkSchedular"><label
+                                                        for="ctl00_ContentPlaceHolder1_ChkSchedular">Schedule
+                                                    </label>
+                                                </td>
+                                                <td width="20%" colspan="2" style="width: 100%">
+                                                    <input name="ctl00$ContentPlaceHolder1$txtSchedule" type="date"
+                                                        id="txtSchedule" class="textbox_Schedule">
+
+                                                </td>
+                                                <td>
+                                                    &nbsp;</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" align="left" valign="top">
+                                    &nbsp;
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3" align="left" valign="top">
+                                    <span id="ctl00_ContentPlaceHolder1_lblMsg"
+                                        style="color:Red;font-size:Medium;font-weight:bold;"></span>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td colspan="2" align="center" valign="top">
+
+                                    <div id="ctl00_ContentPlaceHolder1_UPSendSMS">
+
+                                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnSend" value="Send SMS"
+                                            id="ctl00_ContentPlaceHolder1_btnSend" class="btn">
+
+                                    </div>
+
+
+                                </td>
+                                <td align="center">
+
+                                    <div id="ctl00_ContentPlaceHolder1_UpdateProgress1" style="display:none;"
+                                        role="status" aria-hidden="true">
+
+                                        <div>
+                                            <table id="MyTable" bgcolor="#9F0D10">
+                                                <tbody>
+                                                    <tr>
+                                                        <td> <img src="images/wait2.gif"></td>
+                                                        <td>
+                                                            <b>
+                                                                <font color="white">Please Wait...</font>
+                                                            </b>
+
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr style="display:none">
+
+                                <td colspan="2" align="center" valign="top">
+                                    <table class="style1">
+                                        <tbody>
+                                            <tr>
+                                                <td valign="top">
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </td>
+
+                            </tr>
+
+                            </tbody>
+                            </table>
+
                         </div>
                     </div>
                 </div>
@@ -1004,20 +1004,20 @@
                 <!-- Dashboard List (Block) -->
                 <h2>My Databases</h2>
                 <div class="" style="padding: 5px;">
-                <table border="1px" style="width: 100%;font-size: 15px;color:black;text-align: center;">
-                  <tr>
-                    <th>Name</th>
-                    <th>Total Count</th>
-                    <th>Last Update Date</th>
-                  </tr>
-                  <tr>
-                    <td>All India</td>
-                    <td>13,56,23,500</td>
-                    <td>20-11-2020</td>
-                  </tr>
-                  
-                </table>
-                <h3>Please contact admin to add, delete, modify database</h3>
+                    <table border="1px" style="width: 100%;font-size: 15px;color:black;text-align: center;">
+                        <tr>
+                            <th>Name</th>
+                            <th>Total Count</th>
+                            <th>Last Update Date</th>
+                        </tr>
+                        <tr>
+                            <td>All India</td>
+                            <td>13,56,23,500</td>
+                            <td>20-11-2020</td>
+                        </tr>
+
+                    </table>
+                    <h3>Please contact admin to add, delete, modify database</h3>
                 </div>
             </div>
             <!-- Dashboard Content Panel (Element)-->
@@ -1025,68 +1025,69 @@
                 <div class="" style="padding: 5px;">
                     <h2>My Reports</h2>
 
-                <table border="1px" style="width: 100%;font-size: 15px;color:black;text-align: center;padding: 5px;">
-                  <tr>
-                    <th>Date</th>
-                    <th>Campaign Name</th>
-                    <th>Message type</th>
-                    <th>Total Count</th>
-                    <th>Delivered</th>
-                    <th>Failed</th>
-                    <th>View report</th>
-                    <th>Download Report</th>
-                  </tr>
-                  <tr>
-                    <td>25/11/2020</td>
-                    <td>All India</td>
-                    <td>T(24x7)</td>
-                    <td>20,60,000</td>
-                    <td>20,59,505</td>
-                    <td>495</td>
-                    <td><button type="submit">View Report</button></td>
-                    <td><button type="submit">Download Report</button></td>
-                  </tr>
-                  <tr>
-                    <td>23/11/2020</td>
-                    <td>All India</td>
-                    <td>M-P(24x7)</td>
-                    <td>20,60,000</td>
-                    <td>20,59,505</td>
-                    <td>495</td>
-                    <td><button type="submit">View Report</button></td>
-                    <td><button type="submit">Download Report</button></td>
-                  </tr>
-                  
-                </table>
-                <h3>Report will be available after 3 hour of publishing a campaign</h3>
-                <p>Reports are reset every saturday, </p>
+                    <table border="1px"
+                        style="width: 100%;font-size: 15px;color:black;text-align: center;padding: 5px;">
+                        <tr>
+                            <th>Date</th>
+                            <th>Campaign Name</th>
+                            <th>Message type</th>
+                            <th>Total Count</th>
+                            <th>Delivered</th>
+                            <th>Failed</th>
+                            <th>View report</th>
+                            <th>Download Report</th>
+                        </tr>
+                        <tr>
+                            <td>25/11/2020</td>
+                            <td>All India</td>
+                            <td>T(24x7)</td>
+                            <td>20,60,000</td>
+                            <td>20,59,505</td>
+                            <td>495</td>
+                            <td><button type="submit">View Report</button></td>
+                            <td><button type="submit">Download Report</button></td>
+                        </tr>
+                        <tr>
+                            <td>23/11/2020</td>
+                            <td>All India</td>
+                            <td>M-P(24x7)</td>
+                            <td>20,60,000</td>
+                            <td>20,59,505</td>
+                            <td>495</td>
+                            <td><button type="submit">View Report</button></td>
+                            <td><button type="submit">Download Report</button></td>
+                        </tr>
+
+                    </table>
+                    <h3>Report will be available after 3 hour of publishing a campaign</h3>
+                    <p>Reports are reset every saturday, </p>
                 </div>
             </div>
             <!-- Dashboard Content Panel (Element)-->
             <div class="dashboard-content__panel" data-panel-id="notifications">
                 <div class="" style="padding: 5px;">
-                <h4>No Notifications</h4>
+                    <h4>No Notifications</h4>
                 </div>
             </div>
             <!-- Dashboard Content Panel (Element)-->
             <div class="dashboard-content__panel" data-panel-id="settings">
                 <div class="" style="padding: 5px;">
                     <h4>Please contact admin</h4>
-                    </div>
+                </div>
             </div>
         </div>
 
     </div>
 
     <script src="./dashboard.js"></script>
-    
- <script src="Script_DTP/jquery.simple-dtpicker.js" type="text/javascript"></script>
- <link href="Script_DTP/jquery.simple-dtpicker.css" rel="stylesheet" type="text/css" />
 
-<script>
-    
-</script>
- 
+    <script src="Script_DTP/jquery.simple-dtpicker.js" type="text/javascript"></script>
+    <link href="Script_DTP/jquery.simple-dtpicker.css" rel="stylesheet" type="text/css" />
+
+    <script>
+
+    </script>
+
 </body>
 
 </html>
