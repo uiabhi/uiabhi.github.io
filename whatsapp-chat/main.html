@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var url = '/include.js';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+            "enabled": true,
+            "chatButtonSetting": {
+                "backgroundColor": "#4dc247",
+                "ctaText": "Message on Whatsapp",
+                "borderRadius": "25",
+                "marginLeft": "0",
+                "marginBottom": "50",
+                "marginRight": "50",
+                "position": "right"
+            },
+            "brandSetting": {
+                "brandName": "Test",
+                "brandSubTitle": "Typically replies within an hour",
+                "brandImg": "https://media-exp1.licdn.com/dms/image/C560BAQFcXEo8ogQLMQ/company-logo_200_200/0/1588920722714?e=1617235200&v=beta&t=1tnUr0lxjeHi1aZyxV-N7qimKkW-wFxSZ6zUSR4MoWI",
+                "welcomeText": "Hi, there!\nHow can I help you?",
+                "backgroundColor": "#0a5f54",
+                "ctaText": "Start Chat",
+                "borderRadius": "25",
+                "autoShow": false,
+                "phoneNumber": "9911152366"
+            }
+        };
+        s.onload = function () {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
