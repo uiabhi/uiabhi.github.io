@@ -2,7 +2,67 @@
 <html>
 <head>
 	<title>Pin Code Information</title>
+    <style>
+
+        form#form {
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+            margin: 25px auto;
+        }
+                table#result {
+            margin: 0 auto;
+            font-family: system-ui;
+          border-collapse: collapse;
+          width: 100%;
+          border: 1px;
+        }
+        
+         td,th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+         tr:nth-child(even){background-color: #f2f2f2;}
+        
+         tr:hover {background-color: #ddd;}
+        
+         th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4b46c3;
+            color: white;
+        }
+        .d-block{
+          display:block;
+        }
+        
+        textarea[id="pincodes"] {
+            display: block;
+            border: 1px solid #222bff;
+            border-radius: 5px;
+            width: 100%;
+            margin: 25px auto;
+            padding: 10px;
+        }
+        
+        button[type="button"] {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            height: 30px;
+            background-color: #4b46c3;
+            color: #fff;
+            border: 0px;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+            </style>
 </head>
+
+
 <body>
 	<form id="form">
 		<textarea id="pincodes" rows="10" cols="30"></textarea>
